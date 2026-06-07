@@ -1457,57 +1457,441 @@ textarea {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-cont    .diagram-step {
+        width: 100%;
+    }
+}
+
+/* ==========================================================================
+   22. リデザイン用追加スタイル (PCベース)
+   ========================================================================== */
+
+/* ヒーローセクションの2カラム化 */
+.hero-content-wrapper {
+    display: grid;
+    grid-template-columns: 1.25fr 0.75fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.hero-image-container {
+    position: relative;
+    display: flex;
     justify-content: center;
-    color: var(--color-primary-light);
-    font-size: 1.25rem;
-    width: 100px;
+    align-items: center;
+}
+
+.hero-main-img {
+    width: 100%;
+    max-width: 380px;
+    height: auto;
+    filter: drop-shadow(0 15px 30px rgba(0, 0, 0, 0.2));
+    animation: floatImage 4s ease-in-out infinite;
+}
+
+@keyframes floatImage {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+.hero-stamp {
+    position: absolute;
+    bottom: -15px;
+    left: -15px;
+    background-color: var(--color-accent);
+    color: var(--color-bg-white);
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-}
-
-.diagram-connector i {
-    animation: pulseArrow 2s infinite ease-in-out;
-}
-
-.connector-text {
-    font-size: 0.75rem;
+    font-size: 0.8rem;
     font-weight: 700;
-    color: var(--color-text-muted);
-    margin-top: 0.25rem;
+    line-height: 1.35;
+    border: 3px dashed var(--color-bg-white);
+    box-shadow: var(--shadow-lg);
+    transform: rotate(-10deg);
+    z-index: 10;
 }
 
-@keyframes pulseArrow {
-    0%, 100% { transform: scale(1); opacity: 0.8; }
-    50% { transform: scale(1.15); opacity: 1; color: var(--color-accent); }
+.hero-stamp i {
+    font-size: 1.35rem;
+    margin-bottom: 0.2rem;
 }
 
-@media (max-width: 900px) {
-    .team-diagram-container {
-        flex-direction: column;
-        gap: 1.5rem;
-        padding: 2rem 1.5rem;
-    }
-    
-    .diagram-connector {
-        width: 100%;
-        height: auto;
-        flex-direction: row;
-        gap: 0.5rem;
-        padding: 0.5rem 0;
-    }
-    
-    .diagram-connector i {
-        transform: rotate(90deg);
-    }
-    
-    @keyframes pulseArrow {
-        0%, 100% { transform: scale(1) rotate(90deg); opacity: 0.8; }
-        50% { transform: scale(1.15) rotate(90deg); opacity: 1; color: var(--color-accent); }
-    }
-    
-    .diagram-step {
-        width: 100%;
-    }
+/* お悩みセクションの紹介画像とタイトル */
+.problem-intro {
+    text-align: center;
+    margin-bottom: 3.5rem;
 }
+
+.problem-intro-img {
+    width: 100%;
+    max-width: 240px;
+    height: auto;
+    margin-bottom: 1.5rem;
+}
+
+.handwritten-accent {
+    color: var(--color-danger);
+    font-weight: 700;
+    position: relative;
+    display: inline-block;
+    padding: 0 0.25rem;
+}
+
+.prob-num {
+    background-color: var(--color-danger);
+    color: var(--color-bg-white);
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 0.85rem;
+    margin-bottom: 1rem;
+    box-shadow: var(--shadow-sm);
+}
+
+/* FEATUREセクション (丸数字はみ出しカード) */
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5rem;
+    margin-top: 3.5rem;
+}
+
+.feature-card-item {
+    background: var(--color-bg-white);
+    border: 1px solid rgba(27, 67, 50, 0.06);
+    border-radius: var(--radius-md);
+    padding: 3rem 2rem 5rem 2rem;
+    position: relative;
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition);
+    display: flex;
+    flex-direction: column;
+}
+
+.feature-card-item:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+    border-color: var(--color-primary-light);
+}
+
+.feat-badge-num {
+    position: absolute;
+    top: -22px;
+    left: 2rem;
+    background: var(--color-accent);
+    color: var(--color-bg-white);
+    font-family: var(--font-heading);
+    font-size: 1.35rem;
+    font-weight: 700;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: var(--shadow-md);
+    border: 3px solid var(--color-bg-white);
+}
+
+.feat-card-content h3 {
+    font-size: 1.15rem;
+    color: var(--color-primary);
+    margin-bottom: 1.25rem;
+    line-height: 1.4;
+    font-weight: 700;
+}
+
+.highlight-text {
+    color: var(--color-accent);
+}
+
+.feat-card-content p {
+    font-size: 0.9rem;
+    color: var(--color-text-dark);
+    line-height: 1.65;
+}
+
+.feat-card-btn {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--color-primary);
+    color: var(--color-bg-white);
+    text-decoration: none;
+    text-align: center;
+    padding: 0.9rem;
+    font-size: 0.9rem;
+    font-weight: 700;
+    border-bottom-left-radius: var(--radius-md);
+    border-bottom-right-radius: var(--radius-md);
+    transition: var(--transition);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+.feature-card-item:hover .feat-card-btn {
+    background-color: var(--color-primary-light);
+}
+
+/* ABOUT US 専門家セクション */
+.about-team-section {
+    padding: 6rem 0;
+    background-color: var(--color-bg-white);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.about-team-wrapper {
+    display: grid;
+    grid-template-columns: 1.25fr 0.75fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.about-team-text h2 {
+    font-size: 2rem;
+    color: var(--color-primary);
+    margin-bottom: 1.5rem;
+    line-height: 1.35;
+}
+
+.about-team-text p {
+    font-size: 0.95rem;
+    line-height: 1.8;
+    color: var(--color-text-dark);
+    margin-bottom: 1.25rem;
+}
+
+.experts-profile-card {
+    background: var(--color-bg-light);
+    border-radius: var(--radius-md);
+    padding: 1.75rem;
+    border: 1px solid rgba(27, 67, 50, 0.06);
+    margin-top: 2rem;
+}
+
+.experts-profile-card h4 {
+    color: var(--color-primary);
+    font-size: 1.1rem;
+    margin-bottom: 0.75rem;
+    border-bottom: 2px solid var(--color-primary-light);
+    padding-bottom: 0.4rem;
+}
+
+.profile-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.profile-table th, .profile-table td {
+    padding: 0.5rem 0;
+    text-align: left;
+    font-size: 0.875rem;
+    line-height: 1.6;
+}
+
+.profile-table th {
+    width: 25%;
+    color: var(--color-primary-light);
+    font-weight: 700;
+    vertical-align: top;
+}
+
+.profile-table td {
+    color: var(--color-text-dark);
+}
+
+.about-team-visual {
+    display: flex;
+    justify-content: center;
+}
+
+.about-team-img {
+    width: 100%;
+    max-width: 320px;
+    height: auto;
+    filter: drop-shadow(0 15px 25px rgba(27, 67, 50, 0.12));
+    border-radius: var(--radius-lg);
+}
+
+/* SERVICE MENU (プランメニュー) */
+.service-menu-section {
+    padding: 6rem 0;
+    background: linear-gradient(135deg, var(--color-primary-dark) 0%, var(--color-primary) 100%);
+    color: var(--color-bg-white);
+}
+
+.service-menu-intro {
+    max-width: 800px;
+    margin: 0 auto 4rem auto;
+}
+
+.service-menu-intro h2 {
+    font-size: 2rem;
+    margin-top: 1rem;
+    line-height: 1.35;
+}
+
+.service-menu-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.menu-card {
+    background: rgba(255, 255, 255, 0.96);
+    color: var(--color-text-dark);
+    border-radius: var(--radius-lg);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    transition: var(--transition);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.menu-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.3);
+}
+
+.menu-card-header {
+    background: var(--color-primary-light);
+    color: var(--color-bg-white);
+    padding: 1.75rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    border-bottom: 4px solid var(--color-accent);
+}
+
+.menu-card-header i {
+    font-size: 2rem;
+}
+
+.menu-card-header h3 {
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.menu-card-body {
+    padding: 2.25rem 1.75rem;
+}
+
+.menu-feat-tag {
+    display: inline-block;
+    background-color: rgba(217, 119, 6, 0.08);
+    color: var(--color-accent);
+    font-size: 0.8rem;
+    font-weight: 700;
+    padding: 0.2rem 0.65rem;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+    border: 1px solid rgba(217, 119, 6, 0.15);
+}
+
+.menu-card-body p {
+    font-size: 0.9rem;
+    line-height: 1.65;
+    margin-bottom: 1.5rem;
+    color: #4b5563;
+}
+
+.menu-spec-list {
+    list-style: none;
+    padding-left: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.06);
+    padding-top: 1.25rem;
+}
+
+.menu-spec-list li {
+    font-size: 0.875rem;
+    line-height: 1.55;
+    margin-bottom: 0.6rem;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    color: var(--color-text-dark);
+    font-weight: 500;
+}
+
+.menu-spec-list li i {
+    color: var(--color-primary-light);
+}
+
+/* お役立ち・サポートグリッドボタン */
+.support-links-section {
+    padding: 5rem 0;
+    background-color: var(--color-bg-light);
+}
+
+.support-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.support-btn-item {
+    background: var(--color-bg-white);
+    color: var(--color-text-dark);
+    text-decoration: none;
+    padding: 1.75rem 1.25rem;
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-sm);
+    border: 1px solid rgba(27, 67, 50, 0.04);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: var(--transition);
+}
+
+.support-btn-item:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-md);
+    border-color: var(--color-primary-light);
+    color: var(--color-primary);
+}
+
+.support-btn-icon {
+    font-size: 2rem;
+    color: var(--color-accent);
+    margin-bottom: 0.75rem;
+    background: rgba(217, 119, 6, 0.06);
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: var(--transition);
+}
+
+.support-btn-item:hover .support-btn-icon {
+    background-color: var(--color-primary);
+    color: var(--color-bg-white);
+}
+
+.support-btn-item span {
+    font-size: 0.8rem;
+    font-weight: 700;
+    line-height: 1.35;
+}
+
 
 /* ==========================================================================
    21. スマホ表示（モバイルファースト・レスポンシブ）最適化追加スタイル
@@ -2132,6 +2516,210 @@ textarea {
     
     .line-cta-box {
         padding: 1.5rem 1.25rem !important;
+    }
+    
+    .line-badge {
+        font-size: 1.1rem !important;
+    }
+    
+    .line-cta-box p {
+        font-size: 0.85rem !important;
+        line-height: 1.5 !important;
+        margin-bottom: 1rem !important;
+    }
+    
+    .cta-form-container {
+        padding: 1.75rem 1.25rem !important;
+    }
+    
+    .cta-form-container h3 {
+        font-size: 1.3rem !important;
+    }
+    
+    .form-desc {
+        font-size: 0.8rem !important;
+        margin-bottom: 1.25rem !important;
+    }
+    
+    .form-group {
+        margin-bottom: 1rem !important;
+    }
+    
+    label {
+        font-size: 0.8rem !important;
+        margin-bottom: 0.35rem !important;
+    }
+    
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    select,
+    textarea {
+        padding: 0.75rem 0.85rem !important;
+        font-size: 1rem !important;
+    }
+    
+    /* 12. フッター */
+    .site-footer {
+        padding: 3rem 0 !important;
+    }
+    
+    .footer-logo {
+        font-size: 1.3rem !important;
+    }
+    
+    .footer-address {
+        font-size: 0.8rem !important;
+        line-height: 1.5 !important;
+        margin-bottom: 1.5rem !important;
+    }
+    
+    /* 13. フフローティングLINE CTA */
+    .floating-line-cta {
+        bottom: 15px !important;
+        left: 15px !important;
+        right: 15px !important;
+    }
+    
+    .floating-line-cta a {
+        padding: 0.85rem !important;
+        font-size: 0.95rem !important;
+        box-shadow: 0 4px 16px rgba(6, 199, 85, 0.4) !important;
+    }
+    
+    /* 新規スマホスタイル */
+    .hero-content-wrapper {
+        grid-template-columns: 1fr !important;
+        gap: 1.5rem !important;
+        text-align: center;
+    }
+    
+    .hero-image-container {
+        order: -1;
+        margin-bottom: 1.5rem;
+    }
+    
+    .hero-main-img {
+        max-width: 250px !important;
+    }
+    
+    .hero-stamp {
+        width: 100px !important;
+        height: 100px !important;
+        font-size: 0.65rem !important;
+        left: 50% !important;
+        bottom: -15px !important;
+        transform: translateX(40px) rotate(-10deg) !important;
+    }
+    
+    .problem-intro-img {
+        max-width: 180px !important;
+    }
+    
+    .handwritten-accent {
+        font-size: 1.85rem !important;
+    }
+    
+    .features-grid {
+        grid-template-columns: 1fr !important;
+        gap: 2rem !important;
+        margin-top: 2.5rem !important;
+    }
+    
+    .feature-card-item {
+        padding: 2.5rem 1.25rem 4rem 1.25rem !important;
+    }
+    
+    .feat-badge-num {
+        width: 38px !important;
+        height: 38px !important;
+        font-size: 1.15rem !important;
+        top: -15px !important;
+        left: 1.5rem !important;
+    }
+    
+    .about-team-section {
+        padding: 4rem 0 !important;
+    }
+    
+    .about-team-wrapper {
+        grid-template-columns: 1fr !important;
+        gap: 2.5rem !important;
+    }
+    
+    .about-team-text h2 {
+        font-size: 1.45rem !important;
+        line-height: 1.35 !important;
+    }
+    
+    .about-team-text p {
+        font-size: 0.95rem !important;
+        line-height: 1.6 !important;
+    }
+    
+    .experts-profile-card {
+        padding: 1.25rem !important;
+    }
+    
+    .about-team-img {
+        max-width: 260px !important;
+    }
+    
+    .service-menu-section {
+        padding: 4rem 0 !important;
+    }
+    
+    .service-menu-intro h2 {
+        font-size: 1.65rem !important;
+        line-height: 1.35 !important;
+    }
+    
+    .service-menu-grid {
+        grid-template-columns: 1fr !important;
+        gap: 2rem !important;
+    }
+    
+    .menu-card-header {
+        padding: 1.25rem !important;
+    }
+    
+    .menu-card-header i {
+        font-size: 1.75rem !important;
+    }
+    
+    .menu-card-header h3 {
+        font-size: 1.15rem !important;
+    }
+    
+    .menu-card-body {
+        padding: 1.5rem 1.25rem !important;
+    }
+    
+    .support-links-section {
+        padding: 3.5rem 0 !important;
+    }
+    
+    .support-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 1rem !important;
+    }
+    
+    .support-btn-item {
+        padding: 1.25rem 1rem !important;
+    }
+    
+    .support-btn-icon {
+        width: 48px !important;
+        height: 48px !important;
+        font-size: 1.5rem !important;
+        margin-bottom: 0.75rem !important;
+    }
+    
+    .support-btn-item span {
+        font-size: 0.75rem !important;
+        line-height: 1.3 !important;
+    }
+}   padding: 1.5rem 1.25rem !important;
     }
     
     .line-badge {
