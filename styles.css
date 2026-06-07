@@ -3007,5 +3007,224 @@ textarea {
     line-height: 1.7;
 }
 
+/* ==========================================================================
+   23. Usecases (想定ユースケース)
+   ========================================================================== */
+.usecases-section {
+    background-color: var(--color-bg-light);
+    padding: 6rem 0;
+}
 
+.usecases-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5rem;
+    margin-top: 3.5rem;
+}
 
+.usecases-card {
+    background-color: var(--color-white);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
+    padding: 3rem 2rem 2.5rem;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-top: 5px solid var(--color-primary-light);
+    display: flex;
+    flex-direction: column;
+}
+
+.usecases-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+.usecases-icon {
+    position: absolute;
+    top: -2.5rem;
+    left: 2rem;
+    width: 5rem;
+    height: 5rem;
+    background: var(--color-gradient-primary);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-white);
+    font-size: 2rem;
+    box-shadow: var(--shadow-sm);
+}
+
+.usecases-card-content {
+    margin-top: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.case-label {
+    display: inline-block;
+    color: var(--color-accent);
+    font-weight: 700;
+    font-size: 0.85rem;
+    letter-spacing: 0.1em;
+    margin-bottom: 0.5rem;
+}
+
+.usecases-card h3 {
+    font-family: var(--font-heading);
+    font-size: 1.3rem;
+    color: var(--color-primary);
+    margin-bottom: 1.5rem;
+    line-height: 1.4;
+}
+
+.case-scenario, .case-problem, .case-solution {
+    margin-bottom: 1.2rem;
+    font-size: 0.95rem;
+}
+
+.case-scenario strong, .case-problem strong, .case-solution strong {
+    display: block;
+    font-size: 0.85rem;
+    margin-bottom: 0.25rem;
+}
+
+.case-scenario strong {
+    color: var(--color-text-light);
+}
+
+.case-problem strong {
+    color: #c9751d;
+}
+
+.case-solution strong {
+    color: var(--color-primary);
+}
+
+.case-scenario p, .case-problem p, .case-solution p {
+    color: var(--color-text-dark);
+    line-height: 1.6;
+    margin: 0;
+}
+
+@media (max-width: 1024px) {
+    .usecases-grid {
+        grid-template-columns: 1fr;
+        gap: 3.5rem;
+    }
+    .usecases-card {
+        padding: 3.5rem 2rem 2.5rem;
+    }
+}
+
+/* ==========================================================================
+   23. Usecases (想定ユースケース)
+   ========================================================================== */
+.usecases-section {
+    background-color: var(--color-bg-light);
+    padding: 6rem 0;
+}
+
+.usecases-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5rem;
+    margin-top: 3.5rem;
+}
+
+.usecases-card {
+    background-color: var(--color-white);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
+    padding: 3rem 2rem 2.5rem;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-top: 5px solid var(--color-primary-light);
+    display: flex;
+    flex-direction: column;
+}
+
+.usecases-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+.usecases-icon {
+    position: absolute;
+    top: -2.5rem;
+    left: 2rem;
+    width: 5rem;
+    height: 5rem;
+    background: var(--color-gradient-primary);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-white);
+    font-size: 2rem;
+    box-shadow: var(--shadow-sm);
+}
+
+.usecases-card-content {
+    margin-top: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.case-label {
+    display: inline-block;
+    color: var(--color-accent);
+    font-weight: 700;
+    font-size: 0.85rem;
+    letter-spacing: 0.1em;
+    margin-bottom: 0.5rem;
+}
+
+.usecases-card h3 {
+    font-family: var(--font-heading);
+    font-size: 1.3rem;
+    color: var(--color-primary);
+    margin-bottom: 1.5rem;
+    line-height: 1.4;
+}
+
+.case-scenario, .case-problem, .case-solution {
+    margin-bottom: 1.2rem;
+    font-size: 0.95rem;
+}
+
+.case-scenario strong, .case-problem strong, .case-solution strong {
+    display: block;
+    font-size: 0.85rem;
+    margin-bottom: 0.25rem;
+}
+
+.case-scenario strong {
+    color: var(--color-text-light);
+}
+
+.case-problem strong {
+    color: #c9751d;
+}
+
+.case-solution strong {
+    color: var(--color-primary);
+}
+
+.case-scenario p, .case-problem p, .case-solution p {
+    color: var(--color-text-dark);
+    line-height: 1.6;
+    margin: 0;
+}
+
+@media (max-width: 1024px) {
+    .usecases-grid {
+        grid-template-columns: 1fr;
+        gap: 3.5rem;
+    }
+    .usecases-card {
+        padding: 3.5rem 2rem 2.5rem;
+    }
+}
