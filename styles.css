@@ -180,6 +180,8 @@ h1, h2, h3, h4 {
     font-size: 1.25rem;
     font-weight: 700;
     color: var(--color-primary);
+    white-space: nowrap;
+    flex-shrink: 0;
 }
 
 .logo-accent {
@@ -321,7 +323,7 @@ h1, h2, h3, h4 {
 
 .problem-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     gap: 2rem;
     margin-top: 1rem;
 }
@@ -356,9 +358,11 @@ h1, h2, h3, h4 {
 }
 
 .problem-card h3 {
-    font-size: 1.25rem;
+    font-size: 1.2rem;
     color: var(--color-text-dark);
     margin-bottom: 1rem;
+    word-break: keep-all;
+    overflow-wrap: break-word;
 }
 
 .problem-card p {
@@ -2843,6 +2847,11 @@ textarea {
     .guarantee-card h3 {
         font-size: 1.2rem !important;
     }
+}
+
+/* PC表示時はスマホ用複製CTAを非表示 */
+.mobile-menu-cta {
+    display: none;
 }
 
 /* ==========================================================================
