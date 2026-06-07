@@ -965,3 +965,174 @@ textarea {
         padding-bottom: 80px; /* フローティングCTA用のパディング */
     }
 }
+
+/* ==========================================================================
+   19. 総合トップページ（ポータル）用追加スタイル
+   ========================================================================== */
+
+/* エリア選択 */
+.area-section {
+    padding: 6rem 0;
+    background-color: var(--color-bg-white);
+}
+
+.area-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.area-card {
+    background: var(--color-bg-gray);
+    border: 1px solid rgba(27, 67, 50, 0.08);
+    border-radius: var(--radius-md);
+    padding: 2.5rem 2rem;
+    text-align: left;
+    transition: var(--transition);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: var(--shadow-sm);
+}
+
+.area-card:not(.coming-soon):hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+    border-color: var(--color-primary-light);
+    background: var(--color-bg-white);
+}
+
+.area-card h3 {
+    font-size: 1.5rem;
+    color: var(--color-primary);
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.area-card h3 i {
+    color: var(--color-accent);
+}
+
+.area-card p {
+    font-size: 0.95rem;
+    color: var(--color-text-dark);
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+.area-card-footer {
+    margin-top: auto;
+}
+
+.area-card.coming-soon {
+    opacity: 0.75;
+    background: rgba(243, 244, 246, 0.6);
+    border-style: dashed;
+}
+
+.area-card.coming-soon .badge-coming {
+    display: inline-block;
+    background: var(--color-text-muted);
+    color: var(--color-bg-white);
+    font-size: 0.75rem;
+    padding: 0.2rem 0.5rem;
+    border-radius: 4px;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+/* リサイクルスキーム */
+.recycle-section {
+    padding: 6rem 0;
+    background-color: var(--color-bg-light);
+}
+
+.recycle-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 2.5rem;
+    margin-top: 2rem;
+}
+
+@media (max-width: 768px) {
+    .recycle-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.recycle-card {
+    background: var(--color-bg-white);
+    border-radius: var(--radius-md);
+    padding: 3rem 2.5rem;
+    box-shadow: var(--shadow-glass);
+    border: 1px solid rgba(27, 67, 50, 0.03);
+    transition: var(--transition);
+}
+
+.recycle-card:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-lg);
+}
+
+.recycle-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.recycle-icon {
+    font-size: 2.25rem;
+    color: var(--color-primary-light);
+    background: rgba(45, 106, 79, 0.08);
+    width: 60px;
+    height: 60px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.recycle-card h3 {
+    font-size: 1.4rem;
+    color: var(--color-primary);
+}
+
+.recycle-card p {
+    font-size: 0.95rem;
+    color: var(--color-text-dark);
+    margin-bottom: 1.5rem;
+    line-height: 1.7;
+}
+
+.recycle-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.recycle-list li {
+    position: relative;
+    padding-left: 1.5rem;
+    font-size: 0.95rem;
+    color: var(--color-text-dark);
+    margin-bottom: 0.75rem;
+}
+
+.recycle-list li::before {
+    content: "■";
+    position: absolute;
+    left: 0;
+    color: var(--color-accent);
+    font-size: 0.8rem;
+    top: 0.1rem;
+}
+
+/* 共有ヘッダーのポータル向け調整 */
+.site-header .logo a {
+    text-decoration: none;
+    color: inherit;
+}
+
