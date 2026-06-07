@@ -1509,5 +1509,700 @@ textarea {
     }
 }
 
+/* ==========================================================================
+   21. スマホ表示（モバイルファースト・レスポンシブ）最適化追加スタイル
+   ========================================================================== */
+
+@media (max-width: 768px) {
+    /* 1. ヘッダー＆ハンバーガーメニュー */
+    .site-header {
+        height: 60px !important;
+    }
+    
+    .header-container {
+        padding: 0 1rem !important;
+        position: relative;
+    }
+    
+    .logo {
+        font-size: 1.05rem !important;
+        z-index: 1001;
+    }
+    
+    .logo-accent {
+        font-size: 0.75rem !important;
+        padding: 0.15rem 0.35rem !important;
+        margin-right: 0.25rem !important;
+    }
+    
+    /* desktop-nav を非表示からドロワーメニューに切り替え */
+    .desktop-nav {
+        display: flex !important;
+        position: fixed !important;
+        top: 0 !important;
+        right: -100% !important;
+        width: 80% !important;
+        max-width: 290px !important;
+        height: 100vh !important;
+        background-color: var(--color-bg-white) !important;
+        flex-direction: column !important;
+        gap: 0 !important;
+        transition: right 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+        overflow-y: auto !important;
+        padding: 70px 0 2rem 0 !important;
+        box-shadow: -5px 0 25px rgba(0, 0, 0, 0.15) !important;
+        z-index: 1000 !important;
+    }
+    
+    .desktop-nav.active {
+        right: 0 !important;
+    }
+    
+    .desktop-nav a {
+        padding: 1rem 1.75rem !important;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.05) !important;
+        display: block !important;
+        font-size: 0.95rem !important;
+        color: var(--color-text-dark) !important;
+        font-weight: 600 !important;
+    }
+    
+    .desktop-nav a:hover {
+        background-color: var(--color-bg-gray) !important;
+        color: var(--color-primary-light) !important;
+    }
+    
+    /* ドロワー内CTA */
+    .mobile-menu-cta {
+        padding: 1.5rem !important;
+        display: block !important;
+    }
+    
+    .mobile-menu-cta .btn {
+        width: 100% !important;
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        padding: 0.85rem !important;
+        font-size: 0.95rem !important;
+        border-radius: 9999px !important;
+    }
+    
+    /* ハンバーガーボタン */
+    .hamburger-menu {
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: space-between !important;
+        width: 26px !important;
+        height: 18px !important;
+        background: none !important;
+        border: none !important;
+        cursor: pointer !important;
+        padding: 0 !important;
+        z-index: 1001 !important;
+        outline: none !important;
+    }
+    
+    .hamburger-menu .bar {
+        width: 100% !important;
+        height: 2.5px !important;
+        background-color: var(--color-primary) !important;
+        border-radius: 9999px !important;
+        transition: all 0.3s ease !important;
+        transform-origin: left center !important;
+    }
+    
+    .hamburger-menu.active .bar:nth-child(1) {
+        transform: rotate(45deg) !important;
+        position: relative !important;
+        top: -1px !important;
+        left: 2px !important;
+    }
+    
+    .hamburger-menu.active .bar:nth-child(2) {
+        width: 0% !important;
+        opacity: 0 !important;
+    }
+    
+    .hamburger-menu.active .bar:nth-child(3) {
+        transform: rotate(-45deg) !important;
+        position: relative !important;
+        top: 1px !important;
+        left: 2px !important;
+    }
+    
+    /* ナビオープン時の背景オーバーレイ */
+    body.nav-open::after {
+        content: "" !important;
+        position: fixed !important;
+        top: 0 !important;
+        left: 0 !important;
+        width: 100vw !important;
+        height: 100vh !important;
+        background-color: rgba(8, 28, 21, 0.5) !important;
+        backdrop-filter: blur(4px) !important;
+        z-index: 999 !important;
+        display: block !important;
+    }
+    
+    body.nav-open {
+        overflow: hidden !important;
+    }
+
+    /* 2. ヒーローセクション */
+    .hero-section {
+        padding-top: 100px !important;
+        padding-bottom: 50px !important;
+    }
+    
+    .hero-section h1 {
+        font-size: 1.85rem !important;
+        line-height: 1.35 !important;
+        margin-bottom: 1rem !important;
+    }
+    
+    .hero-section h1 br {
+        display: none !important;
+    }
+    
+    .hero-lead {
+        font-size: 1rem !important;
+        line-height: 1.6 !important;
+        margin-bottom: 1.5rem !important;
+    }
+    
+    .hero-features {
+        gap: 0.5rem !important;
+        margin-bottom: 2rem !important;
+        justify-content: center !important;
+    }
+    
+    .h-feat-item {
+        font-size: 0.85rem !important;
+        padding: 0.4rem 0.85rem !important;
+    }
+    
+    .cta-buttons {
+        gap: 0.75rem !important;
+    }
+    
+    .btn-large {
+        padding: 0.95rem 1.5rem !important;
+        font-size: 1rem !important;
+    }
+
+    /* 3. お悩み提起セクション */
+    .problem-section {
+        padding: 4rem 0 !important;
+    }
+    
+    .section-subtitle {
+        margin-bottom: 2rem !important;
+        font-size: 0.95rem !important;
+    }
+    
+    .problem-grid {
+        gap: 1.25rem !important;
+    }
+    
+    .problem-card {
+        padding: 1.75rem 1.25rem !important;
+    }
+    
+    .prob-icon {
+        width: 50px !important;
+        height: 50px !important;
+        font-size: 1.5rem !important;
+        margin-bottom: 1rem !important;
+    }
+    
+    .problem-card h3 {
+        font-size: 1.15rem !important;
+        margin-bottom: 0.5rem !important;
+    }
+    
+    .problem-card p {
+        font-size: 0.875rem !important;
+        line-height: 1.6 !important;
+    }
+
+    /* 4. 他社比較表 (テーブルからカード型に変換) */
+    .comparison-section {
+        padding: 4rem 0 !important;
+    }
+    
+    .comparison-table-wrapper {
+        background: transparent !important;
+        box-shadow: none !important;
+        border: none !important;
+        margin-top: 1.5rem !important;
+    }
+    
+    .comparison-table, 
+    .comparison-table tbody, 
+    .comparison-table tr, 
+    .comparison-table td {
+        display: block !important;
+        width: 100% !important;
+    }
+    
+    .comparison-table thead {
+        display: none !important;
+    }
+    
+    .comparison-table tr {
+        background: var(--color-bg-white) !important;
+        margin-bottom: 1.25rem !important;
+        border-radius: var(--radius-md) !important;
+        box-shadow: var(--shadow-sm) !important;
+        border: 1px solid rgba(27, 67, 50, 0.08) !important;
+        overflow: hidden !important;
+    }
+    
+    .comparison-table td {
+        padding: 1rem 1rem 1rem 6.5rem !important; /* 左側にラベル用の広い余白 */
+        border-bottom: 1px solid rgba(0, 0, 0, 0.05) !important;
+        position: relative !important;
+        text-align: left !important;
+        min-height: 70px !important;
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: center !important;
+    }
+    
+    /* 1セル目: 比較項目名 */
+    .comparison-table td.prop-name {
+        background-color: var(--color-primary) !important;
+        color: var(--color-bg-white) !important;
+        font-size: 1rem !important;
+        text-align: center !important;
+        padding: 0.6rem 1rem !important;
+        border-bottom: none !important;
+        min-height: auto !important;
+        display: block !important;
+    }
+    
+    /* 2セル目: 通常の仲介 */
+    .comparison-table td:nth-child(2)::before {
+        content: "他社・仲介" !important;
+        position: absolute !important;
+        left: 1rem !important;
+        top: 50% !important;
+        transform: translateY(-50%) !important;
+        font-weight: 700 !important;
+        font-size: 0.75rem !important;
+        color: var(--color-text-muted) !important;
+        background: rgba(0, 0, 0, 0.05) !important;
+        padding: 0.2rem 0.4rem !important;
+        border-radius: 4px !important;
+        text-align: center !important;
+        width: 4.5rem !important;
+    }
+    
+    /* 3セル目: 当店 */
+    .comparison-table td.highlight-column {
+        background-color: rgba(45, 106, 79, 0.03) !important;
+        border-left: none !important;
+        border-right: none !important;
+    }
+    
+    .comparison-table td.highlight-column::before {
+        content: "当店" !important;
+        position: absolute !important;
+        left: 1rem !important;
+        top: 50% !important;
+        transform: translateY(-50%) !important;
+        font-weight: 700 !important;
+        font-size: 0.75rem !important;
+        color: var(--color-accent) !important;
+        background: rgba(217, 119, 6, 0.1) !important;
+        padding: 0.2rem 0.4rem !important;
+        border-radius: 4px !important;
+        text-align: center !important;
+        width: 4.5rem !important;
+    }
+    
+    .comparison-table td strong {
+        font-size: 0.95rem !important;
+    }
+    
+    .comparison-table td .desc {
+        font-size: 0.8rem !important;
+        margin-top: 0.15rem !important;
+    }
+    
+    .comparison-table tr:last-child td {
+        border-bottom: none !important;
+    }
+
+    /* 5. 提供価値セクション */
+    .bg-dark-section {
+        padding: 4rem 0 !important;
+    }
+    
+    .bg-dark-section h2 {
+        font-size: 1.75rem !important;
+        line-height: 1.35 !important;
+        margin-bottom: 1rem !important;
+    }
+    
+    .bg-dark-section p {
+        font-size: 0.95rem !important;
+        line-height: 1.6 !important;
+        margin-bottom: 1.25rem !important;
+    }
+    
+    .highlight-box {
+        padding: 1.25rem !important;
+    }
+    
+    .highlight-box strong {
+        font-size: 1.05rem !important;
+        margin-bottom: 0.50rem !important;
+    }
+    
+    .highlight-box ul li {
+        font-size: 0.9rem !important;
+        line-height: 1.7 !important;
+    }
+
+    /* 6. 自動連携＆チーム図解 */
+    .alliance-section {
+        padding: 4rem 0 !important;
+    }
+    
+    .alliance-text h3 {
+        font-size: 1.45rem !important;
+        margin-bottom: 1rem !important;
+    }
+    
+    .alliance-text p {
+        font-size: 0.95rem !important;
+        line-height: 1.6 !important;
+    }
+    
+    .team-diagram-container {
+        margin: 2rem auto 1.5rem auto !important;
+        padding: 1.25rem 1rem !important;
+        gap: 0.75rem !important;
+    }
+    
+    .diagram-step {
+        padding: 1.25rem 1rem !important;
+    }
+    
+    .diagram-step .node-icon {
+        width: 45px !important;
+        height: 45px !important;
+        font-size: 1.5rem !important;
+        margin-bottom: 0.75rem !important;
+    }
+    
+    .diagram-step .node-label {
+        font-size: 1.05rem !important;
+        margin-bottom: 0.5rem !important;
+    }
+    
+    .diagram-step .node-desc {
+        font-size: 0.8rem !important;
+        line-height: 1.5 !important;
+    }
+    
+    .diagram-connector {
+        font-size: 0.95rem !important;
+        padding: 0.25rem 0 !important;
+    }
+    
+    .connector-text {
+        font-size: 0.7rem !important;
+        margin-top: 0.1rem !important;
+    }
+    
+    .alliance-grid {
+        gap: 1.25rem !important;
+        margin-top: 1.5rem !important;
+    }
+    
+    .alliance-card {
+        padding: 1.75rem 1.25rem !important;
+    }
+    
+    .alliance-icon {
+        width: 50px !important;
+        height: 50px !important;
+        font-size: 1.75rem !important;
+        margin-bottom: 1rem !important;
+    }
+    
+    .alliance-card h4 {
+        font-size: 1.15rem !important;
+        margin-bottom: 0.5rem !important;
+    }
+    
+    .alliance-card p {
+        font-size: 0.875rem !important;
+        line-height: 1.6 !important;
+    }
+
+    /* 7. なぜ有料引き取りなのか */
+    #why-paid {
+        padding: 4rem 0 !important;
+    }
+    
+    #why-paid > .container > div[style*="padding: 3rem"] {
+        padding: 1.75rem 1.25rem !important;
+    }
+    
+    #why-paid p[style*="font-size: 1.1rem"] {
+        font-size: 0.95rem !important;
+        line-height: 1.6 !important;
+        margin-bottom: 1.5rem !important;
+    }
+    
+    #why-paid h3[style*="font-size: 1.35rem"] {
+        font-size: 1.15rem !important;
+        margin-bottom: 1rem !important;
+    }
+    
+    #why-paid div[style*="display: grid"] {
+        grid-template-columns: 1fr !important;
+        gap: 1rem !important;
+    }
+    
+    #why-paid div[style*="display: grid"] > div {
+        padding: 1.25rem !important;
+    }
+    
+    #why-paid div[style*="display: grid"] h4 {
+        font-size: 1.05rem !important;
+        margin-bottom: 0.5rem !important;
+    }
+    
+    #why-paid div[style*="display: grid"] p {
+        font-size: 0.8rem !important;
+        line-height: 1.5 !important;
+    }
+
+    /* 8. リサイクルスキーム */
+    .recycle-section {
+        padding: 4rem 0 !important;
+    }
+    
+    .recycle-section .text-center p[style*="font-size: 1.1rem"] {
+        font-size: 0.95rem !important;
+        line-height: 1.6 !important;
+    }
+    
+    .recycle-grid {
+        gap: 1.5rem !important;
+    }
+    
+    .recycle-card {
+        padding: 1.75rem 1.25rem !important;
+    }
+    
+    .recycle-icon {
+        width: 50px !important;
+        height: 50px !important;
+        font-size: 1.75rem !important;
+    }
+    
+    .recycle-card h3 {
+        font-size: 1.2rem !important;
+    }
+    
+    .recycle-card p {
+        font-size: 0.875rem !important;
+        line-height: 1.6 !important;
+        margin-bottom: 1rem !important;
+    }
+
+    /* 9. 対応エリア */
+    .area-section {
+        padding: 4rem 0 !important;
+    }
+    
+    .area-section > .container > div[style*="padding: 2rem"] {
+        padding: 1.5rem 1rem !important;
+        margin-bottom: 2rem !important;
+    }
+    
+    .area-section h3 {
+        font-size: 1.15rem !important;
+    }
+    
+    .area-grid {
+        grid-template-columns: 1fr !important;
+        gap: 1.25rem !important;
+    }
+    
+    .area-card {
+        padding: 1.75rem 1.25rem !important;
+    }
+    
+    .area-card h3 {
+        font-size: 1.25rem !important;
+    }
+    
+    .area-card p {
+        font-size: 0.875rem !important;
+        line-height: 1.5 !important;
+        margin-bottom: 1rem !important;
+    }
+
+    /* 10. 非対面郵送3ステップ (タイムライン化) */
+    .process-section {
+        padding: 4rem 0 !important;
+    }
+    
+    .process-timeline {
+        position: relative !important;
+        padding-left: 1.5rem !important;
+        margin-top: 1.5rem !important;
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 1.5rem !important;
+    }
+    
+    .process-timeline::before {
+        content: "" !important;
+        position: absolute !important;
+        left: 0.75rem !important;
+        top: 1.5rem !important;
+        bottom: 1.5rem !important;
+        width: 2px !important;
+        background: var(--color-primary-light) !important;
+        opacity: 0.3 !important;
+    }
+    
+    .process-step {
+        text-align: left !important;
+        padding: 1.5rem 1.25rem 1.5rem 2.25rem !important;
+        margin-bottom: 0 !important;
+        background: var(--color-bg-white) !important;
+        box-shadow: var(--shadow-sm) !important;
+        border: 1px solid rgba(27, 67, 50, 0.05) !important;
+        position: relative !important;
+    }
+    
+    .step-badge {
+        position: absolute !important;
+        left: -1.5rem !important;
+        top: 1.5rem !important;
+        margin-bottom: 0 !important;
+        width: 32px !important;
+        height: 32px !important;
+        border-radius: 50% !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        font-size: 0.65rem !important;
+        padding: 0 !important;
+        box-shadow: var(--shadow-sm) !important;
+        background: var(--color-primary) !important;
+        z-index: 2 !important;
+    }
+    
+    .process-step h3 {
+        font-size: 1.05rem !important;
+        margin-bottom: 0.5rem !important;
+        font-weight: 700 !important;
+    }
+    
+    .process-step p {
+        font-size: 0.85rem !important;
+        line-height: 1.5 !important;
+    }
+
+    /* 11. CTA＆フォーム */
+    .cta-section {
+        padding: 4rem 0 !important;
+    }
+    
+    .cta-info h2 {
+        font-size: 1.75rem !important;
+        line-height: 1.35 !important;
+    }
+    
+    .cta-info p {
+        font-size: 0.95rem !important;
+        line-height: 1.6 !important;
+        margin-bottom: 1.5rem !important;
+    }
+    
+    .line-cta-box {
+        padding: 1.5rem 1.25rem !important;
+    }
+    
+    .line-badge {
+        font-size: 1.1rem !important;
+    }
+    
+    .line-cta-box p {
+        font-size: 0.85rem !important;
+        line-height: 1.5 !important;
+        margin-bottom: 1rem !important;
+    }
+    
+    .cta-form-container {
+        padding: 1.75rem 1.25rem !important;
+    }
+    
+    .cta-form-container h3 {
+        font-size: 1.3rem !important;
+    }
+    
+    .form-desc {
+        font-size: 0.8rem !important;
+        margin-bottom: 1.25rem !important;
+    }
+    
+    .form-group {
+        margin-bottom: 1rem !important;
+    }
+    
+    label {
+        font-size: 0.8rem !important;
+        margin-bottom: 0.35rem !important;
+    }
+    
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    select,
+    textarea {
+        padding: 0.75rem 0.85rem !important;
+        font-size: 1rem !important;
+    }
+    
+    /* 12. フッター */
+    .site-footer {
+        padding: 3rem 0 !important;
+    }
+    
+    .footer-logo {
+        font-size: 1.3rem !important;
+    }
+    
+    .footer-address {
+        font-size: 0.8rem !important;
+        line-height: 1.5 !important;
+        margin-bottom: 1.5rem !important;
+    }
+    
+    /* 13. フフローティングLINE CTA */
+    .floating-line-cta {
+        bottom: 15px !important;
+        left: 15px !important;
+        right: 15px !important;
+    }
+    
+    .floating-line-cta a {
+        padding: 0.85rem !important;
+        font-size: 0.95rem !important;
+        box-shadow: 0 4px 16px rgba(6, 199, 85, 0.4) !important;
+    }
+}
+
 
 

@@ -167,4 +167,58 @@ document.addEventListener('DOMContentLoaded', () => {
             closeModal();
         }
     });
+
+    // 5. モバイル用ハンバーガーメニューの動的生成と制御
+    const headerContainer = document.querySelector('.header-container');
+    const nav = document.querySelector('.desktop-nav');
+    
+    if (headerContainer && nav) {
+        // ハンバーガーボタンの作成
+        const hamburger = document.createElement('button');
+        hamburger.className = 'hamburger-menu';
+        hamburger.setAttribute('aria-label', 'メニューを開閉する');
+        hamburger.innerHTML = `
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        `;
+        
+        // ヘッダーコンテナに追加
+        headerContainer.appendChild(hamburger);
+        
+        // ドロワーメニュー内のCTAボタン追加（既存のヘッダーCTAを複製）
+        const headerCta = document.querySelector('.header-cta');
+        if (headerCta) {
+            const mobileCta = headerCta.cloneNode(true);
+            mobileCta.className = 'mobile-menu-cta';
+            nav.appendChild(mobileCta);
+        }
+        
+        // メニュー開閉トグル
+        hamburger.addEventListener('click', (e) => {
+            e.stopPropagation();
+            hamburger.classList.toggle('active');
+            nav.classList.toggle('active');
+            document.body.classList.toggle('nav-open');
+        });
+        
+        // メニュー外クリックで閉じる
+        document.addEventListener('click', (e) => {
+            if (nav.classList.contains('active') && !nav.contains(e.target) && !hamburger.contains(e.target)) {
+                hamburger.classList.remove('active');
+                nav.classList.remove('active');
+                document.body.classList.remove('nav-open');
+            }
+        });
+        
+        // メニュー内リンククリック時に閉じる
+        const navLinks = nav.querySelectorAll('a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                hamburger.classList.remove('active');
+                nav.classList.remove('active');
+                document.body.classList.remove('nav-open');
+            });
+        });
+    }
 });
