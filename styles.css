@@ -195,14 +195,15 @@ h1, h2, h3, h4 {
 
 .desktop-nav {
     display: flex;
-    gap: 1.5rem;
+    gap: clamp(0.75rem, 1.2vw, 1.5rem);
 }
 
 .desktop-nav a {
     text-decoration: none;
     color: var(--color-text-dark);
     font-weight: 500;
-    font-size: 0.95rem;
+    font-size: clamp(0.85rem, 0.9vw, 0.95rem);
+    white-space: nowrap;
     transition: var(--transition);
 }
 
@@ -211,10 +212,11 @@ h1, h2, h3, h4 {
 }
 
 .btn-header-cta {
-    padding: 0.5rem 1.25rem;
-    font-size: 0.875rem;
+    padding: 0.5rem clamp(0.75rem, 1vw, 1.25rem);
+    font-size: clamp(0.8rem, 0.85vw, 0.875rem);
     background-color: var(--color-primary);
     color: var(--color-bg-white);
+    white-space: nowrap;
 }
 .btn-header-cta:hover {
     background-color: var(--color-primary-light);
@@ -898,7 +900,7 @@ textarea {
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     html {
         font-size: 15px;
     }
@@ -1080,7 +1082,7 @@ textarea {
     margin-top: 2rem;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     .recycle-grid {
         grid-template-columns: 1fr;
     }
@@ -1269,7 +1271,7 @@ textarea {
 }
 
 /* 比較表モバイルレスポンシブ */
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     .comparison-table-wrapper {
         overflow-x: auto;
     }
@@ -1363,7 +1365,7 @@ textarea {
     line-height: 1.7;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     .alliance-grid {
         grid-template-columns: 1fr;
     }
@@ -1910,7 +1912,7 @@ textarea {
    21. スマホ表示（モバイルファースト・レスポンシブ）最適化追加スタイル
    ========================================================================== */
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     /* スマホ用改行制御 */
     .pc-br { display: none !important; }
     .sp-br { display: inline !important; }
