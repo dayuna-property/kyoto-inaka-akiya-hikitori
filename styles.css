@@ -1136,3 +1136,214 @@ textarea {
     color: inherit;
 }
 
+/* ==========================================================================
+   20. 訴求力強化・仕様変更に伴う追加スタイル
+   ========================================================================== */
+
+/* ワンストップバッジ */
+.badge-onestop {
+    background: rgba(217, 119, 6, 0.1);
+    color: var(--color-accent);
+    border: 1px solid rgba(217, 119, 6, 0.3);
+    font-size: 0.825rem;
+    font-weight: 700;
+    padding: 0.35rem 0.85rem;
+    border-radius: 9999px;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    margin-bottom: 1rem;
+    letter-spacing: 0.05em;
+    backdrop-filter: blur(4px);
+    transition: var(--transition);
+}
+
+.badge-onestop:hover {
+    background: rgba(217, 119, 6, 0.18);
+    transform: translateY(-1px);
+}
+
+/* 比較表セクション */
+.comparison-section {
+    padding: 6rem 0;
+    background-color: var(--color-bg-light);
+}
+
+.comparison-table-wrapper {
+    max-width: 900px;
+    margin: 2rem auto 0 auto;
+    background: var(--color-bg-white);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-md);
+    overflow: hidden;
+    border: 1px solid rgba(27, 67, 50, 0.08);
+}
+
+.comparison-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.comparison-table th, 
+.comparison-table td {
+    padding: 1.5rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.comparison-table th {
+    background-color: var(--color-primary);
+    color: var(--color-bg-white);
+    font-weight: 700;
+    font-size: 1.05rem;
+}
+
+.comparison-table th:first-child {
+    width: 25%;
+}
+
+.comparison-table th:nth-child(2) {
+    width: 35%;
+}
+
+.comparison-table th:nth-child(3) {
+    width: 40%;
+}
+
+.comparison-table td.prop-name {
+    font-weight: 700;
+    color: var(--color-primary);
+    background-color: rgba(27, 67, 50, 0.02);
+}
+
+.comparison-table td .desc {
+    font-size: 0.85rem;
+    color: var(--color-text-muted);
+    display: block;
+    margin-top: 0.25rem;
+}
+
+.comparison-table td strong {
+    font-size: 1.1rem;
+}
+
+/* 比較表ハイライト列 */
+.comparison-table .highlight-column {
+    background-color: rgba(45, 106, 79, 0.04);
+    border-left: 2px solid rgba(45, 106, 79, 0.15);
+    border-right: 2px solid rgba(45, 106, 79, 0.15);
+}
+
+.comparison-table th.highlight-column {
+    background-color: var(--color-primary-light);
+    color: var(--color-bg-white);
+    border-left: 2px solid var(--color-primary-light);
+    border-right: 2px solid var(--color-primary-light);
+}
+
+.comparison-table tr:last-child td {
+    border-bottom: none;
+}
+
+/* 比較表モバイルレスポンシブ */
+@media (max-width: 768px) {
+    .comparison-table-wrapper {
+        overflow-x: auto;
+    }
+    
+    .comparison-table th, 
+    .comparison-table td {
+        padding: 1rem;
+        min-width: 150px;
+    }
+    
+    .comparison-table th:first-child,
+    .comparison-table td:first-child {
+        min-width: 120px;
+    }
+}
+
+/* 自動連携セクション */
+.alliance-section {
+    padding: 6rem 0;
+    background-color: var(--color-bg-white);
+}
+
+.alliance-content {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.alliance-text {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 3rem auto;
+}
+
+.alliance-text h3 {
+    font-size: 1.8rem;
+    color: var(--color-primary);
+    margin-bottom: 1.5rem;
+}
+
+.alliance-text p {
+    font-size: 1.05rem;
+    line-height: 1.8;
+    color: var(--color-text-dark);
+    margin-bottom: 1rem;
+}
+
+.alliance-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 2.5rem;
+}
+
+.alliance-card {
+    background: var(--color-bg-gray);
+    border: 1px solid rgba(27, 67, 50, 0.06);
+    border-radius: var(--radius-md);
+    padding: 3rem 2.5rem;
+    transition: var(--transition);
+    box-shadow: var(--shadow-sm);
+}
+
+.alliance-card:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-lg);
+    background: var(--color-bg-white);
+    border-color: var(--color-primary-light);
+}
+
+.alliance-icon {
+    font-size: 2.5rem;
+    color: var(--color-accent);
+    margin-bottom: 1.5rem;
+    background: rgba(217, 119, 6, 0.08);
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.alliance-card h4 {
+    font-size: 1.35rem;
+    color: var(--color-primary);
+    margin-bottom: 1rem;
+}
+
+.alliance-card p {
+    font-size: 0.95rem;
+    color: var(--color-text-dark);
+    line-height: 1.7;
+}
+
+@media (max-width: 768px) {
+    .alliance-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
