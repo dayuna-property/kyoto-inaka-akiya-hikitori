@@ -88,7 +88,7 @@ h1, h2, h3, h4 {
 
 .section-subtitle {
     font-size: 1.1rem;
-    color: var(--color-text-muted);
+    color: #4b5563; /* 視認性向上のためやや濃いチャコールに変更 */
     margin-bottom: 3.5rem;
 }
 
@@ -382,7 +382,7 @@ h1, h2, h3, h4 {
 }
 
 .bg-dark-section p {
-    color: rgba(255, 255, 255, 0.85);
+    color: rgba(255, 255, 255, 0.95); /* テキストコントラストを強化 */
     margin-bottom: 1.5rem;
 }
 
@@ -1028,9 +1028,17 @@ textarea {
 }
 
 .area-card.coming-soon {
-    opacity: 0.75;
-    background: rgba(243, 244, 246, 0.6);
+    background: rgba(229, 231, 235, 0.4);
     border-style: dashed;
+    border-color: rgba(27, 67, 50, 0.2);
+}
+
+.area-card.coming-soon h3 {
+    color: var(--color-text-muted);
+}
+
+.area-card.coming-soon p {
+    color: #4b5563; /* 視認性の確保 */
 }
 
 .area-card.coming-soon .badge-coming {
@@ -1218,7 +1226,7 @@ textarea {
 
 .comparison-table td .desc {
     font-size: 0.85rem;
-    color: var(--color-text-muted);
+    color: #4b5563; /* コントラスト向上のため濃いめの色に変更 */
     display: block;
     margin-top: 0.25rem;
 }
