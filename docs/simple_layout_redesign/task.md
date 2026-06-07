@@ -38,3 +38,15 @@
   - [x] カード・グリッド崩れがないかの確認
 - [x] Walkthroughドキュメントの作成（[walkthrough.md](file:///c:/Users/tatsu/OneDrive/デスクトップ/物件配信/inaka-akiya-hikitori/docs/simple_layout_redesign/walkthrough.md)）
 - [x] Git commit & push
+
+## フェーズ4：競合分析に基づく追加改善（信頼性とAIO/SEO強化）
+- [x] 共通CSS（[styles.css](file:///c:/Users/tatsu/OneDrive/デスクトップ/物件配信/inaka-akiya-hikitori/styles.css)）への安心宣言カード用スタイルの追加
+- [x] 各HTMLファイルへの「3つの安心宣言」セクションの実装
+  - [x] 総合トップ（[index.html](file:///c:/Users/tatsu/OneDrive/デスクトップ/物件配信/inaka-akiya-hikitori/index.html)）
+  - [x] 京都（[kyoto/index.html](file:///c:/Users/tatsu/OneDrive/デスクトップ/物件配信/inaka-akiya-hikitori/kyoto/index.html)）
+  - [x] 大阪（[osaka/index.html](file:///c:/Users/tatsu/OneDrive/デスクトップ/物件配信/inaka-akiya-hikitori/osaka/index.html)）
+  - [x] 滋賀（[shiga/index.html](file:///c:/Users/tatsu/OneDrive/デスクトップ/物件配信/inaka-akiya-hikitori/shiga/index.html)）
+  - [x] 兵庫（[hyogo/index.html](file:///c:/Users/tatsu/OneDrive/デスクトップ/物件配信/inaka-akiya-hikitori/hyogo/index.html)）
+  - [x] 和歌山（[wakayama/index.html](file:///c:/Users/tatsu/OneDrive/デスクトップ/物件配信/inaka-akiya-hikitori/wakayama/index.html)）
+- [x] 動作検証とWalkthroughの更新
+- [x] Git commit & push
