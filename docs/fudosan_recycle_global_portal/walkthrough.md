@@ -42,5 +42,37 @@
 
 ---
 
+## 滋賀県（湖西・北部）特設ページの追加とポータル連携
+
+### 1. 滋賀エリア特設LPの新設
+* [shiga/index.html](file:///c:/Users/tatsu/OneDrive/デスクトップ/物件配信/inaka-akiya-hikitori/shiga/index.html) を新設しました。
+* **地元民が「あそこか…」と具体的にイメージできる粒度の訴求**:
+  * **大津市湖西エリア（和邇・小野・志賀・蓬莱・比良・北小松）**: 比良山麓の放置別荘地の管理費・維持費などの具体的なお悩みを描写。
+  * **高島市（マキノ・今津・安曇川）**: マキノや今津など、豪雪地帯の実家の雪下ろしや倒壊リスクなどを描写。
+  * **長浜市湖北エリア（余呉・西浅井）**: 境界不明の湖北山林や、雪深い余呉・西浅井エリアの実家処分リスクなどを描写。
+* **SEO/AIO強化**:
+  * メタ情報（Title, Description, Keywords）および JSON-LD 構造化データにこれら滋賀のピンポイント地域名とサービス説明を包含し、AI検索・地域名検索に対応。
+  * アセットパスを親ディレクトリ（`../`）に向けることで共通スタイル・共通JSを適用。
+
+### 2. ポータル（総合トップ）の更新
+* ポータル [index.html](file:///c:/Users/tatsu/OneDrive/デスクトップ/物件配信/inaka-akiya-hikitori/index.html) の「対応エリア」セクションに「滋賀エリア窓口」のカードを追加しました。
+* 遷移先として `shiga/` へのリンクを設定しました。
+* JSON-LD 内の `areaServed` に `滋賀県` を追加しました。
+
+---
+
+## 修正対象ファイル
+
+* **総合トップページ**: [index.html](file:///c:/Users/tatsu/OneDrive/デスクトップ/物件配信/inaka-akiya-hikitori/index.html)
+* **滋賀エリア特設ページ [NEW]**: [shiga/index.html](file:///c:/Users/tatsu/OneDrive/デスクトップ/物件配信/inaka-akiya-hikitori/shiga/index.html)
+* **ドキュメント（docs/）**:
+  * [task.md](file:///c:/Users/tatsu/OneDrive/デスクトップ/物件配信/inaka-akiya-hikitori/docs/fudosan_recycle_global_portal/task.md)
+  * [walkthrough.md](file:///c:/Users/tatsu/OneDrive/デスクトップ/物件配信/inaka-akiya-hikitori/docs/fudosan_recycle_global_portal/walkthrough.md) (本ファイル)
+
+---
+
 ## 検証結果
-* 総合トップページ内の「引き取り後のリサイクル」セクションから、景表法違反につながるおそれのある具体的なリスト項目（CO2オフセット、林業資源、クリーンエネルギー、サテライト賃貸、資材再生、スマート農業等）がすべて削除され、安全な事業者引き継ぎ方針のみに文面が修正されたことを確認しました。
+* 総合トップページ内の「引き取り後のリサイクル」セクションの景表法修正が正しく反映されていることを確認。
+* ポータル（`/`）から滋賀県エリア特設ページ（`/shiga/`）へのボタン遷移、および滋賀ページのヘッダーからポータルへの戻りリンクの遷移が正しいことを確認。
+* 滋賀特設ページ（`/shiga/`）にてCSS/JS/共通画像（hero.png）が正しく読み込まれ、デザイン崩れがないことを確認。
+* 滋賀の超ピンポイント地名が JSON-LD および meta タグに適切に含まれていることを確認。
