@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // 2. FAQ アコーディオン制御
-    const faqItems = document.querySelectorAll('.faq-item');
+    const faqItems = document.querySelectorAll('.faq-item, .faq-hybrid-item');
 
     faqItems.forEach(item => {
         const question = item.querySelector('.faq-question');
