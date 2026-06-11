@@ -1100,6 +1100,18 @@ textarea {
     margin: 0 auto;
 }
 
+/* インラインSVG用スタイル */
+svg.recycle-scheme-img {
+    width: 100%;
+    height: auto;
+    max-width: 850px;
+    display: block;
+    margin: 0 auto;
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-glass);
+    overflow: visible;
+}
+
 .recycle-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
@@ -3549,5 +3561,79 @@ textarea {
     }
     .comparison-card.our-service {
         transform: scale(1);
+    }
+}
+
+/* ==========================================================================
+   インフォグラフィック画像コンテナ（ビジュアルリニューアル用）
+   ========================================================================== */
+
+/* インフォグラフィック画像のレスポンシブコンテナ */
+.infographic-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.infographic-img {
+    width: 100%;
+    max-width: 850px;
+    height: auto;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-lg);
+    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.4s ease;
+}
+
+.infographic-img:hover {
+    transform: scale(1.02);
+    box-shadow: 0 20px 40px rgba(27, 67, 50, 0.15);
+}
+
+/* ABOUT US セクション ビジュアルポイント */
+.about-visual-points {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.75rem;
+    margin-top: 1.5rem;
+}
+
+.visual-point {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    padding: 0.75rem 1rem;
+    background: rgba(27, 67, 50, 0.04);
+    border-radius: var(--radius-sm);
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: var(--color-text-dark);
+    border-left: 3px solid var(--color-primary-light);
+    transition: var(--transition);
+}
+
+.visual-point:hover {
+    background: rgba(27, 67, 50, 0.08);
+    transform: translateX(4px);
+}
+
+.visual-point i {
+    color: var(--color-primary-light);
+    font-size: 1.1rem;
+    flex-shrink: 0;
+}
+
+/* レスポンシブ対応 */
+@media (max-width: 768px) {
+    .infographic-container {
+        padding: 0.5rem 0;
+    }
+    
+    .infographic-img {
+        border-radius: var(--radius-md);
+    }
+
+    .about-visual-points {
+        grid-template-columns: 1fr;
     }
 }
