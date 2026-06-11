@@ -10,7 +10,13 @@
 - [x] 表示レイアウトとレスポンシブ崩れがないかの検証
 - [x] お支払いいただく費用の主な内訳（明朗会計）グリッドのPC表示バグ修正（1行に4列並ぶよう修正）
 - [x] 修正内容の確認ドキュメント (walkthrough.md) の作成
-- [x] 日本語・Noto Sans JPフォント対応のリサイクルスキーム図解（SVG）の導入
+- [x] 日本語・Noto Sans JPフォント対応のリサイクルスキーム図解の導入
   - [x] 高品質な日本語SVG図解の作成と保存 (`images/recycle_scheme_diagram.svg`)
-  - [x] 各HTMLファイルの画像パスを `.png` から `.svg` に変更
+  - [x] 各HTMLファイルの画像パスをインラインSVGタグ埋め込みに変更
+    - [x] ルート index.html へのインラインSVG埋め込み
+    - [x] 兵庫県 index.html へのインラインSVG埋め込み
+    - [x] 京都府 index.html へのインラインSVG埋め込み
+    - [x] 大阪府 index.html へのインラインSVG埋め込み
+    - [x] 滋賀県 index.html へのインラインSVG埋め込み
+    - [x] 和歌山県 index.html へのインラインSVG埋め込み
 - [ ] Gitへのコミットとプッシュ (`git -c http.sslVerify=false push`)
