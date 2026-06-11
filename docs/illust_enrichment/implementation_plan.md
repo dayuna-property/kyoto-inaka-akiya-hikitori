@@ -1,12 +1,13 @@
 # 実装計画：イラストの多用と文章の最小限化（日本人向けデザイン）
 
-想定ユースケースセクションおよび特徴セクションにおいて、文字中心 of 構成から、日本人向けに最適化されたイラスト中心の構成へと変更し、視覚的なわかりやすさを向上させます。
+想定ユースケースセクションおよび特徴セクションにおいて、文字中心の構成から、日本人向けに最適化されたイラスト中心の構成へと変更し、視覚的なわかりやすさを向上させます。
+また、引き取り後の再循環について直感的に理解できるよう、リサイクルスキームの図解を新規追加します。
 
 ## ユーザー確認事項
 
 > [!IMPORTANT]
 > 既存の各地域別HTML（兵庫、京都、大阪、滋賀、和歌山）およびルートの `index.html` に同一の変更を適用します。
-> 地域別HTMLでは画像のパスが `../images/` になるのに対し、ルートHTMLでは `images/` となる点に注意して実装します。
+> 地域別HTMLでは画像のパスが `../images/recycle_scheme_diagram.png` になるのに対し、ルートHTMLでは `images/recycle_scheme_diagram.png` となる点に注意して実装します。
 
 ## 提案する変更内容
 
@@ -16,6 +17,7 @@
 - 想定ユースケースカード内（`.usecases-card`）にイラスト画像を表示するためのスタイルを調整します。
 - 特徴カード（`.feature-card-item`）内の数字バッジ（`.feat-badge-num`）を非表示/削除し、イラスト画像（`.feature-card-img`）を綺麗に中央配置するスタイルを調整します。
 - モバイル表示時（`@media (max-width: 1024px)`）の配置崩れを防ぐため、カード内のパディングや画像のレスポンシブサイズを最適化します。
+- 新設するリサイクルスキーム図解表示用クラス `.recycle-visual-container` および `.recycle-scheme-img` のスタイルを追加します（レスポンシブ対応の横幅設定など）。
 
 ---
 
@@ -29,14 +31,18 @@
 #### [MODIFY] [wakayama/index.html](file:///c:/Users/tatsu/OneDrive/デスクトップ/物件配信/inaka-akiya-hikitori/wakayama/index.html)
 
 - **想定ユースケース (`#usecases`)**
-  - アイコン（`.usecases-icon`）および詳細な3つの状況説明段落（`.case-scenario`, `.case-problem`, `.case-solution`）を削除。
-  - 新たに `.usecase-card-img` クラスを持つ `<img>` 要素を追加し、イラストを表示。
-  - テキストを最小限（見出しと1言のシンプルな説明文）に変更。
-  
+  - イラスト（`usecase_*.png`）の適用とテキスト最小限化。
+
 - **選ばれる特徴 (`#features`)**
-  - 数字バッジ（`.feat-badge-num`）を削除。
-  - `.feature-card-img` を追加し、特徴に合わせたイラストを表示。
-  - テキストをシンプルかつ日本人向けに分かりやすい表現に凝縮。
+  - イラスト（`feature_*.png`）の適用とテキスト最小限化。
+
+- **リサイクルスキーム (`#recycle`)**
+  - セクションの見出し・リード文の直後に、新規生成したリサイクルスキーム図解画像を表示するコンテナを追加します。
+  ```html
+  <div class="recycle-visual-container">
+      <img src="images/recycle_scheme_diagram.png" alt="負動産リサイクルスキーム図解" class="recycle-scheme-img">
+  </div>
+  ```
 
 ---
 

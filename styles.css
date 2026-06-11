@@ -1083,6 +1083,23 @@ textarea {
     background-color: var(--color-bg-light);
 }
 
+.recycle-visual-container {
+    max-width: 850px;
+    margin: 0 auto 3rem auto;
+    text-align: center;
+    padding: 0 1rem;
+}
+
+.recycle-scheme-img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-glass);
+    display: block;
+    margin: 0 auto;
+}
+
 .recycle-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
@@ -2436,6 +2453,10 @@ textarea {
     /* 8. リサイクルスキーム */
     .recycle-section {
         padding: 4rem 0 !important;
+    }
+    
+    .recycle-visual-container {
+        margin-bottom: 2rem !important;
     }
     
     .recycle-section .text-center p[style*="font-size: 1.1rem"] {
