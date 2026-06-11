@@ -8,5 +8,6 @@
 - [x] 滋賀県 index.html (shiga/index.html) の改修
 - [x] 和歌山県 index.html (wakayama/index.html) の改修
 - [x] 表示レイアウトとレスポンシブ崩れがないかの検証
+- [x] お支払いいただく費用の主な内訳（明朗会計）グリッドのPC表示バグ修正（1行に4列並ぶよう修正）
 - [x] 修正内容の確認ドキュメント (walkthrough.md) の作成
 - [ ] Gitへのコミットとプッシュ (`git -c http.sslVerify=false push`)
