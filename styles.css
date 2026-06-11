@@ -1599,6 +1599,8 @@ textarea {
     transition: var(--transition);
     display: flex;
     flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 
 .feature-card-item:hover {
@@ -1624,6 +1626,14 @@ textarea {
     justify-content: center;
     box-shadow: var(--shadow-md);
     border: 3px solid var(--color-bg-white);
+}
+
+.feature-card-img {
+    width: 140px;
+    height: 140px;
+    object-fit: contain;
+    margin: 0 auto 1.5rem auto;
+    display: block;
 }
 
 .feat-card-content h3 {
@@ -3041,12 +3051,13 @@ textarea {
     background-color: var(--color-white);
     border-radius: var(--radius-lg);
     box-shadow: var(--shadow-md);
-    padding: 3rem 2rem 2.5rem;
-    position: relative;
+    padding: 2.5rem 2rem;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     border-top: 5px solid var(--color-primary-light);
     display: flex;
     flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 
 .usecases-card:hover {
@@ -3054,27 +3065,19 @@ textarea {
     box-shadow: var(--shadow-lg);
 }
 
-.usecases-icon {
-    position: absolute;
-    top: -2.5rem;
-    left: 2rem;
-    width: 5rem;
-    height: 5rem;
-    background: var(--color-gradient-primary);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--color-white);
-    font-size: 2rem;
-    box-shadow: var(--shadow-sm);
+.usecase-card-img {
+    width: 140px;
+    height: 140px;
+    object-fit: contain;
+    margin-bottom: 1.5rem;
+    display: block;
 }
 
 .usecases-card-content {
-    margin-top: 0.5rem;
     display: flex;
     flex-direction: column;
-    height: 100%;
+    align-items: center;
+    width: 100%;
 }
 
 .case-label {
@@ -3088,37 +3091,15 @@ textarea {
 
 .usecases-card h3 {
     font-family: var(--font-heading);
-    font-size: 1.3rem;
+    font-size: 1.25rem;
     color: var(--color-primary);
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
     line-height: 1.4;
 }
 
-.case-scenario, .case-problem, .case-solution {
-    margin-bottom: 1.2rem;
-    font-size: 0.95rem;
-}
-
-.case-scenario strong, .case-problem strong, .case-solution strong {
-    display: block;
-    font-size: 0.85rem;
-    margin-bottom: 0.25rem;
-}
-
-.case-scenario strong {
-    color: var(--color-text-light);
-}
-
-.case-problem strong {
-    color: #c9751d;
-}
-
-.case-solution strong {
-    color: var(--color-primary);
-}
-
-.case-scenario p, .case-problem p, .case-solution p {
-    color: var(--color-text-dark);
+.usecase-desc {
+    font-size: 0.9rem;
+    color: var(--color-text-muted);
     line-height: 1.6;
     margin: 0;
 }
@@ -3126,123 +3107,14 @@ textarea {
 @media (max-width: 1024px) {
     .usecases-grid {
         grid-template-columns: 1fr;
-        gap: 3.5rem;
+        gap: 2rem;
     }
     .usecases-card {
-        padding: 3.5rem 2rem 2.5rem;
+        padding: 2.5rem 1.5rem;
     }
 }
 
-/* ==========================================================================
-   23. Usecases (想定ユースケース)
-   ========================================================================== */
-.usecases-section {
-    background-color: var(--color-bg-light);
-    padding: 6rem 0;
-}
 
-.usecases-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2.5rem;
-    margin-top: 3.5rem;
-}
-
-.usecases-card {
-    background-color: var(--color-white);
-    border-radius: var(--radius-lg);
-    box-shadow: var(--shadow-md);
-    padding: 3rem 2rem 2.5rem;
-    position: relative;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    border-top: 5px solid var(--color-primary-light);
-    display: flex;
-    flex-direction: column;
-}
-
-.usecases-card:hover {
-    transform: translateY(-5px);
-    box-shadow: var(--shadow-lg);
-}
-
-.usecases-icon {
-    position: absolute;
-    top: -2.5rem;
-    left: 2rem;
-    width: 5rem;
-    height: 5rem;
-    background: var(--color-gradient-primary);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--color-white);
-    font-size: 2rem;
-    box-shadow: var(--shadow-sm);
-}
-
-.usecases-card-content {
-    margin-top: 0.5rem;
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-}
-
-.case-label {
-    display: inline-block;
-    color: var(--color-accent);
-    font-weight: 700;
-    font-size: 0.85rem;
-    letter-spacing: 0.1em;
-    margin-bottom: 0.5rem;
-}
-
-.usecases-card h3 {
-    font-family: var(--font-heading);
-    font-size: 1.3rem;
-    color: var(--color-primary);
-    margin-bottom: 1.5rem;
-    line-height: 1.4;
-}
-
-.case-scenario, .case-problem, .case-solution {
-    margin-bottom: 1.2rem;
-    font-size: 0.95rem;
-}
-
-.case-scenario strong, .case-problem strong, .case-solution strong {
-    display: block;
-    font-size: 0.85rem;
-    margin-bottom: 0.25rem;
-}
-
-.case-scenario strong {
-    color: var(--color-text-light);
-}
-
-.case-problem strong {
-    color: #c9751d;
-}
-
-.case-solution strong {
-    color: var(--color-primary);
-}
-
-.case-scenario p, .case-problem p, .case-solution p {
-    color: var(--color-text-dark);
-    line-height: 1.6;
-    margin: 0;
-}
-
-@media (max-width: 1024px) {
-    .usecases-grid {
-        grid-template-columns: 1fr;
-        gap: 3.5rem;
-    }
-    .usecases-card {
-        padding: 3.5rem 2rem 2.5rem;
-    }
-}
 
 /* ==========================================================================
    ハイブリッド・レイアウト改修用スタイル（フォレストグリーン×わかりやすさ）
