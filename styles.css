@@ -851,14 +851,25 @@ textarea {
     line-height: 1.6;
 }
 
-/* 16. モバイル フローティングLINE CTA */
+/* 16. 画面最下部 フローティングLINE CTA */
 .floating-line-cta {
     position: fixed;
-    bottom: 20px;
-    left: 20px;
-    right: 20px;
+    bottom: 24px;
+    left: 50%;
+    transform: translateX(-50%) translateY(10px);
+    width: calc(100% - 40px);
+    max-width: 500px;
     z-index: 999;
-    display: none;
+    display: block;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.floating-line-cta.visible {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateX(-50%) translateY(0);
 }
 
 .floating-line-cta a {
@@ -869,11 +880,23 @@ textarea {
     color: var(--color-bg-white);
     text-decoration: none;
     font-weight: 700;
-    padding: 1rem;
+    padding: 1.1rem;
     border-radius: 9999px;
-    box-shadow: 0 4px 12px rgba(6, 199, 85, 0.3);
-    font-size: 1rem;
+    box-shadow: 0 6px 20px rgba(6, 199, 85, 0.35);
+    font-size: 1.15rem;
+    transition: all 0.3s ease;
     gap: 0.5rem;
+}
+
+.floating-line-cta a:hover {
+    background-color: var(--color-line-hover);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(6, 199, 85, 0.45);
+}
+
+body {
+    padding-bottom: 95px !important; /* フローティングCTA用のパディングをグローバルに適用 */
+}
 }
 
 /* 17. Intersection Observer用アニメーション効果 */
@@ -982,23 +1005,7 @@ textarea {
         padding: 2rem 1.5rem;
     }
     
-    .floating-line-cta {
-        display: block;
-        opacity: 0;
-        pointer-events: none;
-        transform: translateY(20px);
-        transition: opacity 0.3s ease, transform 0.3s ease;
-    }
-    
-    .floating-line-cta.visible {
-        opacity: 1;
-        pointer-events: auto;
-        transform: translateY(0);
-    }
-    
-    body {
-        padding-bottom: 80px; /* フローティングCTA用のパディング */
-    }
+
 }
 
 /* ==========================================================================
