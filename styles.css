@@ -3776,3 +3776,124 @@ svg.recycle-scheme-img {
         padding: 1.5rem;
     }
 }
+
+/* ==========================================================================
+   20. 総合トップバッジ & LINE特化問い合わせセクション
+   ========================================================================== */
+
+/* 総合トップロゴバッジ */
+.logo a {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.logo-icon {
+    color: var(--color-accent);
+    font-size: 1.25rem;
+}
+
+.badge-portal {
+    background-color: var(--color-accent);
+    color: var(--color-bg-white);
+    font-size: 0.7rem;
+    font-weight: bold;
+    padding: 0.2rem 0.5rem;
+    border-radius: 4px;
+    letter-spacing: 0.05em;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 1.2;
+    margin-left: 0.25rem;
+    box-shadow: 0 2px 4px rgba(217, 119, 6, 0.2);
+}
+
+/* LINE一本化時のCTAセクション調整 */
+.cta-section.line-only {
+    padding: 5rem 0;
+}
+
+.cta-section.line-only .cta-wrapper {
+    display: block;
+    max-width: 760px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.cta-section.line-only .cta-info {
+    margin: 0 auto;
+}
+
+.cta-section.line-only .cta-info h2 {
+    font-size: 2.25rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.cta-section.line-only .cta-info p {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.cta-section.line-only .line-cta-box {
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: var(--radius-lg);
+    padding: 3rem 2.5rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cta-section.line-only .line-badge {
+    justify-content: center;
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+}
+
+.cta-section.line-only .line-cta-box p {
+    max-width: 580px;
+    font-size: 0.95rem;
+    line-height: 1.7;
+    margin-bottom: 2rem;
+}
+
+/* LINE QRコードコンテナ */
+.line-qr-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+    margin: 1.5rem 0 2rem;
+    background: var(--color-bg-white);
+    padding: 1.5rem;
+    border-radius: var(--radius-md);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    box-shadow: var(--shadow-sm);
+    width: fit-content;
+}
+
+.line-qr-container img {
+    width: 140px;
+    height: 140px;
+    object-fit: contain;
+}
+
+.line-qr-text {
+    font-size: 0.8rem;
+    color: var(--color-text-dark);
+    font-weight: bold;
+}
+
+/* モバイル表示時の調整 */
+@media (max-width: 768px) {
+    .cta-section.line-only .cta-info h2 {
+        font-size: 1.75rem;
+    }
+    .cta-section.line-only .line-cta-box {
+        padding: 2rem 1.5rem;
+    }
+}
