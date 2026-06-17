@@ -221,4 +221,19 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         });
     }
+
+    // 6. フローティングLINEボタンのスクロール表示制御 (ページトップでの重なり防止)
+    const floatingCta = document.querySelector('.floating-line-cta');
+    if (floatingCta) {
+        const handleScroll = () => {
+            if (window.scrollY > 300) {
+                floatingCta.classList.add('visible');
+            } else {
+                floatingCta.classList.remove('visible');
+            }
+        };
+        // 初期状態のチェック
+        handleScroll();
+        window.addEventListener('scroll', handleScroll);
+    }
 });
