@@ -165,42 +165,15 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         }
 
-        // 繧ｭ繝ｼ繝懊�繝峨�Esc繧ｭ繝ｼ縺ｧ繧ゅΔ繝ｼ繝繝ｫ繧帝哩縺倥ｋ
+        // 繧ｭ繝ｼ繝懊繝峨Esc繧ｭ繝ｼ縺ｧ繧ゅΔ繝ｼ繝€繝ｫ繧帝哩縺倥ｋ
         document.addEventListener('keydown', (e) => {
             if (e.key === 'Escape' && successModal && successModal.classList.contains('active')) {
                 closeModal();
             }
         });
-    }｡ｨ遉ｺ
-            successModal.classList.add('active');
-
-            // 繝輔か繝ｼ繝�縺ｮ蛟､繧偵Μ繧ｻ繝�ヨ
-            form.reset();
-        }, 1500);
-    });
-
-    // 4. 繝｢繝ｼ繝繝ｫ繧ｯ繝ｭ繝ｼ繧ｺ蜃ｦ逅�
-    function closeModal() {
-        successModal.classList.remove('active');
     }
 
-    closeModalBtn.addEventListener('click', closeModal);
-    
-    // 繝｢繝ｼ繝繝ｫ縺ｮ閭梧勹繧ｯ繝ｪ繝�け縺ｧ繧る哩縺倥ｋ繧医≧縺ｫ險ｭ螳�
-    successModal.addEventListener('click', (e) => {
-        if (e.target === successModal) {
-            closeModal();
-        }
-    });
-
-    // 繧ｭ繝ｼ繝懊�繝峨�Esc繧ｭ繝ｼ縺ｧ繧ゅΔ繝ｼ繝繝ｫ繧帝哩縺倥ｋ
-    document.addEventListener('keydown', (e) => {
-        if (e.key === 'Escape' && successModal.classList.contains('active')) {
-            closeModal();
-        }
-    });
-
-    // 5. 繝｢繝舌う繝ｫ逕ｨ繝上Φ繝舌�繧ｬ繝ｼ繝｡繝九Η繝ｼ縺ｮ蜍慕噪逕滓�縺ｨ蛻ｶ蠕｡
+    // 5. 繝｢繝舌う繝ｫ逕ｨ繝上Φ繝舌繧ｬ繝ｼ繝｡繝九Η繝ｼ縺ｮ蜍慕噪逕滓縺ｨ蛻ｶ蠕｡
     const headerContainer = document.querySelector('.header-container');
     const nav = document.querySelector('.desktop-nav');
     
