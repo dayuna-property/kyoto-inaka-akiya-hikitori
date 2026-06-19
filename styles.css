@@ -322,38 +322,46 @@ h1, h2, h3, h4 {
 }
 
 @media (max-width: 768px) {
+    /* 2段組みヘッダーレイアウト */
+    .site-header {
+        height: auto !important;
+        min-height: 90px !important;
+        padding: 0.5rem 0 !important;
+    }
+    
+    .header-container {
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        gap: 0.5rem !important;
+        position: relative !important;
+        padding: 0 1rem !important;
+    }
+    
+    .hamburger-menu {
+        position: absolute !important;
+        top: 18px !important;
+        right: 1rem !important;
+    }
+    
     .header-sub-links {
-        overflow-x: auto;
-        white-space: nowrap;
-        -webkit-overflow-scrolling: touch;
-        scrollbar-width: none; /* Hide scrollbar Firefox */
-        max-width: 55vw; /* Pushes the menu icon to the far right, allows scrolling inside this area */
-        justify-content: flex-start;
-        padding-bottom: 0px;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        width: 100% !important;
+        max-width: none !important;
+        justify-content: center !important;
+        overflow-x: visible !important;
+        flex-wrap: wrap !important;
+        gap: 0.4rem !important;
     }
-    .header-sub-links::-webkit-scrollbar {
-        display: none; /* Hide scrollbar Safari/Chrome */
-    }
-}
-
-@media (max-width: 580px) {
-    .header-sub-links {
-        gap: 0.3rem;
-        margin-right: 3.5rem;
-    }
+    
     .sub-link-btn {
-        padding: 0.225rem 0.45rem;
-        font-size: 0.725rem;
+        padding: 0.225rem 0.6rem !important;
+        font-size: 0.75rem !important;
     }
+    
     .sub-link-area {
-        padding: 0.2rem 0.4rem;
-        font-size: 0.725rem;
-    }
-}
-
-@media (max-width: 400px) {
-    .header-sub-links {
-        display: none; /* Hide on extremely small screen to avoid overlaps */
+        padding: 0.2rem 0.5rem !important;
+        font-size: 0.75rem !important;
     }
 }
 
