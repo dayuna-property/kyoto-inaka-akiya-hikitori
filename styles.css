@@ -260,6 +260,21 @@ h1, h2, h3, h4 {
     color: var(--color-bg-white);
 }
 
+.sub-link-line-cta {
+    background-color: var(--color-line) !important;
+    color: var(--color-bg-white) !important;
+    border: 1px solid var(--color-line) !important;
+    box-shadow: 0 2px 8px rgba(6, 199, 85, 0.25) !important;
+    display: none; /* デスクトップ表示時は非表示 */
+}
+
+.sub-link-line-cta:hover {
+    background-color: var(--color-line-hover) !important;
+    color: var(--color-bg-white) !important;
+    box-shadow: 0 4px 12px rgba(6, 199, 85, 0.4) !important;
+    transform: translateY(-1px);
+}
+
 /* Area sub links in category page headers */
 .header-area-links {
     gap: clamp(0.3rem, 0.5vw, 0.5rem);
@@ -362,6 +377,10 @@ h1, h2, h3, h4 {
     .sub-link-area {
         padding: 0.2rem 0.5rem !important;
         font-size: 0.75rem !important;
+    }
+
+    .sub-link-line-cta {
+        display: inline-flex !important;
     }
 }
 
