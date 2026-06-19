@@ -260,16 +260,12 @@ h1, h2, h3, h4 {
     color: var(--color-bg-white);
 }
 
-.mobile-line-header-btn {
-    display: none;
-}
-
 .sub-link-line-cta {
     background-color: var(--color-line) !important;
     color: var(--color-bg-white) !important;
     border: 1px solid var(--color-line) !important;
     box-shadow: 0 2px 8px rgba(6, 199, 85, 0.25) !important;
-    display: none; /* デスクトップ表示時は非表示 */
+    display: none !important; /* グローバルで非表示 */
 }
 
 .sub-link-line-cta:hover {
@@ -375,37 +371,9 @@ h1, h2, h3, h4 {
     }
     
     .hamburger-menu {
-        display: none !important;
-    }
-    
-    .mobile-line-header-btn {
-        display: flex !important;
-        align-items: center;
-        justify-content: center;
-        height: 40px !important;
-        padding: 0 0.8rem !important;
-        gap: 0.35rem !important;
-        background-color: var(--color-line) !important;
-        color: var(--color-bg-white) !important;
-        border-radius: 8px;
-        font-size: 0.8rem !important;
-        font-weight: bold !important;
-        text-decoration: none;
-        box-shadow: 0 3px 10px rgba(6, 199, 85, 0.3) !important;
         position: absolute !important;
+        top: 18px !important;
         right: 1rem !important;
-        top: 15px !important;
-        z-index: 1001 !important;
-        transition: all 0.2s ease !important;
-    }
-    
-    .mobile-line-header-btn i {
-        font-size: 1.1rem !important;
-    }
-    
-    .mobile-line-header-btn:active {
-        transform: scale(0.95);
-        background-color: var(--color-line-hover) !important;
     }
     
     .header-sub-links {
@@ -1100,7 +1068,7 @@ textarea {
     bottom: 24px;
     right: 24px;
     z-index: 999;
-    display: none !important;
+    display: block;
     opacity: 0;
     pointer-events: none;
     transform: translateY(20px);
@@ -2320,7 +2288,7 @@ svg.recycle-scheme-img {
     
     /* ハンバーガーボタン */
     .hamburger-menu {
-        display: none !important;
+        display: flex !important;
         flex-direction: column !important;
         justify-content: space-between !important;
         width: 26px !important;

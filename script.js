@@ -183,20 +183,63 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // 5. モバイル用ヘッダーLINE査定ボタンの動的生成
+    // 5. 繝｢繝舌う繝ｫ逕ｨ繝上Φ繝舌繧ｬ繝ｼ繝｡繝九Η繝ｼ縺ｮ蜍慕噪逕滓縺ｨ蛻ｶ蠕｡
     const headerContainer = document.querySelector('.header-container');
+    const nav = document.querySelector('.desktop-nav');
     
-    if (headerContainer) {
-        // LINEボタンの作成
-        const lineBtn = document.createElement('a');
-        lineBtn.className = 'mobile-line-header-btn';
-        lineBtn.href = 'https://lin.ee/9Ozovz2';
-        lineBtn.target = '_blank';
-        lineBtn.rel = 'noopener noreferrer';
-        lineBtn.setAttribute('aria-label', 'LINE無料査定');
-        lineBtn.innerHTML = '<i class="fa-brands fa-line"></i> 無料査定・相談';
+    if (headerContainer && nav) {
+        // 繝上Φ繝舌�繧ｬ繝ｼ繝懊ち繝ｳ縺ｮ菴懈�
+        const hamburger = document.createElement('button');
+        hamburger.className = 'hamburger-menu';
+        hamburger.setAttribute('aria-label', '繝｡繝九Η繝ｼ繧帝幕髢峨☆繧�');
+        hamburger.innerHTML = `
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        `;
         
-        // ヘッダーコンテナに追加
-        headerContainer.appendChild(lineBtn);
+        // 繝倥ャ繝繝ｼ繧ｳ繝ｳ繝�リ縺ｫ霑ｽ蜉�
+        headerContainer.appendChild(hamburger);
+        
+        // 繝峨Ο繝ｯ繝ｼ繝｡繝九Η繝ｼ蜀��CTA繝懊ち繝ｳ霑ｽ蜉��域里蟄倥�繝倥ャ繝繝ｼCTA繧定､�｣ｽ��
+        const headerCta = document.querySelector('.header-cta');
+        if (headerCta) {
+            const mobileCta = headerCta.cloneNode(true);
+            mobileCta.className = 'mobile-menu-cta';
+            nav.appendChild(mobileCta);
+        }
+        
+        // 繝｡繝九Η繝ｼ髢矩哩繝医げ繝ｫ
+        hamburger.addEventListener('click', (e) => {
+            e.stopPropagation();
+            hamburger.classList.toggle('active');
+            nav.classList.toggle('active');
+            document.body.classList.toggle('nav-open');
+        });
+        
+        // 繝｡繝九Η繝ｼ螟悶け繝ｪ繝�け縺ｧ髢峨§繧�
+        document.addEventListener('click', (e) => {
+            if (nav.classList.contains('active') && !nav.contains(e.target) && !hamburger.contains(e.target)) {
+                hamburger.classList.remove('active');
+                nav.classList.remove('active');
+                document.body.classList.remove('nav-open');
+            }
+        });
+        
+        // 繝｡繝九Η繝ｼ蜀�Μ繝ｳ繧ｯ繧ｯ繝ｪ繝�け譎ゅ↓髢峨§繧�
+        const navLinks = nav.querySelectorAll('a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                hamburger.classList.remove('active');
+                nav.classList.remove('active');
+                document.body.classList.remove('nav-open');
+            });
+        });
+    }
+
+    // 6. フローティングLINEボタンの表示（常に表示）
+    const floatingCta = document.querySelector('.floating-line-cta');
+    if (floatingCta) {
+        floatingCta.classList.add('visible');
     }
 });
