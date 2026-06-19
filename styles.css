@@ -297,6 +297,26 @@ h1, h2, h3, h4 {
     color: #34d399;
 }
 
+.h-feat-item.h-feat-speed {
+    background: rgba(217, 119, 6, 0.18) !important;
+    border: 1.5px solid var(--color-accent) !important;
+    box-shadow: 0 0 12px rgba(217, 119, 6, 0.3) !important;
+}
+
+.h-feat-item.h-feat-speed i {
+    color: var(--color-accent) !important;
+}
+
+.highlight-speed {
+    color: var(--color-accent) !important;
+    font-weight: 800 !important;
+    font-size: 1.1em !important;
+    background: rgba(217, 119, 6, 0.08);
+    padding: 0.1rem 0.3rem;
+    border-radius: 3px;
+    border-bottom: 2px solid var(--color-accent);
+}
+
 .cta-buttons {
     display: flex;
     gap: 1rem;
@@ -851,46 +871,33 @@ textarea {
     line-height: 1.6;
 }
 
-/* 16. 画面最下部の固定帯 (Sticky Bottom Bar) LINE CTA */
+/* 16. 画面最下部の固定帯 (Sticky Bottom Bar) LINE CTA -> Floating button only */
 .floating-line-cta {
     position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    width: 100%;
-    max-width: 100%;
+    bottom: 24px;
+    right: 24px;
     z-index: 999;
-    background: rgba(8, 28, 21, 0.98); /* 深いフォレストグリーン背景 */
-    border-top: 3px solid var(--color-line); /* LINEカラーの上枠線 */
-    box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.3);
-    backdrop-filter: blur(12px);
     display: block;
-    opacity: 1;
-    pointer-events: auto;
-    transform: translateY(0);
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(20px);
     transition: opacity 0.4s ease, transform 0.4s ease;
 }
 
+.floating-line-cta.visible {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+}
+
 .floating-line-cta-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0.8rem 1.5rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 2rem;
+    padding: 0;
+    margin: 0;
+    display: block;
 }
 
 .floating-line-cta-text {
-    color: var(--color-bg-white);
-    font-size: 0.95rem;
-    font-weight: bold;
-    line-height: 1.4;
-    letter-spacing: 0.03em;
-}
-
-.floating-line-cta-text span.highlight-orange {
-    color: var(--color-accent);
+    display: none; /* 帯は不要のためテキスト非表示 */
 }
 
 .floating-line-cta a {
@@ -901,24 +908,23 @@ textarea {
     color: var(--color-bg-white);
     text-decoration: none;
     font-weight: bold;
-    padding: 0.75rem 2rem;
-    border-radius: 6px;
+    padding: 0.8rem 1.6rem;
+    border-radius: 50px; /* 角丸でボタン感を強調 */
     font-size: 1.05rem;
     transition: all 0.3s ease;
     gap: 0.5rem;
-    box-shadow: 0 4px 12px rgba(6, 199, 85, 0.3);
+    box-shadow: 0 4px 16px rgba(6, 199, 85, 0.4);
     white-space: nowrap;
 }
 
 .floating-line-cta a:hover {
     background-color: var(--color-line-hover);
-    transform: translateY(-1px);
-    box-shadow: 0 6px 16px rgba(6, 199, 85, 0.45);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(6, 199, 85, 0.6);
 }
 
 body {
-    padding-bottom: 80px !important; /* 固定帯の重なりを防ぐパディング */
-}
+    padding-bottom: 0px !important; /* 帯をなくしたため余白を解除 */
 }
 
 /* 17. Intersection Observer用アニメーション効果 */
