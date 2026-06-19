@@ -3925,4 +3925,19 @@ svg.recycle-scheme-img {
     .cta-section.line-only .line-cta-box {
         padding: 2rem 1.5rem;
     }
+    
+    /* 画面最下部の固定帯 (Sticky Bottom Bar) LINE CTA のスマホ最適化 */
+    .floating-line-cta-text {
+        display: none !important;
+    }
+    .floating-line-cta-container {
+        justify-content: center !important;
+        padding: 0.6rem 1rem !important;
+    }
+    .floating-line-cta a {
+        width: 100% !important;
+        padding: 0.75rem !important;
+        font-size: 0.9rem !important;
+    }
 }
+
