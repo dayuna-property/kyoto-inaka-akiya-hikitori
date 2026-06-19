@@ -1004,6 +1004,28 @@ textarea {
     font-size: 0.8rem;
 }
 
+.footer-legal-info {
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    font-size: 0.8rem;
+    line-height: 1.6;
+    text-align: left;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.footer-legal-info p {
+    margin-bottom: 1rem;
+}
+
+.footer-legal-info p:last-child {
+    margin-bottom: 0;
+}
+
+
 /* 15. モーダル (送信完了) */
 .modal-overlay {
     position: fixed;
