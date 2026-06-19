@@ -218,6 +218,7 @@ h1, h2, h3, h4 {
 /* Header sub links (visible on both desktop and mobile) */
 .header-sub-links {
     display: flex;
+    flex-wrap: nowrap;
     align-items: center;
     gap: clamp(0.4rem, 0.8vw, 0.8rem);
     margin-left: auto;
@@ -261,25 +262,55 @@ h1, h2, h3, h4 {
 
 /* Area sub links in category page headers */
 .header-area-links {
-    gap: clamp(0.2rem, 0.5vw, 0.5rem);
+    gap: clamp(0.3rem, 0.5vw, 0.5rem);
 }
 
 .sub-link-area {
     font-size: clamp(0.75rem, 0.8vw, 0.85rem);
     font-weight: bold;
-    color: var(--color-primary-light);
+    color: var(--color-primary-light) !important;
     text-decoration: none;
-    padding: 0.25rem clamp(0.35rem, 0.5vw, 0.5rem);
-    border-radius: 3px;
+    padding: 0.25rem clamp(0.45rem, 0.6vw, 0.6rem);
+    border-radius: 20px; /* ピル形状（丸薬型）のチップデザイン */
     transition: all 0.2s ease;
-    border: 1px solid rgba(45, 106, 79, 0.15);
-    background-color: rgba(45, 106, 79, 0.03);
+    border: 1px solid rgba(45, 106, 79, 0.3);
+    background-color: rgba(45, 106, 79, 0.05);
     white-space: nowrap;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
 }
 
 .sub-link-area:hover {
     background-color: var(--color-primary-light);
-    color: var(--color-bg-white);
+    color: var(--color-bg-white) !important;
+    border-color: var(--color-primary-light);
+    transform: translateY(-1px);
+    box-shadow: 0 2px 6px rgba(45, 106, 79, 0.2);
+}
+
+/* Active area badge style */
+.badge-area-active {
+    display: inline-block;
+    background-color: var(--color-accent);
+    color: var(--color-bg-white) !important;
+    font-size: 0.725rem;
+    font-weight: bold;
+    padding: 0.15rem 0.45rem;
+    border-radius: 4px;
+    margin-left: 0.5rem;
+    vertical-align: middle;
+    white-space: nowrap;
+    border: 1px solid rgba(217, 119, 6, 0.2);
+    box-shadow: 0 1px 3px rgba(217, 119, 6, 0.15);
+}
+
+/* Helper to hide text on mobile to save space */
+@media (max-width: 768px) {
+    .pc-only-text {
+        display: none !important;
+    }
 }
 
 /* Responsive adjustments */
@@ -290,26 +321,37 @@ h1, h2, h3, h4 {
     }
 }
 
-@media (max-width: 580px) {
+@media (max-width: 768px) {
     .header-sub-links {
-        gap: 0.25rem;
-        margin-right: 3.5rem;
+        overflow-x: auto;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none; /* Hide scrollbar Firefox */
+        max-width: 55vw; /* Pushes the menu icon to the far right, allows scrolling inside this area */
+        justify-content: flex-start;
+        padding-bottom: 0px;
     }
-    .sub-link-btn {
-        padding: 0.2rem 0.4rem;
-        font-size: 0.725rem;
-    }
-    .sub-link-area {
-        padding: 0.15rem 0.3rem;
-        font-size: 0.725rem;
-    }
-    /* Hide some area links on very small mobile viewports to prevent overlap */
-    .header-area-links a:nth-child(n+4) {
-        display: none; /* Show only first 3 areas on very small screens, others accessible via menu */
+    .header-sub-links::-webkit-scrollbar {
+        display: none; /* Hide scrollbar Safari/Chrome */
     }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 580px) {
+    .header-sub-links {
+        gap: 0.3rem;
+        margin-right: 3.5rem;
+    }
+    .sub-link-btn {
+        padding: 0.225rem 0.45rem;
+        font-size: 0.725rem;
+    }
+    .sub-link-area {
+        padding: 0.2rem 0.4rem;
+        font-size: 0.725rem;
+    }
+}
+
+@media (max-width: 400px) {
     .header-sub-links {
         display: none; /* Hide on extremely small screen to avoid overlaps */
     }
