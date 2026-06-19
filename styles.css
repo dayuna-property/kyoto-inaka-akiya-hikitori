@@ -260,6 +260,10 @@ h1, h2, h3, h4 {
     color: var(--color-bg-white);
 }
 
+.mobile-line-header-btn {
+    display: none;
+}
+
 .sub-link-line-cta {
     background-color: var(--color-line) !important;
     color: var(--color-bg-white) !important;
@@ -337,25 +341,65 @@ h1, h2, h3, h4 {
 }
 
 @media (max-width: 768px) {
-    /* 2段組みヘッダーレイアウト */
+    /* モバイルヘッダー設定 */
     .site-header {
+        height: 70px !important;
+        min-height: auto !important;
+        padding: 0 !important;
+    }
+    
+    .header-container {
+        flex-direction: row !important;
+        align-items: center !important;
+        justify-content: space-between !important;
+        position: relative !important;
+        padding: 0 1rem !important;
+    }
+    
+    /* カテゴリやエリア等のサブナビがあるページのみ2段組みにする */
+    .site-header:has(.sub-link-akiya),
+    .site-header:has(.sub-link-sanrin),
+    .site-header:has(.sub-link-area) {
         height: auto !important;
         min-height: 90px !important;
         padding: 0.5rem 0 !important;
     }
     
-    .header-container {
+    .site-header:has(.sub-link-akiya) .header-container,
+    .site-header:has(.sub-link-sanrin) .header-container,
+    .site-header:has(.sub-link-area) .header-container {
         flex-direction: column !important;
         align-items: flex-start !important;
         gap: 0.5rem !important;
-        position: relative !important;
-        padding: 0 1rem !important;
+        height: auto !important;
     }
     
     .hamburger-menu {
+        display: none !important;
+    }
+    
+    .mobile-line-header-btn {
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
+        width: 44px;
+        height: 44px;
+        background-color: var(--color-line) !important;
+        color: var(--color-bg-white) !important;
+        border-radius: 8px;
+        font-size: 26px;
+        text-decoration: none;
+        box-shadow: 0 3px 10px rgba(6, 199, 85, 0.3) !important;
         position: absolute !important;
-        top: 18px !important;
         right: 1rem !important;
+        top: 13px !important;
+        z-index: 1001 !important;
+        transition: all 0.2s ease !important;
+    }
+    
+    .mobile-line-header-btn:active {
+        transform: scale(0.95);
+        background-color: var(--color-line-hover) !important;
     }
     
     .header-sub-links {
@@ -380,7 +424,7 @@ h1, h2, h3, h4 {
     }
 
     .sub-link-line-cta {
-        display: inline-flex !important;
+        display: none !important;
     }
 }
 
@@ -2270,7 +2314,7 @@ svg.recycle-scheme-img {
     
     /* ハンバーガーボタン */
     .hamburger-menu {
-        display: flex !important;
+        display: none !important;
         flex-direction: column !important;
         justify-content: space-between !important;
         width: 26px !important;
