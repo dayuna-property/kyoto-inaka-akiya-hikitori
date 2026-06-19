@@ -194,15 +194,9 @@ document.addEventListener('DOMContentLoaded', () => {
         lineBtn.target = '_blank';
         lineBtn.rel = 'noopener noreferrer';
         lineBtn.setAttribute('aria-label', 'LINE無料査定');
-        lineBtn.innerHTML = '<i class="fa-brands fa-line"></i>';
+        lineBtn.innerHTML = '<i class="fa-brands fa-line"></i> 無料査定・相談';
         
         // ヘッダーコンテナに追加
         headerContainer.appendChild(lineBtn);
-    }
-
-    // 6. フローティングLINEボタンの表示（常に表示）
-    const floatingCta = document.querySelector('.floating-line-cta');
-    if (floatingCta) {
-        floatingCta.classList.add('visible');
     }
 });

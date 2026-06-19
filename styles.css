@@ -382,19 +382,25 @@ h1, h2, h3, h4 {
         display: flex !important;
         align-items: center;
         justify-content: center;
-        width: 44px;
-        height: 44px;
+        height: 40px !important;
+        padding: 0 0.8rem !important;
+        gap: 0.35rem !important;
         background-color: var(--color-line) !important;
         color: var(--color-bg-white) !important;
         border-radius: 8px;
-        font-size: 26px;
+        font-size: 0.8rem !important;
+        font-weight: bold !important;
         text-decoration: none;
         box-shadow: 0 3px 10px rgba(6, 199, 85, 0.3) !important;
         position: absolute !important;
         right: 1rem !important;
-        top: 13px !important;
+        top: 15px !important;
         z-index: 1001 !important;
         transition: all 0.2s ease !important;
+    }
+    
+    .mobile-line-header-btn i {
+        font-size: 1.1rem !important;
     }
     
     .mobile-line-header-btn:active {
@@ -1094,7 +1100,7 @@ textarea {
     bottom: 24px;
     right: 24px;
     z-index: 999;
-    display: block;
+    display: none !important;
     opacity: 0;
     pointer-events: none;
     transform: translateY(20px);
