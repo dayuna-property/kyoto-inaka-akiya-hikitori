@@ -211,6 +211,110 @@ h1, h2, h3, h4 {
     color: var(--color-primary-light);
 }
 
+.nav-mobile-only {
+    display: none !important;
+}
+
+/* Header sub links (visible on both desktop and mobile) */
+.header-sub-links {
+    display: flex;
+    align-items: center;
+    gap: clamp(0.4rem, 0.8vw, 0.8rem);
+    margin-left: auto;
+    margin-right: clamp(0.5rem, 1vw, 1.5rem);
+}
+
+.sub-link-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.35rem clamp(0.5rem, 0.8vw, 0.8rem);
+    border-radius: 4px;
+    font-size: clamp(0.75rem, 0.8vw, 0.85rem);
+    font-weight: bold;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    white-space: nowrap;
+}
+
+.sub-link-akiya {
+    background-color: rgba(45, 106, 79, 0.1);
+    color: var(--color-primary-light);
+    border: 1px solid rgba(45, 106, 79, 0.2);
+}
+
+.sub-link-akiya:hover {
+    background-color: var(--color-primary-light);
+    color: var(--color-bg-white);
+}
+
+.sub-link-sanrin {
+    background-color: rgba(217, 119, 6, 0.1);
+    color: var(--color-accent);
+    border: 1px solid rgba(217, 119, 6, 0.2);
+}
+
+.sub-link-sanrin:hover {
+    background-color: var(--color-accent);
+    color: var(--color-bg-white);
+}
+
+/* Area sub links in category page headers */
+.header-area-links {
+    gap: clamp(0.2rem, 0.5vw, 0.5rem);
+}
+
+.sub-link-area {
+    font-size: clamp(0.75rem, 0.8vw, 0.85rem);
+    font-weight: bold;
+    color: var(--color-primary-light);
+    text-decoration: none;
+    padding: 0.25rem clamp(0.35rem, 0.5vw, 0.5rem);
+    border-radius: 3px;
+    transition: all 0.2s ease;
+    border: 1px solid rgba(45, 106, 79, 0.15);
+    background-color: rgba(45, 106, 79, 0.03);
+    white-space: nowrap;
+}
+
+.sub-link-area:hover {
+    background-color: var(--color-primary-light);
+    color: var(--color-bg-white);
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+    .header-sub-links {
+        margin-left: auto;
+        margin-right: 4.5rem; /* Space for hamburger menu */
+    }
+}
+
+@media (max-width: 580px) {
+    .header-sub-links {
+        gap: 0.25rem;
+        margin-right: 3.5rem;
+    }
+    .sub-link-btn {
+        padding: 0.2rem 0.4rem;
+        font-size: 0.725rem;
+    }
+    .sub-link-area {
+        padding: 0.15rem 0.3rem;
+        font-size: 0.725rem;
+    }
+    /* Hide some area links on very small mobile viewports to prevent overlap */
+    .header-area-links a:nth-child(n+4) {
+        display: none; /* Show only first 3 areas on very small screens, others accessible via menu */
+    }
+}
+
+@media (max-width: 375px) {
+    .header-sub-links {
+        display: none; /* Hide on extremely small screen to avoid overlaps */
+    }
+}
+
 .btn-header-cta {
     padding: 0.5rem clamp(0.75rem, 1vw, 1.25rem);
     font-size: clamp(0.8rem, 0.85vw, 0.875rem);
@@ -3944,6 +4048,11 @@ svg.recycle-scheme-img {
         width: 100% !important;
         padding: 0.75rem !important;
         font-size: 0.9rem !important;
+    }
+    
+    /* Mobile-only navigation links in the drawer */
+    .desktop-nav a.nav-mobile-only {
+        display: block !important;
     }
 }
 
