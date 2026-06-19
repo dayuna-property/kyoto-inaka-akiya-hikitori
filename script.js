@@ -23,20 +23,30 @@ document.addEventListener('DOMContentLoaded', () => {
 
         revealElements.forEach(el => revealObserver.observe(el));
     } else {
-        // Intersection Observer髱槫ｯｾ蠢懊ヶ繝ｩ繧ｦ繧ｶ縺ｮ莉｣譖ｿ蜃ｦ逅�
+        // Intersection Observer髱槫ｯｾ蠢懊ヶ繝ｩ繧ｦ繧ｶ縺ｮ莉｣譖ｿ蜃ｦ逅
         revealElements.forEach(el => el.classList.add('active'));
     }
 
-    // 2. FAQ 繧｢繧ｳ繝ｼ繝�ぅ繧ｪ繝ｳ蛻ｶ蠕｡
+    // 2. FAQ アコーディオン制御
     const faqItems = document.querySelectorAll('.faq-item, .faq-hybrid-item');
 
     faqItems.forEach(item => {
         const question = item.querySelector('.faq-question');
-        
-        question.addEventListener('click', () => {
-            const isActive = item.classList.contains('active');
-            
-            // 莉悶�髢九＞縺ｦ縺�ｋ繧｢繧ｳ繝ｼ繝�ぅ繧ｪ繝ｳ    // 3. 蝠上＞蜷医ｏ縺帙ヵ繧ｩ繝ｼ繝� 繝舌Μ繝��繧ｷ繝ｧ繝ｳ & 繝�Δ騾∽ｿ｡
+        if (question) {
+            question.addEventListener('click', () => {
+                const isActive = item.classList.contains('active');
+                
+                // 他の開いているアコーディオンを閉じる
+                faqItems.forEach(i => i.classList.remove('active'));
+                
+                if (!isActive) {
+                    item.classList.add('active');
+                }
+            });
+        }
+    });
+
+    // 3. 問い合わせフォーム バリデーション & デモ送信
     const form = document.getElementById('contact-form');
     if (form) {
         const successModal = document.getElementById('success-modal');
