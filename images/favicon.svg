@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <!-- 背景グラデーション (フォレストグリーン系) -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1b4332" />
+      <stop offset="100%" stop-color="#2d6a4f" />
+    </linearGradient>
+    <!-- アクセントグラデーション (ゴールド・アンバー系) -->
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f59e0b" />
+      <stop offset="100%" stop-color="#d97706" />
+    </linearGradient>
+  </defs>
+
+  <!-- 背景：角丸の四角形（Squircle） -->
+  <rect x="0" y="0" width="512" height="512" rx="128" fill="url(#bgGrad)" />
+
+  <!-- 外周のリサイクルループ（太い円弧と矢印） -->
+  <!-- 上部アロー -->
+  <path d="M 143,200 A 160,160 0 0,1 369,200" fill="none" stroke="url(#accentGrad)" stroke-width="24" stroke-linecap="round" />
+  <path d="M 345,175 L 385,200 L 360,240" fill="none" stroke="url(#accentGrad)" stroke-width="24" stroke-linecap="round" stroke-linejoin="round" />
+
+  <!-- 下部アロー -->
+  <path d="M 369,312 A 160,160 0 0,1 143,312" fill="none" stroke="url(#accentGrad)" stroke-width="24" stroke-linecap="round" />
+  <path d="M 167,337 L 127,312 L 152,272" fill="none" stroke="url(#accentGrad)" stroke-width="24" stroke-linecap="round" stroke-linejoin="round" />
+
+  <!-- 中央の家 (ホワイト) -->
+  <!-- 煙突 -->
+  <rect x="300" y="174" width="24" height="48" fill="#ffffff" rx="2" />
+  <!-- 家の土台 -->
+  <path d="M190,240 L190,360 C190,368 196,374 204,374 L308,374 C316,374 322,368 322,360 L322,240 Z" fill="#ffffff" />
+  <!-- 三角屋根 -->
+  <path d="M156,242 L256,150 L356,242 Z" fill="#ffffff" stroke="#ffffff" stroke-width="12" stroke-linejoin="round" stroke-linecap="round" />
+  <!-- 窓（エコな葉っぱの形） -->
+  <path d="M 256,260 C 235,260 225,285 256,315 C 287,285 277,260 256,260 Z" fill="url(#bgGrad)" />
+</svg>
