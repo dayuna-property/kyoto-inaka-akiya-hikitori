@@ -4238,8 +4238,8 @@ svg.recycle-scheme-img {
         z-index: 1001;
         outline: none;
         margin-left: 1.5rem;
-        margin-right: 1.25rem;
-        order: 3; /* サブリンクとCTAボタンの間に配置 */
+        margin-right: 0.5rem;
+        order: 4; /* 一番右端に配置 */
     }
     
     .site-header .hamburger-menu .bar {
@@ -4288,7 +4288,7 @@ svg.recycle-scheme-img {
     }
     
     .site-header .header-cta {
-        order: 4; /* 一番右端 */
+        order: 3; /* ハンバーガーボタンの左側に配置 */
     }
     
     /* 4. メニューオープン時の背景オーバーレイ */
