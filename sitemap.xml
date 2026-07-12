@@ -75,4 +75,53 @@
     <loc>https://fudosan-recycle.com/sanrin/wakayama/</loc>
     <priority>0.8</priority>
   </url>
+  <!-- Column Pages -->
+  <url>
+    <loc>https://fudosan-recycle.com/column/</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://fudosan-recycle.com/column/old-house-cleanup-purchase.html</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://fudosan-recycle.com/column/land-state-return.html</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://fudosan-recycle.com/column/forest-disposal.html</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://fudosan-recycle.com/column/abandoned-house-tax.html</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://fudosan-recycle.com/column/unknown-boundary-land.html</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://fudosan-recycle.com/column/unrebuildable-house.html</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://fudosan-recycle.com/column/inheritance-registration-mandatory.html</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://fudosan-recycle.com/column/house-cleanup-cost.html</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://fudosan-recycle.com/column/landslide-risk-land.html</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://fudosan-recycle.com/column/kyoto-shiga-rural-land.html</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://fudosan-recycle.com/column/land-donation-government.html</loc>
+    <priority>0.7</priority>
+  </url>
 </urlset>
