@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-WREFV64WSJ"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-WREFV64WSJ');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <!-- Favicon Settings -->
+    <link rel="icon" href="../images/favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="../images/favicon-32x32.png" type="image/png" sizes="32x32">
+    <link rel="icon" href="../images/favicon-48x48.png" type="image/png" sizes="48x48">
+    <link rel="icon" href="../images/favicon-96x96.png" type="image/png" sizes="96x96">
+    <link rel="icon" href="../images/favicon-192x192.png" type="image/png" sizes="192x192">
+    <link rel="apple-touch-icon" href="../images/apple-touch-icon.png">
+    
+    <!-- SEO Meta Tags -->
+    <link rel="canonical" href="https://fudosan-recycle.com/column/">
+    <title>お役立ちコラム一覧｜負動産リサイクルセンター</title>
+    <meta name="description" content="売れない空き家、処分に困る山林、相続した不要な土地の手放し方や処分手順を分かりやすく解説するお役立ちコラム一覧です。">
+    <meta name="keywords" content="負動産 処分 コラム, 空き家 処分 ブログ, 山林 引き取り 記事">
+    
+    <!-- OGP Meta Tags -->
+    <meta property="og:title" content="お役立ちコラム一覧｜負動産リサイクルセンター">
+    <meta property="og:description" content="処分困難な空き家や山林に関するお悩み解決ヒントを発信しています。">
+    <meta property="og:image" content="../images/hero.png">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="ja_JP">
+    <meta property="og:site_name" content="負動産リサイクルセンター">
+    
+    <!-- Prefetch and External CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../styles.css">
+    
+    <!-- Column List Page Specific Styling -->
+    <style>
+        .archive-hero {
+            background-color: var(--color-primary-dark, #1b4332);
+            color: #fff;
+            padding: 4rem 2rem 3rem;
+            text-align: center;
+        }
+        .archive-title {
+            font-size: 2.2rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+        .archive-lead {
+            font-size: 1.1rem;
+            max-width: 700px;
+            margin: 0 auto;
+            color: rgba(255, 255, 255, 0.9);
+        }
+        
+        .archive-container {
+            max-width: 1200px;
+            margin: 4rem auto;
+            padding: 0 1.5rem;
+        }
+        
+        /* Grid Layout */
+        .column-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        @media (min-width: 768px) {
+            .column-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        @media (min-width: 992px) {
+            .column-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+        
+        /* Card Style */
+        .column-card {
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            transition: transform 0.3s, box-shadow 0.3s;
+            border: 1px solid #eaeaea;
+        }
+        .column-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 30px rgba(0,0,0,0.1);
+        }
+        .card-img-placeholder {
+            height: 180px;
+            background: linear-gradient(135deg, #2d6a4f 0%, #1b4332 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: rgba(255,255,255,0.9);
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+        .card-content {
+            padding: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+        }
+        .card-cat {
+            align-self: flex-start;
+            background-color: var(--color-accent, #e76f51);
+            color: #fff;
+            font-size: 0.75rem;
+            font-weight: bold;
+            padding: 0.25rem 0.75rem;
+            border-radius: 50px;
+            margin-bottom: 0.8rem;
+        }
+        .card-title {
+            font-size: 1.15rem;
+            font-weight: bold;
+            line-height: 1.5;
+            margin-bottom: 0.8rem;
+            color: #333;
+        }
+        .card-title a {
+            color: inherit;
+            text-decoration: none;
+        }
+        .card-title a:hover {
+            color: var(--color-accent, #e76f51);
+        }
+        .card-excerpt {
+            font-size: 0.9rem;
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 1.5rem;
+            flex-grow: 1;
+        }
+        .card-meta {
+            font-size: 0.8rem;
+            color: #999;
+            border-top: 1px solid #eee;
+            padding-top: 0.8rem;
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .breadcrumb {
+            max-width: 1200px;
+            margin: 1.5rem auto 0;
+            padding: 0 1.5rem;
+            font-size: 0.85rem;
+            color: #718096;
+        }
+        .breadcrumb a {
+            color: #4a5568;
+            text-decoration: none;
+        }
+        .breadcrumb a:hover {
+            color: var(--color-accent, #e76f51);
+        }
+        .breadcrumb span {
+            margin: 0 0.5rem;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header class="site-header">
+        <div class="header-container">
+            <div class="logo">
+                <a href="../index.html" style="color: inherit; text-decoration: none;">
+                    <i class="fa-solid fa-house-chimney logo-icon"></i>
+                    <span>負動産リサイクルセンター</span>
+                    <span class="badge-portal">総合トップ</span>
+                </a>
+            </div>
+            <div class="header-sub-links">
+                <a href="../akiya/index.html" class="sub-link-btn sub-link-akiya"><i class="fa-solid fa-house-chimney"></i> 空き家引き取り</a>
+                <a href="../sanrin/index.html" class="sub-link-btn sub-link-sanrin"><i class="fa-solid fa-tree"></i> 山林引き取り</a>
+                <a href="https://lin.ee/9Ozovz2" class="sub-link-btn sub-link-line-cta" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-line"></i> LINE無料査定</a>
+            </div>
+            <nav class="desktop-nav">
+                <a href="../index.html#problems">お悩み</a>
+                <a href="../index.html#about-team">解決策</a>
+                <a href="../index.html#gateways" style="color: var(--color-accent); font-weight: bold;"><i class="fa-solid fa-circle-arrow-right"></i> 引き取り窓口</a>
+                <a href="../index.html#features">3つの特徴</a>
+                <a href="../index.html#guarantee">安心宣言</a>
+                <a href="../index.html#process">手続きの流れ</a>
+                <a href="../index.html#areas">対応エリア</a>
+                <a href="../index.html#faq">よくある質問</a>
+            </nav>
+            <div class="header-cta">
+                <a href="https://lin.ee/9Ozovz2" class="btn btn-header-cta" target="_blank" rel="noopener noreferrer">無料査定・相談</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Archive Hero -->
+        <section class="archive-hero">
+            <div class="archive-hero-container">
+                <h1 class="archive-title">お役立ちコラム</h1>
+                <p class="archive-lead">売れない空き家・古民家、処分したい山林、相続した不要な土地を手放すためのノウハウや解決策を専門家が解説します。</p>
+            </div>
+        </section>
+
+        <!-- Breadcrumb -->
+        <div class="breadcrumb">
+            <a href="../index.html">ホーム</a><span>&gt;</span>
+            <span>コラム一覧</span>
+        </div>
+
+        <!-- Columns Grid -->
+        <div class="archive-container">
+            <div class="column-grid">
+                
+                <!-- Card 1 -->
+                <div class="column-card">
+                    <div class="card-img-placeholder">
+                        <i class="fa-solid fa-house-circle-xmark" style="font-size: 3rem; opacity: 0.8;"></i>
+                    </div>
+                    <div class="card-content">
+                        <span class="card-cat">空き家処分・実家整理</span>
+                        <h2 class="card-title"><a href="old-house-cleanup-purchase.html">古い家を処分したい！売れない実家を『荷物丸ごと』買い取ってもらう手順</a></h2>
+                        <p class="card-excerpt">相続した古い実家に荷物が大量に残っていて片付けられないとお悩みの方へ。荷物丸ごとの状態での売却・引き取り手順を分かりやすく解説します。</p>
+                        <div class="card-meta">
+                            <span><i class="fa-regular fa-calendar-days"></i> 2026/07/13</span>
+                            <span>負動産リサイクルセンター</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container text-center">
+            <p class="footer-logo">負動産リサイクルセンター</p>
+            <p class="copyright">&copy; 2026 負動産リサイクルセンター All Rights Reserved.</p>
+            <div class="footer-legal-info">
+                <p>
+                    運営者情報<br>
+                    運営者：株式会社ミュートス、電話番号：075-600-2524、住所：「公式LINE（または問い合わせ）よりご請求いただければ、遅滞なく開示いたします」、キャンセルについて: 「個別見積もり提示後、契約締結前まではキャンセル無料。契約締結後のキャンセルは不可（または違約金あり）」
+                </p>
+                <p>
+                    個人情報の取り扱いについて<br>
+                    当窓口は、お問い合わせフォームから取得した個人情報（お名前、メールアドレス、物件所在地等）を、お問い合わせへの回答の目的のみに利用いたします。法令に基づく場合を除き、ご本人の同意なく第三者に個人情報を提供することはありません。
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Sticky Bottom LINE CTA Bar -->
+    <div class="floating-line-cta">
+        <div class="floating-line-cta-container">
+            <div class="floating-line-cta-text">
+                ＼処分困難な実家や山林を有料引き取り／ <span class="highlight-orange"><span class="highlight-speed">最短1〜2週間</span>で管理責任から永久解放！</span>
+            </div>
+            <a href="https://lin.ee/9Ozovz2" target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-line"></i> LINEで無料査定・ご相談はこちら
+            </a>
+        </div>
+    </div>
+
+</body>
+</html>
