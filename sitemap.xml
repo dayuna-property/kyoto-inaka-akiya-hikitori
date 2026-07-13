@@ -1,127 +1,207 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://fudosan-recycle.com/</loc>
+    <loc>https://www.fudosan-recycle.com/</loc>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://fudosan-recycle.com/akiya/</loc>
+    <loc>https://www.fudosan-recycle.com/akiya/</loc>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://fudosan-recycle.com/sanrin/</loc>
+    <loc>https://www.fudosan-recycle.com/sanrin/</loc>
     <priority>0.9</priority>
   </url>
   <!-- Root Region Pages -->
   <url>
-    <loc>https://fudosan-recycle.com/kyoto/</loc>
+    <loc>https://www.fudosan-recycle.com/kyoto/</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://fudosan-recycle.com/shiga/</loc>
+    <loc>https://www.fudosan-recycle.com/shiga/</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://fudosan-recycle.com/hyogo/</loc>
+    <loc>https://www.fudosan-recycle.com/hyogo/</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://fudosan-recycle.com/osaka/</loc>
+    <loc>https://www.fudosan-recycle.com/osaka/</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://fudosan-recycle.com/wakayama/</loc>
+    <loc>https://www.fudosan-recycle.com/wakayama/</loc>
     <priority>0.8</priority>
   </url>
   <!-- Akiya Region Pages -->
   <url>
-    <loc>https://fudosan-recycle.com/akiya/kyoto/</loc>
+    <loc>https://www.fudosan-recycle.com/akiya/kyoto/</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://fudosan-recycle.com/akiya/shiga/</loc>
+    <loc>https://www.fudosan-recycle.com/akiya/shiga/</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://fudosan-recycle.com/akiya/hyogo/</loc>
+    <loc>https://www.fudosan-recycle.com/akiya/hyogo/</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://fudosan-recycle.com/akiya/osaka/</loc>
+    <loc>https://www.fudosan-recycle.com/akiya/osaka/</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://fudosan-recycle.com/akiya/wakayama/</loc>
+    <loc>https://www.fudosan-recycle.com/akiya/wakayama/</loc>
     <priority>0.8</priority>
   </url>
   <!-- Sanrin Region Pages -->
   <url>
-    <loc>https://fudosan-recycle.com/sanrin/kyoto/</loc>
+    <loc>https://www.fudosan-recycle.com/sanrin/kyoto/</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://fudosan-recycle.com/sanrin/shiga/</loc>
+    <loc>https://www.fudosan-recycle.com/sanrin/shiga/</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://fudosan-recycle.com/sanrin/hyogo/</loc>
+    <loc>https://www.fudosan-recycle.com/sanrin/hyogo/</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://fudosan-recycle.com/sanrin/osaka/</loc>
+    <loc>https://www.fudosan-recycle.com/sanrin/osaka/</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://fudosan-recycle.com/sanrin/wakayama/</loc>
+    <loc>https://www.fudosan-recycle.com/sanrin/wakayama/</loc>
     <priority>0.8</priority>
   </url>
   <!-- Column Pages -->
   <url>
-    <loc>https://fudosan-recycle.com/column/</loc>
+    <loc>https://www.fudosan-recycle.com/column/</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://fudosan-recycle.com/column/old-house-cleanup-purchase.html</loc>
+    <loc>https://www.fudosan-recycle.com/column/old-house-cleanup-purchase.html</loc>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://fudosan-recycle.com/column/land-state-return.html</loc>
+    <loc>https://www.fudosan-recycle.com/column/land-state-return.html</loc>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://fudosan-recycle.com/column/forest-disposal.html</loc>
+    <loc>https://www.fudosan-recycle.com/column/forest-disposal.html</loc>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://fudosan-recycle.com/column/abandoned-house-tax.html</loc>
+    <loc>https://www.fudosan-recycle.com/column/abandoned-house-tax.html</loc>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://fudosan-recycle.com/column/unknown-boundary-land.html</loc>
+    <loc>https://www.fudosan-recycle.com/column/unknown-boundary-land.html</loc>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://fudosan-recycle.com/column/unrebuildable-house.html</loc>
+    <loc>https://www.fudosan-recycle.com/column/unrebuildable-house.html</loc>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://fudosan-recycle.com/column/inheritance-registration-mandatory.html</loc>
+    <loc>https://www.fudosan-recycle.com/column/inheritance-registration-mandatory.html</loc>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://fudosan-recycle.com/column/house-cleanup-cost.html</loc>
+    <loc>https://www.fudosan-recycle.com/column/house-cleanup-cost.html</loc>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://fudosan-recycle.com/column/landslide-risk-land.html</loc>
+    <loc>https://www.fudosan-recycle.com/column/landslide-risk-land.html</loc>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://fudosan-recycle.com/column/kyoto-shiga-rural-land.html</loc>
+    <loc>https://www.fudosan-recycle.com/column/kyoto-shiga-rural-land.html</loc>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://fudosan-recycle.com/column/land-donation-government.html</loc>
+    <loc>https://www.fudosan-recycle.com/column/land-donation-government.html</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.fudosan-recycle.com/column/abandoned-house-inheritance-renunciation.html</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.fudosan-recycle.com/column/parent-nursing-home-empty-house.html</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.fudosan-recycle.com/column/trash-house-as-is-disposal.html</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.fudosan-recycle.com/column/farmhouse-with-agricultural-land.html</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.fudosan-recycle.com/column/row-house-joint-ownership-disposal.html</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.fudosan-recycle.com/column/protection-forest-disposal.html</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.fudosan-recycle.com/column/steep-slope-mountain-disposal.html</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.fudosan-recycle.com/column/no-boundary-mountain-disposal.html</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.fudosan-recycle.com/column/bubble-genya-disposal.html</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.fudosan-recycle.com/column/forest-tax-and-regulations.html</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.fudosan-recycle.com/column/blind-land-disposal.html</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.fudosan-recycle.com/column/cliff-land-disposal.html</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.fudosan-recycle.com/column/private-road-consent-issue.html</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.fudosan-recycle.com/column/illegal-construction-disposal.html</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.fudosan-recycle.com/column/resort-land-maintenance-fees.html</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.fudosan-recycle.com/column/stigmatized-property-disposal.html</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.fudosan-recycle.com/column/co-ownership-share-disposal.html</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.fudosan-recycle.com/column/cemetery-land-inheritance.html</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.fudosan-recycle.com/column/vacant-house-bank-unsold.html</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.fudosan-recycle.com/column/proximity-nuisance-facility.html</loc>
     <priority>0.7</priority>
   </url>
 </urlset>
