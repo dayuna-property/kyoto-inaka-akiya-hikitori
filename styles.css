@@ -337,54 +337,43 @@ h1, h2, h3, h4 {
 }
 
 @media (max-width: 768px) {
-    /* モバイルヘッダー設定 */
+    /* モバイルヘッダー設定 (サブリンクがある場合は自動的に2段になるよう :has に依存せず実装) */
     .site-header {
-        height: 70px !important;
-        min-height: auto !important;
-        padding: 0 !important;
+        height: auto !important;
+        min-height: 70px !important;
+        padding: 0.5rem 0 !important;
     }
     
     .header-container {
         flex-direction: row !important;
+        flex-wrap: wrap !important;
         align-items: center !important;
         justify-content: space-between !important;
         position: relative !important;
         padding: 0 1rem !important;
     }
     
-    /* カテゴリやエリア等のサブナビがあるページのみ2段組みにする */
-    .site-header:has(.sub-link-akiya),
-    .site-header:has(.sub-link-sanrin),
-    .site-header:has(.sub-link-area) {
-        height: auto !important;
-        min-height: 90px !important;
-        padding: 0.5rem 0 !important;
-    }
-    
-    .site-header:has(.sub-link-akiya) .header-container,
-    .site-header:has(.sub-link-sanrin) .header-container,
-    .site-header:has(.sub-link-area) .header-container {
-        flex-direction: column !important;
-        align-items: flex-start !important;
-        gap: 0.5rem !important;
-        height: auto !important;
+    .logo {
+        max-width: calc(100% - 60px) !important;
     }
     
     .hamburger-menu {
         position: absolute !important;
-        top: 18px !important;
+        top: 22px !important; /* パディング追加に伴う位置調整 */
         right: 1rem !important;
     }
     
     .header-sub-links {
         margin-left: 0 !important;
         margin-right: 0 !important;
+        margin-top: 0.5rem !important;
         width: 100% !important;
         max-width: none !important;
         justify-content: center !important;
         overflow-x: visible !important;
         flex-wrap: wrap !important;
         gap: 0.4rem !important;
+        order: 2 !important; /* 下段に配置 */
     }
     
     .sub-link-btn {
@@ -4304,5 +4293,229 @@ svg.recycle-scheme-img {
         opacity: 1;
         transition: opacity 0.3s ease;
     }
+}
+
+/* ==========================================================================
+   23. コラムページ スマホ・タブレット用レスポンシブ調整 (見切れ・崩れ対策)
+   ========================================================================== */
+@media (max-width: 1024px) {
+    /* 1024px以下のすべてのモバイル・タブレットでヘッダーサブリンクを安全に折り返し、見切れを防ぐ */
+    .site-header {
+        height: auto !important;
+        min-height: 70px !important;
+        padding: 0.5rem 0 !important;
+    }
+    
+    .header-container {
+        flex-direction: row !important;
+        flex-wrap: wrap !important;
+        align-items: center !important;
+        justify-content: space-between !important;
+        position: relative !important;
+        padding: 0 1rem !important;
+    }
+    
+    .logo {
+        max-width: calc(100% - 60px) !important;
+    }
+    
+    .hamburger-menu {
+        position: absolute !important;
+        top: 22px !important; /* パディング分を考慮した縦中央寄せ */
+        right: 1rem !important;
+    }
+    
+    .header-sub-links {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        margin-top: 0.5rem !important;
+        width: 100% !important;
+        max-width: none !important;
+        justify-content: center !important;
+        overflow-x: visible !important;
+        flex-wrap: wrap !important;
+        gap: 0.4rem !important;
+        order: 2 !important; /* ロゴの下段に配置 */
+    }
+    
+    .sub-link-btn {
+        padding: 0.225rem 0.6rem !important;
+        font-size: 0.75rem !important;
+    }
+    
+    .sub-link-area {
+        padding: 0.2rem 0.5rem !important;
+        font-size: 0.75rem !important;
+    }
+}
+
+@media (max-width: 991px) {
+    /* コラムレイアウトが1カラム（タブレット・大画面スマホ）になるタイミングでの最適化 */
+    main .column-hero {
+        padding: 3rem 1.5rem 2rem !important;
+    }
+    
+    main .column-title {
+        font-size: 1.6rem !important;
+        line-height: 1.4 !important;
+        margin-bottom: 1rem !important;
+    }
+    
+    main .column-layout {
+        margin: 1.5rem auto !important;
+        padding: 0 1rem !important;
+        gap: 1.5rem !important;
+        grid-template-columns: minmax(0, 1fr) !important; /* テーブル等のはみ出しによるレイアウト崩れ防止 */
+    }
+    
+    /* コラム本文カードの余白調整 */
+    main .column-body {
+        padding: 2rem 1.5rem !important;
+        border-radius: 12px !important;
+        min-width: 0 !important; /* テーブル等のはみ出しによるレイアウト崩れ防止 */
+    }
+    
+    main .column-body p {
+        font-size: 1rem !important;
+    }
+    
+    main .column-body h2 {
+        font-size: 1.35rem !important;
+    }
+    
+    main .column-body h3 {
+        font-size: 1.15rem !important;
+    }
+}
+
+@media (max-width: 768px) {
+    /* 中型・小型スマホ表示でのさらなる最適化 */
+    main .column-hero {
+        padding: 2.5rem 1rem 2rem !important;
+    }
+    
+    main .column-title {
+        font-size: 1.4rem !important;
+    }
+    
+    main .column-layout {
+        padding: 0 0.5rem !important;
+        grid-template-columns: minmax(0, 1fr) !important; /* はみ出し防止 */
+    }
+    
+    /* スマホ幅では padding をさらに狭くして文字エリアを確保（見切れ対策） */
+    main .column-body {
+        padding: 1.5rem 1rem !important;
+        border-radius: 8px !important;
+        min-width: 0 !important; /* はみ出し防止 */
+    }
+    
+    main .column-body p {
+        font-size: 0.95rem !important;
+        line-height: 1.7 !important;
+        margin-bottom: 1.2rem !important;
+    }
+    
+    main .column-body h2 {
+        font-size: 1.25rem !important;
+        margin: 2rem 0 1rem !important;
+        padding-left: 0.75rem !important;
+    }
+    
+    main .column-body h3 {
+        font-size: 1.1rem !important;
+    }
+    
+    main .toc-box {
+        padding: 1rem !important;
+        margin-bottom: 1.5rem !important;
+    }
+    
+    main .toc-list li a {
+        font-size: 0.85rem !important;
+    }
+    
+    main .info-box {
+        padding: 1rem !important;
+        margin: 1.5rem 0 !important;
+    }
+    
+    main .body-cta-box {
+        padding: 1.5rem 1rem !important;
+        margin: 2rem 0 !important;
+    }
+    
+    main .body-cta-title {
+        font-size: 1.1rem !important;
+    }
+    
+    main .body-cta-btn {
+        padding: 0.7rem 1.5rem !important;
+        font-size: 0.85rem !important;
+    }
+    
+    main .sidebar-widget {
+        padding: 1.5rem 1rem !important;
+    }
+    
+    main .breadcrumb {
+        padding: 0 0.5rem !important;
+        font-size: 0.75rem !important;
+        word-break: break-all !important;
+    }
+}
+
+@media (max-width: 480px) {
+    /* 375pxなどの極小スマホでの表示崩れ防止 */
+    main .column-layout {
+        padding: 0 0.25rem !important;
+        grid-template-columns: minmax(0, 1fr) !important; /* はみ出し防止 */
+    }
+    
+    main .column-body {
+        padding: 1.25rem 0.75rem !important;
+        min-width: 0 !important; /* はみ出し防止 */
+    }
+}
+
+/* ==========================================================================
+   25. 比較コラム（5社比較表）のニュートラルなストライプ背景スタイル
+   ========================================================================== */
+.comparison-table {
+    border-collapse: collapse !important;
+    width: 100% !important;
+}
+
+.comparison-table th, .comparison-table td {
+    border: 1px solid #e2e8f0 !important; /* 目立ちすぎず洗練された淡いグレー境界線 */
+    padding: 1.2rem 1rem !important;
+}
+
+/* 奇数行の背景 */
+.comparison-table tbody tr:nth-child(odd) {
+    background-color: #ffffff !important;
+}
+
+/* 偶数行に微細なグレー背景（ストライプ）を適用して可読性を向上 */
+.comparison-table tbody tr:nth-child(even) {
+    background-color: #f7fafc !important; /* 微細な薄いブルーグレー */
+}
+
+/* ホバー時の視認性向上 */
+.comparison-table tbody tr:hover {
+    background-color: #f0f4f8 !important;
+}
+
+/* ==========================================================================
+   26. テーブルレスポンシブ（スマホ表示時の横スクロール対応）
+   ========================================================================== */
+.table-responsive {
+    width: 100% !important;
+    overflow-x: auto !important;
+    -webkit-overflow-scrolling: touch !important;
+    margin-bottom: 2rem !important;
+}
+.table-responsive table {
+    min-width: 768px !important;
 }
 
