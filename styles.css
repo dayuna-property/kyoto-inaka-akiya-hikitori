@@ -392,14 +392,25 @@ h1, h2, h3, h4 {
 }
 
 .btn-header-cta {
-    padding: 0.5rem clamp(0.75rem, 1vw, 1.25rem);
-    font-size: clamp(0.8rem, 0.85vw, 0.875rem);
-    background-color: var(--color-primary);
-    color: var(--color-bg-white);
+    padding: 0.55rem clamp(0.85rem, 1.2vw, 1.35rem) !important;
+    font-size: clamp(0.825rem, 0.9vw, 0.925rem) !important;
+    background-color: #06c755 !important;
+    color: #ffffff !important;
     white-space: nowrap;
+    border-radius: 50px !important;
+    font-weight: 700 !important;
+    box-shadow: 0 4px 12px rgba(6, 199, 85, 0.4) !important;
+    transition: all 0.3s ease !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 0.4rem !important;
+    text-decoration: none !important;
 }
 .btn-header-cta:hover {
-    background-color: var(--color-primary-light);
+    background-color: #05b34c !important;
+    color: #ffffff !important;
+    transform: translateY(-2px) !important;
+    box-shadow: 0 6px 18px rgba(6, 199, 85, 0.55) !important;
 }
 
 /* 6. ヒーローセクション */
@@ -4351,8 +4362,8 @@ svg.recycle-scheme-img {
 
 @media (max-width: 991px) {
     /* コラムレイアウトが1カラム（タブレット・大画面スマホ）になるタイミングでの最適化 */
-    main .column-hero {
-        padding: 3rem 1.5rem 2rem !important;
+    main .column-hero, main .archive-hero {
+        padding: 7rem 1.5rem 2.5rem !important;
     }
     
     main .column-title {
@@ -4390,8 +4401,8 @@ svg.recycle-scheme-img {
 
 @media (max-width: 768px) {
     /* 中型・小型スマホ表示でのさらなる最適化 */
-    main .column-hero {
-        padding: 2.5rem 1rem 2rem !important;
+    main .column-hero, main .archive-hero {
+        padding: 6.5rem 1rem 2rem !important;
     }
     
     main .column-title {
@@ -4518,4 +4529,272 @@ svg.recycle-scheme-img {
 .table-responsive table {
     min-width: 768px !important;
 }
+
+/* ==========================================================================
+   27. コラム用「負動産リサイクルセンター」詳細認知・誘導パーツ
+   ========================================================================== */
+
+/* ヘッダーサブリンク：当センターとは */
+.sub-link-about {
+    background-color: var(--color-primary-light, #2d6a4f) !important;
+    color: #ffffff !important;
+}
+.sub-link-about:hover {
+    background-color: var(--color-primary-dark, #1b4332) !important;
+    color: #ffffff !important;
+}
+
+/* 記事本文末尾：「負動産リサイクルセンターとは？」紹介ミニカード */
+.about-center-card {
+    background: linear-gradient(135deg, #f0f7f4 0%, #e8f3ee 100%);
+    border: 2px solid var(--color-primary-light, #2d6a4f);
+    border-radius: 12px;
+    padding: 2rem;
+    margin: 2.5rem 0;
+    box-shadow: 0 4px 15px rgba(27, 67, 50, 0.08);
+}
+
+.about-center-header {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--color-primary-dark, #1b4332);
+    margin-bottom: 1rem;
+    border-bottom: 2px solid rgba(45, 106, 79, 0.2);
+    padding-bottom: 0.75rem;
+}
+
+.about-center-header i {
+    color: var(--color-accent, #e76f51);
+    font-size: 1.4rem;
+}
+
+.about-center-desc {
+    font-size: 0.98rem;
+    line-height: 1.7;
+    color: #2b3a33;
+    margin-bottom: 1.25rem;
+}
+
+.about-center-features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem 1.5rem;
+    margin-bottom: 1.5rem;
+    background: #ffffff;
+    padding: 1rem 1.25rem;
+    border-radius: 8px;
+    border: 1px dashed rgba(45, 106, 79, 0.3);
+}
+
+.about-center-features span {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--color-primary-dark, #1b4332);
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+.about-center-features span i {
+    color: #27ae60;
+}
+
+.about-center-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    width: 100%;
+    background-color: var(--color-primary-dark, #1b4332);
+    color: #ffffff !important;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1rem;
+    padding: 0.9rem 1.5rem;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(27, 67, 50, 0.2);
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.about-center-btn:hover {
+    background-color: var(--color-primary, #2d6a4f);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(27, 67, 50, 0.3);
+}
+
+/* 本文末尾ダブルCTAボックス */
+.body-cta-box {
+    background: linear-gradient(135deg, #1b4332 0%, #2d6a4f 100%);
+    color: #ffffff;
+    padding: 2.5rem 2rem;
+    border-radius: 12px;
+    margin: 3rem 0;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.body-cta-title {
+    font-size: 1.35rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    line-height: 1.4;
+    color: #ffffff;
+}
+
+.body-cta-box p {
+    font-size: 0.95rem;
+    line-height: 1.7;
+    margin-bottom: 1.75rem;
+    color: rgba(255, 255, 255, 0.95);
+}
+
+.body-cta-actions {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.body-cta-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 1rem 1.75rem;
+    font-size: 1rem;
+    font-weight: 700;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    min-width: 240px;
+    box-sizing: border-box;
+}
+
+.body-cta-btn.line-btn {
+    background-color: #06c755;
+    color: #ffffff !important;
+    box-shadow: 0 4px 15px rgba(6, 199, 85, 0.4);
+}
+
+.body-cta-btn.line-btn:hover {
+    background-color: #05b34c;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(6, 199, 85, 0.5);
+}
+
+.body-cta-btn.info-btn {
+    background-color: var(--color-accent, #e76f51);
+    color: #ffffff !important;
+    box-shadow: 0 4px 15px rgba(231, 111, 81, 0.4);
+}
+
+.body-cta-btn.info-btn:hover {
+    background-color: #d95d3f;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(231, 111, 81, 0.5);
+}
+
+/* サイドバー「負動産リサイクルセンターとは」カード */
+.sidebar-about-widget {
+    background: #ffffff;
+    border: 2px solid var(--color-primary-light, #2d6a4f);
+    border-radius: 12px;
+    padding: 1.75rem 1.25rem;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.sidebar-about-widget .sidebar-widget-title {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--color-primary-dark, #1b4332);
+    border-bottom: 2px solid var(--color-accent, #e76f51);
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.sidebar-about-text {
+    font-size: 0.9rem;
+    line-height: 1.65;
+    color: #444;
+    margin-bottom: 1.25rem;
+}
+
+.sidebar-about-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    background-color: var(--color-primary-dark, #1b4332);
+    color: #ffffff !important;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 0.9rem;
+    padding: 0.75rem 1rem;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.sidebar-about-btn:hover {
+    background-color: var(--color-accent, #e76f51);
+    transform: translateY(-1px);
+}
+
+/* モバイル対応（768px以下） */
+@media (max-width: 768px) {
+    .about-center-card {
+        padding: 1.5rem 1.25rem !important;
+        margin: 2rem 0 !important;
+    }
+    
+    .about-center-header {
+        font-size: 1.1rem !important;
+    }
+    
+    .about-center-desc {
+        font-size: 0.9rem !important;
+    }
+    
+    .about-center-features {
+        flex-direction: column !important;
+        gap: 0.5rem !important;
+        padding: 0.85rem 1rem !important;
+    }
+    
+    .about-center-btn {
+        font-size: 0.9rem !important;
+        padding: 0.85rem 1rem !important;
+    }
+    
+    .body-cta-box {
+        padding: 2rem 1.25rem !important;
+    }
+    
+    .body-cta-title {
+        font-size: 1.15rem !important;
+    }
+    
+    .body-cta-actions {
+        flex-direction: column !important;
+        width: 100% !important;
+    }
+    
+    .body-cta-btn {
+        width: 100% !important;
+        min-width: 0 !important;
+        font-size: 0.9rem !important;
+        padding: 0.85rem 1rem !important;
+    }
+}
+
 
