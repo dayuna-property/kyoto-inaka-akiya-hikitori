@@ -182,6 +182,24 @@ h1, h2, h3, h4 {
     color: var(--color-primary);
     white-space: nowrap;
     flex-shrink: 0;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.logo-img {
+    height: 40px;
+    width: auto;
+    max-width: 260px;
+    object-fit: contain;
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .logo-img {
+        height: 32px;
+        max-width: 190px;
+    }
 }
 
 .logo-accent {
@@ -411,6 +429,90 @@ h1, h2, h3, h4 {
     color: #ffffff !important;
     transform: translateY(-2px) !important;
     box-shadow: 0 6px 18px rgba(6, 199, 85, 0.55) !important;
+}
+
+.btn-header-cta-img-wrap {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.btn-header-cta-img-wrap:hover {
+    transform: translateY(-2px);
+    opacity: 0.95;
+}
+
+.btn-header-cta-img {
+    height: 42px;
+    width: auto;
+    max-width: 175px;
+    object-fit: contain;
+    display: block;
+    border-radius: 6px;
+}
+
+@media (max-width: 768px) {
+    .btn-header-cta-img {
+        height: 36px;
+        max-width: 145px;
+    }
+}
+
+/* visually-hidden (アクセシビリティ・SEO用非表示) */
+.visually-hidden {
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    padding: 0 !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    clip: rect(0, 0, 0, 0) !important;
+    white-space: nowrap !important;
+    border: 0 !important;
+}
+
+/* 6-B. 新トップビュー（画像流用ファーストビュー構成） */
+.hero-fv-section {
+    padding-top: 70px; /* 固定ヘッダー（70px）の下に配置 */
+    padding-bottom: 0;
+    background-color: #f7faf8;
+    position: relative;
+    width: 100%;
+}
+
+.hero-fv-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    background-color: #ffffff;
+}
+
+.fv-image-link {
+    display: block;
+    width: 100%;
+    position: relative;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.fv-banner-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: contain;
+    transition: opacity 0.2s ease;
+}
+
+.fv-image-link:hover .fv-banner-img {
+    opacity: 0.96;
+}
+
+@media (max-width: 768px) {
+    .hero-fv-section {
+        padding-top: 60px; /* スマホ用ヘッダー高さに合わせる */
+    }
 }
 
 /* 6. ヒーローセクション */
