@@ -1,10 +1,21 @@
 /* ==========================================================================
-   莠ｬ驛ｽ蛹鈴Κ 雋�蜍慕肇譛画侭蠑輔″蜿悶ｊ繧ｵ繝ｼ繝薙せLP - 繧､繝ｳ繧ｿ繝ｩ繧ｯ繧ｷ繝ｧ繝ｳJS
+   莠ｬ驛ｽ蛹鈴Κ 雋蜍慕肇譛画侭蠑輔″蜿悶ｊ繧ｵ繝ｼ繝薙せLP - 繧､繝ｳ繧ｿ繝ｩ繧ｯ繧ｷ繝ｧ繝ｳJS
    ========================================================================== */
 
 document.addEventListener('DOMContentLoaded', () => {
 
-    // 1. 繧ｹ繧ｯ繝ｭ繝ｼ繝ｫ譎ゅ�縺ｵ繧上▲縺ｨ繝輔ぉ繝ｼ繝峨う繝ｳ陦ｨ遉ｺ (Intersection Observer)
+    // 0. 固定ヘッダー高さの動的計算（スマホ等でトップビュー画像がヘッダーに隠れるのを防止）
+    const siteHeader = document.querySelector('.site-header');
+    function updateHeaderHeight() {
+        if (siteHeader) {
+            const headerHeight = siteHeader.offsetHeight;
+            document.documentElement.style.setProperty('--header-height', `${headerHeight}px`);
+        }
+    }
+    updateHeaderHeight();
+    window.addEventListener('resize', updateHeaderHeight);
+
+    // 1. 繧ｹ繧ｯ繝ｭ繝ｼ繝ｫ譎ゅ縺ｵ繧上▲縺ｨ繝輔ぉ繝ｼ繝峨う繝ｳ陦ｨ遉ｺ (Intersection Observer)
     const revealElements = document.querySelectorAll('.reveal');
     
     if ('IntersectionObserver' in window) {

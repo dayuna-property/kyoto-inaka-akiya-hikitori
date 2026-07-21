@@ -474,7 +474,7 @@ h1, h2, h3, h4 {
 
 /* 6-B. 新トップビュー（画像流用ファーストビュー構成） */
 .hero-fv-section {
-    padding-top: 70px; /* 固定ヘッダー（70px）の下に配置 */
+    padding-top: var(--header-height, 75px); /* 固定ヘッダー（75px）の下に配置 */
     padding-bottom: 0;
     background-color: #f7faf8;
     position: relative;
@@ -511,9 +511,16 @@ h1, h2, h3, h4 {
 
 @media (max-width: 768px) {
     .hero-fv-section {
-        padding-top: 60px; /* スマホ用ヘッダー高さに合わせる */
+        padding-top: var(--header-height, 100px); /* スマホ用ヘッダー高さに合わせる */
     }
 }
+
+@media (max-width: 480px) {
+    .hero-fv-section {
+        padding-top: var(--header-height, 110px); /* 小型スマホでヘッダー要素が折り返された場合の調整 */
+    }
+}
+
 
 /* 6. ヒーローセクション */
 .hero-section {
