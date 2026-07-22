@@ -248,9 +248,17 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // 6. フローティングLINEボタンの表示（常に表示）
+    // 6. フローティングLINEボタンの表示（スクロール時に表示）
     const floatingCta = document.querySelector('.floating-line-cta');
     if (floatingCta) {
-        floatingCta.classList.add('visible');
+        const handleScroll = () => {
+            if (window.scrollY > 200) {
+                floatingCta.classList.add('visible');
+            } else {
+                floatingCta.classList.remove('visible');
+            }
+        };
+        window.addEventListener('scroll', handleScroll);
+        handleScroll(); // 初期状態の判定
     }
 });
