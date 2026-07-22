@@ -526,7 +526,7 @@ h1, h2, h3, h4 {
     margin: 0 auto;
     position: relative;
     padding: clamp(2.5rem, 5.4vw, 5.5rem) max(2rem, calc((100vw - 1350px) / 2)) clamp(1.8rem, 5.3vw, 5rem);
-    background: url('images/lp-html-assets-v2/hero-background.png') center center / cover no-repeat;
+    background: url('images/lp-html-assets-v2/hero-background.webp') center center / cover no-repeat;
     overflow: hidden;
 }
 
