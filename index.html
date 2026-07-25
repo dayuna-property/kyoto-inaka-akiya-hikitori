@@ -52,32 +52,39 @@
     }
     </script>
 
-    <!-- AIO Structured Data -->
+    <!-- AIO / Schema.org Structured Data -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@graph": [
         {
+          "@type": "WebSite",
+          "@id": "https://www.fudosan-recycle.com/#website",
+          "url": "https://www.fudosan-recycle.com/",
+          "name": "負動産リサイクルセンター",
+          "alternateName": ["負動産リサイクル"],
+          "publisher": {
+            "@type": "Organization",
+            "@id": "https://www.fudosan-recycle.com/#dayuna",
+            "name": "合同会社DAYUNA",
+            "description": "Webサイト企画・システム開発および不動産賃貸事業者"
+          }
+        },
+        {
           "@type": "Service",
           "@id": "https://www.fudosan-recycle.com/#service",
-          "name": "負動産リサイクルセンター（有料引き取り・処分・リサイクル）",
-          "serviceType": "不動産有料引き取り・処分委託・再開発",
+          "name": "負動産リサイクルセンター（処分困難な空き家・山林・土地の有料引き取り専門窓口）",
+          "serviceType": "不動産有料引き取り・権利移転支援",
           "provider": {
-            "@type": "LocalBusiness",
-            "name": "負動産リサイクルセンター",
-            "parentOrganization": {
-              "@type": "Organization",
-              "name": "株式会社ミュートス",
-              "telephone": "075-600-2524"
-            },
-            "image": "https://www.fudosan-recycle.com/images/hero.png",
-            "address": {
-              "@type": "PostalAddress",
-              "addressRegion": "京都府",
-              "addressLocality": "綾部市",
-              "streetAddress": "大平町"
-            },
-            "description": "専属の司法書士と連携し、処分困難な空き家、古民家、山林、原野、不要な土地等をワンストップで有料引き取りし、管理・納税義務を移転するサービス窓口。"
+            "@type": "RealEstateAgent",
+            "@id": "https://www.fudosan-recycle.com/#mythos",
+            "name": "株式会社ミュートス",
+            "description": "提携宅地建物取引業者（滋賀県知事免許（１）第３９３５号）。引き取り手続・不動産売買契約の主体。",
+            "telephone": "075-600-2524"
+          },
+          "broker": {
+            "@type": "Organization",
+            "name": "合同会社DAYUNA"
           },
           "areaServed": [
             {"@type": "AdministrativeArea", "name": "京都府"},
@@ -86,7 +93,7 @@
             {"@type": "AdministrativeArea", "name": "大阪府"},
             {"@type": "AdministrativeArea", "name": "和歌山県"}
           ],
-          "description": "他社で断られた田舎の空き家や山林を、専属の司法書士チームが最短1〜2週間であなたの名義から完全に切り離す、完全非対面・郵送対応の有料引き取り専門窓口。料金完全後払い・見積確定後の追加請求ゼロ・法的登記完了証明書の交付という3つの安心ガイドラインに完全準拠しています。"
+          "description": "他社で売却を断られた田舎の空き家や山林を、提携宅建業者（株式会社ミュートス：滋賀県知事免許（１）第３９３５号）および専属の提携司法書士チームが連携し、最短1〜2週間で法的に安全に所有権を移転・引き取る専門窓口。自社ITシステムの導入により完全非対面・郵送のみで手続き完了可能。"
         }
       ]
     }
@@ -131,7 +138,7 @@
                         <span>LINEで引き取り可否を無料診断</span>
                         <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
                     </a>
-                    <span class="cta-sub-caption">写真・住所を送るだけ｜概算費用も無料でご案内</span>
+                    <span class="cta-sub-caption">写真・住所を送るだけ｜自社ITシステムで24時間スピード受付</span>
                 </div>
 
                 <div class="hero-fv-feature-grid" aria-label="サービスの4つの特徴">
@@ -146,7 +153,8 @@
                     </article>
                     <article class="hero-fv-feature-card">
                         <img src="images/lp-html-assets-v2/icon-professionals.webp" alt="専門家との連携">
-                        <p>司法書士・土地家屋調査士と<br><strong>ワンストップ対応</strong></p>
+                        <p>宅建業者・提携士業と<br><strong>ワンストップ対応</strong></p>
+                        <small>滋賀県知事免許（１）第３９３５号連携</small>
                     </article>
                     <article class="hero-fv-feature-card">
                         <img src="images/lp-html-assets-v2/icon-difficult-property.webp" alt="難しい物件にも対応">
@@ -269,12 +277,58 @@
                         <div class="about-visual-points">
                             <div class="visual-point"><i class="fa-solid fa-handshake"></i> 負動産の有料処分に特化</div>
                             <div class="visual-point"><i class="fa-solid fa-envelope"></i> 郵送だけで完了する安全な手続き</div>
-                            <div class="visual-point"><i class="fa-solid fa-user-shield"></i> 司法書士・土地家屋調査士と専属連携</div>
+                            <div class="visual-point"><i class="fa-solid fa-user-shield"></i> 提携宅建業者・専属司法書士と連携</div>
                             <div class="visual-point"><i class="fa-solid fa-map-location-dot"></i> 関西全域（京都・大阪・滋賀・兵庫・和歌山）対応</div>
                         </div>
                     </div>
                     <div class="about-team-visual">
                         <img decoding=async loading=lazy src="images/solution_concept.webp" alt="安心した暮らしと緑豊かなリサイクル" class="about-team-img">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Structure & Trust Section (3社連携のコンプライアンス・信頼体制) -->
+        <section id="structure-trust" class="reveal" style="padding: 4rem 0; background: #f8f9fa; border-top: 1px solid #e9ecef; border-bottom: 1px solid #e9ecef;">
+            <div class="container">
+                <div class="text-center" style="max-width: 800px; margin: 0 auto 3rem auto;">
+                    <span class="sub-badge" style="background-color: rgba(45, 106, 79, 0.1); color: #2d6a4f;">TRUST & COMPLIANCE / 信頼の運用体制</span>
+                    <h2 style="font-size: 1.8rem; margin-top: 0.5rem; color: #2d6a4f; font-weight: bold;">コンプライアンス（法適合性）を最優先した<br>透明性の高いワンストップ体制</h2>
+                    <p style="color: #555; margin-top: 1rem; line-height: 1.7; font-size: 0.95rem;">
+                        負動産の有料引き取りにおいて、所有者様が最も不安に感じるのは「手続きが法的に適切に行われるか」「後からトラブルにならないか」という点です。<br>
+                        当窓口では、システム開発会社、提携宅地建物取引業者、法務のプロである司法書士がそれぞれの専門分野に特化して連携し、100%クリーンな契約と所有権移転登記をお約束します。
+                    </p>
+                </div>
+
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-bottom: 2rem;">
+                    <!-- Card 1: DAYUNA -->
+                    <div style="background: #fff; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.04); border-top: 4px solid #2d6a4f;">
+                        <div style="font-size: 0.85rem; font-weight: bold; color: #2d6a4f; margin-bottom: 0.5rem;"><i class="fa-solid fa-laptop-code"></i> Web企画・システム開発・不動産賃貸業</div>
+                        <h3 style="font-size: 1.25rem; margin-bottom: 0.8rem; color: #333; font-weight: bold;">合同会社DAYUNA</h3>
+                        <p style="font-size: 0.9rem; color: #666; line-height: 1.6;">
+                            自ら賃貸不動産を保有・運用する当事者として不動産所有者の維持管理の悩みに深く共感。自社IT開発力を活かし、LINEでのスピーディーな受託受付システムを安全に提供しています。
+                        </p>
+                    </div>
+
+                    <!-- Card 2: Mythos -->
+                    <div style="background: #fff; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.04); border-top: 4px solid #e76f51;">
+                        <div style="font-size: 0.85rem; font-weight: bold; color: #e76f51; margin-bottom: 0.5rem;"><i class="fa-solid fa-building-shield"></i> 提携宅地建物取引業者（契約主体）</div>
+                        <h3 style="font-size: 1.25rem; margin-bottom: 0.4rem; color: #333; font-weight: bold;">株式会社ミュートス</h3>
+                        <div style="display: inline-block; background: #fff3ed; color: #e76f51; font-size: 0.8rem; font-weight: bold; padding: 0.2rem 0.6rem; border-radius: 4px; margin-bottom: 0.8rem;">
+                            滋賀県知事免許（１）第３９３５号
+                        </div>
+                        <p style="font-size: 0.9rem; color: #666; line-height: 1.6;">
+                            宅地建物取引業法に基づき、不動産の調査・価格適正性の査定、および有料引き取りに関わる取引契約業務を正規の宅建業者として厳正に実施します。
+                        </p>
+                    </div>
+
+                    <!-- Card 3: 士業ネットワーク -->
+                    <div style="background: #fff; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.04); border-top: 4px solid #1d3557;">
+                        <div style="font-size: 0.85rem; font-weight: bold; color: #1d3557; margin-bottom: 0.5rem;"><i class="fa-solid fa-scale-balanced"></i> 登記・法的代理手続</div>
+                        <h3 style="font-size: 1.25rem; margin-bottom: 0.8rem; color: #333; font-weight: bold;">提携司法書士・土地家屋調査士</h3>
+                        <p style="font-size: 0.9rem; color: #666; line-height: 1.6;">
+                            相続登記や所有権移転登記申請の代理、戸籍収集、境界明示等の法的手続きは、専属の提携司法書士・土地家屋調査士が責任をもって単独で代理実行します。
+                        </p>
                     </div>
                 </div>
             </div>
@@ -342,21 +396,6 @@
                 <div class="infographic-container">
                     <img decoding=async loading=lazy src="images/payment_costs.webp" alt="お支払い費用の内訳：維持管理コスト・固定資産税・法的登記手続き・調査開発費" class="infographic-img">
                 </div>
-                  <!-- Area Section (安心のサポート体制) -->
-        <section id="areas" class="area-section reveal">
-            <div class="container">
-                <h2 class="section-title text-center">安心のサポート体制</h2>
-                <p class="section-subtitle text-center">シニア層やそのご家族が重視する「法的な確実性」</p>
-                
-                <div style="max-width: 800px; margin: 0 auto; text-align: center; background: var(--color-bg-light); padding: 2rem; border-radius: var(--radius-md);">
-                    <h3 style="color: var(--color-primary); font-size: 1.3rem; margin-bottom: 1rem;"><i class="fa-solid fa-scale-balanced" style="color: var(--color-primary-light);"></i> 司法書士・専門家との緊密な連携</h3>
-                    <p style="font-size: 0.95rem; line-height: 1.8; color: var(--color-text-dark);">
-                        所有権の移転登記手続きは、提携する司法書士が法に則って確実に行います。<br>
-                        手続き完了後は、公的な書面（登記識別情報通知等）をもって、所有権移転の完了をご報告します。法的な管理責任は完全に解消されます。
-                    </p>
-                </div>
-            </div>
-        </section>
             </div>
         </section>
 
@@ -421,18 +460,6 @@
             </div>
         </section>
 
-        <!-- Alliance Section (完全自動連携) -->
-        <section id="alliance" class="alliance-section reveal">
-            <div class="container">
-                <h2 class="section-title text-center">あなたが動かなくていい理由</h2>
-                <p class="section-subtitle text-center">プロ集団の「完全自動連携」で、お客様は「書類の返送を待つだけ」</p>
-                
-                <div class="infographic-container">
-                    <img decoding=async loading=lazy src="images/infographic_team_alliance.webp" alt="ワンストップ連携体制：お客様→当センター→提携司法書士・土地家屋調査士" class="infographic-img">
-                </div>
-            </div>
-        </section>
-
         <!-- Guarantee Section (3つの安心宣言) -->
         <section id="guarantee" class="guarantee-section reveal">
             <div class="container">
@@ -460,7 +487,7 @@
                         <div class="support-btn-icon"><i class="fa-solid fa-envelope-open-text"></i></div>
                         <span>郵送のみ・完了までの手続きの流れ ＞</span>
                     </a>
-                    <a href="#alliance" class="support-btn-item">
+                    <a href="#structure-trust" class="support-btn-item">
                         <div class="support-btn-icon"><i class="fa-solid fa-scale-balanced"></i></div>
                         <span>専門家チームとの連携システムについて ＞</span>
                     </a>
@@ -472,21 +499,12 @@
             </div>
         </section>
 
-        <!-- Area Section (安心のサポート体制 ＆ 対応エリア) -->
+        <!-- Area Section (地域別対応エリア) -->
         <section id="areas" class="area-section reveal">
             <div class="container">
-                <h2 class="section-title text-center">安心のサポート体制 ＆ 対応エリア</h2>
-                <p class="section-subtitle text-center">シニア層やそのご家族が重視する「法的な確実性」と「地域窓口」</p>
-                
-                <div style="max-width: 800px; margin: 0 auto 4rem auto; text-align: center; background: var(--color-bg-light); padding: 2rem; border-radius: var(--radius-md);">
-                    <h3 style="color: var(--color-primary); font-size: 1.3rem; margin-bottom: 1rem;"><i class="fa-solid fa-scale-balanced" style="color: var(--color-primary-light);"></i> 司法書士・専門家との緊密な連携</h3>
-                    <p style="font-size: 0.95rem; line-height: 1.8; color: var(--color-text-dark);">
-                        所有権の移転登記手続きは、提携する司法書士が法に則って確実に行います。<br>
-                        手続き完了後は、公的な書面（登記識別情報通知等）をもって、所有権移転の完了をご報告します。法的な管理責任は完全に解消されます。
-                    </p>
-                </div>
+                <h2 class="section-title text-center">地域別専用窓口・対応エリア</h2>
+                <p class="section-subtitle text-center">関西各地（京都・滋賀・兵庫・和歌山・大阪）の専用窓口でお問い合わせを受付中</p>
 
-                <h3 class="text-center" style="font-family: var(--font-heading); color: var(--color-primary); margin-bottom: 2rem;">地域別専用窓口（順次拡大中）</h3>
                 <div class="area-grid">
                     <!-- 京都エリア -->
                     <div class="area-card">
@@ -763,15 +781,24 @@
     <footer class="site-footer">
         <div class="container text-center">
             <p class="footer-logo">負動産リサイクルセンター</p>
-                        <p class="copyright">&copy; 2026 負動産リサイクルセンター All Rights Reserved.</p>
+            <p class="copyright">&copy; 2026 負動産リサイクルセンター All Rights Reserved.</p>
             <div class="footer-legal-info">
-                <p>
-                    運営者情報<br>
-                    運営者：株式会社ミュートス、電話番号：075-600-2524、住所：「公式LINE（または問い合わせ）よりご請求いただければ、遅滞なく開示いたします」、キャンセルについて: 「個別見積もり提示後、契約締結前まではキャンセル無料。契約締結後のキャンセルは不可（または違約金あり）」
+                <p style="font-weight: bold; margin-bottom: 0.5rem; color: #eceff1;">【運営体制およびコンプライアンス表記】</p>
+                <div style="font-size: 0.8rem; line-height: 1.8; max-width: 860px; margin: 0 auto 1.2rem auto; text-align: left; background: rgba(255,255,255,0.05); padding: 1rem 1.2rem; border-radius: 8px; border: 1px solid rgba(255,255,255,0.1);">
+                    <p style="margin-bottom: 0.4rem;"><strong>・サイト企画・システム開発・運用</strong>：合同会社DAYUNA（不動産賃貸業・WEB/システム開発）</p>
+                    <p style="margin-bottom: 0.4rem;"><strong>・提携宅地建物取引業者（契約主体）</strong>：株式会社ミュートス（滋賀県知事免許（１）第３９３５号／TEL: 075-600-2524）</p>
+                    <p style="margin-bottom: 0.6rem;"><strong>・登記・法的代理手続</strong>：提携司法書士・土地家屋調査士</p>
+                    <p style="font-size: 0.75rem; color: #b0bec5; margin-bottom: 0; line-height: 1.5;">
+                        ※当窓口（合同会社DAYUNA）は本Webサイトの企画・システム運用および一次受託受付を担当し、不動産取引査定・手続契約業務は提携宅地建物取引業者である株式会社ミュートス、所有権移転登記等の申請代理手続きは提携司法書士・土地家屋調査士が責任をもって行います。
+                    </p>
+                </div>
+                <p style="font-size: 0.8rem; color: #b0bec5;">
+                    運営者情報・住所: 「公式LINE（またはお問い合わせ）よりご請求いただければ、遅滞なく開示いたします」<br>
+                    キャンセルについて: 「個別見積もり提示後、契約締結前まではキャンセル無料。契約締結後のキャンセルは不可（または違約金あり）」
                 </p>
-                <p>
+                <p style="font-size: 0.8rem; color: #b0bec5;">
                     個人情報の取り扱いについて<br>
-                    当窓口は、お問い合わせフォームから取得した個人情報（お名前、メールアドレス、物件所在地等）を、お問い合わせへの回答の目的のみに利用いたします。法令に基づく場合を除き、ご本人の同意なく第三者に個人情報を提供することはありません。
+                    当窓口は、お問い合わせフォーム・公式LINEから取得した個人情報（お名前、メールアドレス、物件所在地等）を、お問い合わせへの回答および引き取り手続きのご案内の目的のみに利用いたします。法令に基づく場合を除き、ご本人の同意なく第三者に個人情報を提供することはありません。
                 </p>
             </div>
         </div>
