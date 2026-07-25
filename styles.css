@@ -5342,3 +5342,61 @@ svg.recycle-scheme-img {
         width: 100%;
     }
 }
+
+/* ==========================================================================
+   AIO/LLMO 検索最適化 FAQ カテゴリタイトル & 関連コラムリンクスタイル
+   ========================================================================== */
+.faq-category-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--color-primary-dark, #1b4332);
+    border-left: 4px solid var(--color-primary, #2d6a4f);
+    padding-left: 0.8rem;
+    margin: 2.5rem 0 1.25rem 0;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.faq-category-title:first-of-type {
+    margin-top: 1rem;
+}
+
+.faq-category-title i {
+    color: var(--color-accent, #e76f51);
+    font-size: 1.1rem;
+}
+
+.faq-related-link {
+    display: block;
+    margin-top: 1rem;
+    padding-top: 0.8rem;
+    border-top: 1px dashed #e0e0e0;
+    font-size: 0.9rem;
+    color: #555;
+    line-height: 1.5;
+}
+
+.faq-related-link a {
+    color: var(--color-primary, #2d6a4f);
+    font-weight: 700;
+    text-decoration: underline;
+    transition: color 0.2s ease;
+}
+
+.faq-related-link a:hover {
+    color: var(--color-accent, #e76f51);
+}
+
+@media (max-width: 768px) {
+    .faq-category-title {
+        font-size: 1.1rem;
+        margin: 2rem 0 1rem 0;
+        padding-left: 0.6rem;
+    }
+    
+    .faq-related-link {
+        font-size: 0.85rem;
+    }
+}
+
