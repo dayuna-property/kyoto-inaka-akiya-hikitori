@@ -5400,3 +5400,154 @@ svg.recycle-scheme-img {
     }
 }
 
+/* ==========================================================================
+   AIO / LLMO 検索最適化 コラム用スタイル（要約ボックス、フッタークラスター、タグ）
+   ========================================================================== */
+.aio-summary-box {
+    background: linear-gradient(135deg, rgba(45, 106, 79, 0.05) 0%, rgba(27, 67, 50, 0.1) 100%);
+    border: 1px solid rgba(45, 106, 79, 0.2);
+    border-left: 5px solid var(--color-primary, #2d6a4f);
+    border-radius: var(--radius-md, 8px);
+    padding: 1.5rem 1.8rem;
+    margin: 1.8rem 0 2.5rem 0;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+}
+
+.aio-summary-box .summary-title {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--color-primary-dark, #1b4332);
+    margin-bottom: 0.8rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.aio-summary-box .summary-title i {
+    color: var(--color-accent, #e76f51);
+    font-size: 1.2rem;
+}
+
+.aio-summary-box ul {
+    margin: 0;
+    padding-left: 1.2rem;
+    list-style-type: disc;
+}
+
+.aio-summary-box ul li {
+    font-size: 0.95rem;
+    line-height: 1.7;
+    color: #333;
+    margin-bottom: 0.4rem;
+}
+
+.aio-summary-box ul li:last-child {
+    margin-bottom: 0;
+}
+
+.column-footer-cluster {
+    margin-top: 3.5rem;
+    padding-top: 2rem;
+    border-top: 2px solid #eaeaea;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.related-faq-block, .related-column-block {
+    background-color: #fcfdfc;
+    border: 1px solid #e2e8f0;
+    border-radius: var(--radius-md, 8px);
+    padding: 1.5rem;
+}
+
+.related-faq-block h3, .related-column-block h3 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--color-primary-dark, #1b4332);
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.related-faq-block h3 i {
+    color: var(--color-accent, #e76f51);
+}
+
+.related-column-block h3 i {
+    color: var(--color-primary, #2d6a4f);
+}
+
+.related-faq-block p {
+    font-size: 0.95rem;
+    line-height: 1.7;
+    color: #444;
+    margin: 0;
+}
+
+.related-faq-block p a {
+    color: var(--color-primary, #2d6a4f);
+    font-weight: 700;
+    text-decoration: underline;
+    margin-top: 0.5rem;
+    display: inline-block;
+}
+
+.related-column-block ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+
+.related-column-block ul li a {
+    color: var(--color-primary, #2d6a4f);
+    font-weight: 600;
+    font-size: 0.95rem;
+    text-decoration: underline;
+    transition: color 0.2s ease;
+}
+
+.related-column-block ul li a:hover {
+    color: var(--color-accent, #e76f51);
+}
+
+.column-tag-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    margin-bottom: 0.8rem;
+}
+
+.column-tag {
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: #2d6a4f;
+    background-color: rgba(45, 106, 79, 0.08);
+    padding: 0.2rem 0.6rem;
+    border-radius: 50px;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.2rem;
+}
+
+.column-category-title-main {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--color-primary-dark, #1b4332);
+    border-bottom: 3px solid var(--color-primary, #2d6a4f);
+    padding-bottom: 0.6rem;
+    margin: 3.5rem 0 1.8rem 0;
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+}
+
+.column-category-title-main i {
+    color: var(--color-accent, #e76f51);
+}
+
+
