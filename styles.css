@@ -5550,4 +5550,70 @@ svg.recycle-scheme-img {
     color: var(--color-accent, #e76f51);
 }
 
+/* ヒーローヘッダー内（ダークグリーン背景）での視認性改善スタイル */
+.column-hero .column-tag-list {
+    justify-content: center;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.column-hero .column-tag {
+    color: #ffffff !important;
+    background-color: rgba(255, 255, 255, 0.18) !important;
+    border: 1px solid rgba(255, 255, 255, 0.35) !important;
+    font-size: 0.85rem !important;
+    padding: 0.25rem 0.8rem !important;
+    backdrop-filter: blur(4px);
+    transition: all 0.2s ease;
+}
+
+.column-hero .column-tag:hover {
+    background-color: rgba(255, 255, 255, 0.35) !important;
+    color: #ffffff !important;
+}
+
+.column-hero .aio-summary-box {
+    background: #ffffff !important;
+    border: 2px solid var(--color-accent, #e76f51) !important;
+    border-left: 6px solid var(--color-accent, #e76f51) !important;
+    border-radius: var(--radius-md, 12px) !important;
+    padding: 1.6rem 2rem !important;
+    margin: 2rem auto 1.5rem auto !important;
+    max-width: 850px !important;
+    text-align: left !important;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25) !important;
+}
+
+.column-hero .aio-summary-box .summary-title {
+    color: #1b4332 !important;
+    font-size: 1.2rem !important;
+    font-weight: 800 !important;
+    border-bottom: 2px solid #f0f0f0 !important;
+    padding-bottom: 0.6rem !important;
+    margin-bottom: 1rem !important;
+}
+
+.column-hero .aio-summary-box .summary-title i {
+    color: #e76f51 !important;
+}
+
+.column-hero .aio-summary-box ul {
+    margin: 0 !important;
+    padding-left: 1.2rem !important;
+}
+
+.column-hero .aio-summary-box ul li {
+    color: #2d3748 !important;
+    font-size: 0.98rem !important;
+    font-weight: 500 !important;
+    line-height: 1.7 !important;
+    margin-bottom: 0.6rem !important;
+}
+
+.column-hero .aio-summary-box ul li strong {
+    color: #1b4332 !important;
+    font-weight: 700 !important;
+}
+
+
 
