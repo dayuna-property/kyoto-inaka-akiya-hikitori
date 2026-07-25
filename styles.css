@@ -5227,3 +5227,118 @@ svg.recycle-scheme-img {
         margin-top: 0.4rem;
     }
 }
+
+/* インフォグラフィック 3社連携レスポンシブスタイル */
+.three-party-grid {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr auto 1fr;
+    gap: 0.6rem;
+    align-items: stretch;
+    margin-bottom: 1.5rem;
+    position: relative;
+}
+
+.step-arrow-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.3rem;
+    padding: 0 0.1rem;
+}
+
+.step-label {
+    font-size: 0.72rem;
+    font-weight: bold;
+    color: #004B24;
+    background: #EAF3EB;
+    border: 1px solid #C4E2CE;
+    padding: 0.15rem 0.55rem;
+    border-radius: 20px;
+    white-space: nowrap;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+.step-arrow-wrapper img {
+    max-width: 44px;
+    height: auto;
+    object-fit: contain;
+}
+
+.infographic-lower-grid {
+    display: grid;
+    grid-template-columns: 1fr 0.65fr 1.55fr;
+    gap: 1.2rem;
+    align-items: center;
+    background: #FAFDFB;
+    border-radius: 12px;
+    padding: 1.5rem 1.8rem;
+    border: 1px solid #E0EFE5;
+}
+
+/* 下向き合流コネクター (CSSレスポンシブ代替案) */
+.flow-down-connector {
+    margin: 1.5rem 0 2rem 0;
+    text-align: center;
+    position: relative;
+}
+
+.connector-line {
+    height: 2px;
+    background: linear-gradient(90deg, transparent 0%, #0D5B31 15%, #0D5B31 85%, transparent 100%);
+    width: 85%;
+    margin: 0 auto;
+}
+
+.down-arrow-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    background: #004B24;
+    color: #fff;
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0, 75, 36, 0.25);
+    font-size: 1.1rem;
+    margin-top: -1.2rem;
+    position: relative;
+    z-index: 2;
+    animation: bounceDown 2s infinite;
+}
+
+@keyframes bounceDown {
+    0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+    40% { transform: translateY(4px); }
+    60% { transform: translateY(2px); }
+}
+
+@media (max-width: 900px) {
+    .three-party-grid {
+        grid-template-columns: 1fr;
+        gap: 0.8rem;
+    }
+    .step-arrow-wrapper {
+        margin: 0.2rem 0;
+    }
+    .step-arrow-wrapper img {
+        transform: rotate(90deg);
+        max-width: 36px;
+    }
+    .infographic-lower-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        text-align: center;
+    }
+    .infographic-lower-grid > div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-left: none !important;
+        border-right: none !important;
+        padding: 0 !important;
+    }
+    .connector-line {
+        width: 100%;
+    }
+}

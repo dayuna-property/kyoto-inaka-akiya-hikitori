@@ -1,0 +1,77 @@
+Use case: infographic-diagram
+Asset type: Japanese real-estate service LP trust section / 16:9 high-resolution PNG (1692 x 929 or a clean 1920 x 1054 proportional equivalent)
+
+Create a clean, credible Japanese corporate infographic on a pure white background. It explains a three-party one-stop system for accepting and handling unwanted / burdensome real estate. The visual tone is calm, compliant, premium, and easy to scan. Use a modern flat 3D/isometric hybrid: softly modeled miniature buildings and objects, crisp dark-green linework, realistic Japanese family photography only in the family area, and generous whitespace. Do not imitate any existing logo or use a real company logo.
+
+Color system:
+- Main deep green #004B24; secondary green #0A6735; pale mint #EAF3EB; line green #0D5B31.
+- CTA orange #FF7900; white background; text black / near-black #111111.
+- Use very restrained, soft grey grounding shadows only beneath the 3D/isometric objects.
+
+Canvas and hierarchy:
+1. At the top center, set a single large Japanese headline, bold Gothic / sans serif. Text exactly:
+   「信頼の3社連携で、安心・安全のワンストップ引き取り」
+   Color the phrase 「ワンストップ引き取り」 orange; all remaining headline characters deep green.
+2. Directly below, centered, set this smaller black subheading exactly:
+   「相談から契約・登記・法的手続きまで、専門家が責任を持って対応します」
+3. In the upper-middle, place three equal large rounded-rectangle panels in one horizontal row, with dark green 2 px outlines, white interiors, and a pale-mint header band. The panels should span approximately 30% / 29% / 29% of the canvas width with 3–4% gaps. Place a dark-green numbered circle overlapping the upper-left of each panel. Use numbers 1, 2, 3 in white.
+
+Panel 1 (left):
+- Header band exact text: 「受付・相談窓口・運営（当事者として共感）」
+- Main name centered: 「合同会社DAYUNA」
+- Illustration: a smartphone showing a green LINE-like chat consultation icon and a speech balloon saying 「LINEで 無料相談 受付」; beside it, a small attractive rental apartment building in restrained isometric 3D.
+- Body copy, use four short readable lines (not long paragraphs):
+  「賃貸不動産を保有・運用する当事者として」
+  「所有者の維持管理の悩みに共感。」
+  「LINEでのスピーディーな受託受付と」
+  「負動産リサイクルセンターを安全に運営。」
+
+Panel 2 (center):
+- Header band exact text: 「調査・査定・契約業務（宅建業者）」
+- Main name centered: 「株式会社ミュートス」
+- Illustration: a green-signed real estate storefront labeled 「不動産」 and an official-looking licence card. The card is a generic illustration, not an official reproduction, with visible text 「宅地建物取引業者票」 and 「滋賀県知事免許（１）第３９３５号」.
+- Body copy (four short readable lines):
+  「宅地建物取引業法に基づき、不動産の調査・」
+  「価格適正性の査定、有料引き取りに関わる」
+  「取引契約業務を正規の宅建業者として」
+  「厳正に実施します。」
+
+Panel 3 (right):
+- Header band exact text: 「登記・法的手続き（専門家）」
+- Main name centered: 「提携司法書士・土地家屋調査士」
+- Illustration: legal filing papers, a black-and-gold fountain pen, and a polished gold balance scale. The document may have large generic Japanese labels 「登記申請書」「戸籍収集 等」 only.
+- Body copy (four short readable lines):
+  「相続登記や所有権移転登記申請の代理、」
+  「戸籍収集、境界明示等の法的手続きは、」
+  「提携司法書士・土地家屋調査士が」
+  「責任をもって単独で代理実行します。」
+
+Flow:
+- Between panel 1 and 2, and panel 2 and 3, show thick simple dark-green right-facing arrows centered vertically.
+- Under the three panels, add a thick dark-green U-shaped connector line spanning the panel row; at its center point use a clear downward arrow to the reassurance area below.
+
+Lower reassurance area:
+- On the lower left, dark-green bold heading exact text: 「不動産の負担や悩みを解決し、\n安心をお届けします」.
+- Under it, four black short benefit rows, each with a round dark-green check icon:
+  「不要な不動産を手放せる」
+  「固定資産税などの負担から解放される」
+  「相続・維持管理の悩みから解放される」
+  「専門家の連携で安心して任せられる」
+- At lower-center left, place a warm photorealistic Japanese multi-generation family (parents, school-age child, and older relatives) sitting close together in a bright home, relieved and smiling naturally. It is the only photo-real element; keep it in a neat rectangular photo area.
+- To its right, place a large upright dark-green shield with a white check. Under / beside it set dark-green bold text: 「コンプライアンス遵守の\nワンストップ体制」.
+- On the lower right, place one pale white/green rounded trust strip divided into four equal vertical cards, with elegant green outline icons and Japanese labels:
+  1. document/check icon: 「法令遵守」 and small subtext 「宅建業法・関連法令を\n遵守した適正な運営」
+  2. handshake icon: 「正規の契約」 and small subtext 「宅建業者による\n調査・査定・契約」
+  3. pen/signature icon: 「登記まで対応」 and small subtext 「登記申請まで\n責任をもって対応」
+  4. people icon: 「専門家連携」 and small subtext 「各分野のプロが\n連携して対応」
+
+Bottom CTA:
+- Center a wide orange rounded pill button spanning about 60% of canvas width. On its left is a small circular bright-green LINE-like chat icon. Set bold white text exact:
+  「LINEでお気軽にご相談ください（相談無料）」
+- On the right inside the orange bar, place a smaller white rounded pill reading 「LINE相談はこちら」 in dark grey/black, with a small orange chevron at the far right.
+
+Typography and quality requirements:
+- All Japanese text must be accurately spelled, legible, and aligned; use a modern Japanese Gothic sans-serif.
+- Build the composition as a precise editable infographic, not as a poster with distorted text.
+- Keep fine dark-green outlines, clear visual grouping, consistent padding, and a wide desktop LP composition.
+- Avoid: clutter, excessive gradients, overly glossy 3D, stock-photo watermark, AI-garbled Japanese text, unrelated icons, blue color dominance, dark backgrounds, generic financial charts, or claims about AI appraisal.
