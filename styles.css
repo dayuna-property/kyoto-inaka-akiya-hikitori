@@ -3611,11 +3611,52 @@ svg.recycle-scheme-img {
     border: 1px solid rgba(217, 119, 6, 0.3);
     font-size: 0.9rem;
     font-weight: 700;
-    padding: 0.4rem 1.25rem;
+    padding: 0.45rem 1.25rem;
     border-radius: 9999px;
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
     margin-bottom: 1rem;
     letter-spacing: 0.05em;
+    max-width: 100%;
+    word-break: break-all;
+}
+
+a.guarantee-badge {
+    text-decoration: none;
+    transition: all 0.25s ease;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(217, 119, 6, 0.12);
+}
+
+a.guarantee-badge:hover {
+    background-color: var(--color-accent, #d97706);
+    color: #ffffff;
+    border-color: var(--color-accent, #d97706);
+    box-shadow: 0 4px 12px rgba(217, 119, 6, 0.3);
+    transform: translateY(-1px);
+}
+
+.guarantee-source-note {
+    font-size: 0.85rem;
+    color: #4b5563;
+    margin-top: 0.8rem;
+    line-height: 1.6;
+}
+
+.mlit-link {
+    color: #1d4ed8;
+    font-weight: 600;
+    text-decoration: underline;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;
+    transition: color 0.2s ease;
+}
+
+.mlit-link:hover {
+    color: #1e40af;
+    text-decoration: none;
 }
 
 .guarantee-grid {
