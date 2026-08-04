@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://fudosan-recycle.com/sitemap.xml
+Sitemap: https://www.fudosan-recycle.com/sitemap.xml

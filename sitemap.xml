@@ -1,207 +1,277 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Main Pages -->
   <url>
     <loc>https://www.fudosan-recycle.com/</loc>
+    <lastmod>2026-08-05</lastmod>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://www.fudosan-recycle.com/akiya/</loc>
+    <lastmod>2026-08-05</lastmod>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://www.fudosan-recycle.com/sanrin/</loc>
+    <lastmod>2026-08-05</lastmod>
     <priority>0.9</priority>
   </url>
+
   <!-- Root Region Pages -->
   <url>
     <loc>https://www.fudosan-recycle.com/kyoto/</loc>
+    <lastmod>2026-08-05</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.fudosan-recycle.com/shiga/</loc>
+    <lastmod>2026-08-05</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.fudosan-recycle.com/hyogo/</loc>
+    <lastmod>2026-08-05</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.fudosan-recycle.com/osaka/</loc>
+    <lastmod>2026-08-05</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.fudosan-recycle.com/wakayama/</loc>
+    <lastmod>2026-08-05</lastmod>
     <priority>0.8</priority>
   </url>
+
   <!-- Akiya Region Pages -->
   <url>
     <loc>https://www.fudosan-recycle.com/akiya/kyoto/</loc>
+    <lastmod>2026-08-05</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.fudosan-recycle.com/akiya/shiga/</loc>
+    <lastmod>2026-08-05</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.fudosan-recycle.com/akiya/hyogo/</loc>
+    <lastmod>2026-08-05</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.fudosan-recycle.com/akiya/osaka/</loc>
+    <lastmod>2026-08-05</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.fudosan-recycle.com/akiya/wakayama/</loc>
+    <lastmod>2026-08-05</lastmod>
     <priority>0.8</priority>
   </url>
+
   <!-- Sanrin Region Pages -->
   <url>
     <loc>https://www.fudosan-recycle.com/sanrin/kyoto/</loc>
+    <lastmod>2026-08-05</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.fudosan-recycle.com/sanrin/shiga/</loc>
+    <lastmod>2026-08-05</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.fudosan-recycle.com/sanrin/hyogo/</loc>
+    <lastmod>2026-08-05</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.fudosan-recycle.com/sanrin/osaka/</loc>
+    <lastmod>2026-08-05</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.fudosan-recycle.com/sanrin/wakayama/</loc>
+    <lastmod>2026-08-05</lastmod>
     <priority>0.8</priority>
   </url>
+
   <!-- Column Pages -->
   <url>
     <loc>https://www.fudosan-recycle.com/column/</loc>
+    <lastmod>2026-08-05</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.fudosan-recycle.com/column/old-house-cleanup-purchase.html</loc>
+    <lastmod>2026-08-05</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.fudosan-recycle.com/column/land-state-return.html</loc>
+    <lastmod>2026-08-05</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.fudosan-recycle.com/column/forest-disposal.html</loc>
+    <lastmod>2026-08-05</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.fudosan-recycle.com/column/abandoned-house-tax.html</loc>
+    <lastmod>2026-08-05</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.fudosan-recycle.com/column/unknown-boundary-land.html</loc>
+    <lastmod>2026-08-05</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.fudosan-recycle.com/column/unrebuildable-house.html</loc>
+    <lastmod>2026-08-05</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.fudosan-recycle.com/column/inheritance-registration-mandatory.html</loc>
+    <lastmod>2026-08-05</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.fudosan-recycle.com/column/house-cleanup-cost.html</loc>
+    <lastmod>2026-08-05</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.fudosan-recycle.com/column/landslide-risk-land.html</loc>
+    <lastmod>2026-08-05</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.fudosan-recycle.com/column/kyoto-shiga-rural-land.html</loc>
+    <lastmod>2026-08-05</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.fudosan-recycle.com/column/land-donation-government.html</loc>
+    <lastmod>2026-08-05</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.fudosan-recycle.com/column/abandoned-house-inheritance-renunciation.html</loc>
+    <lastmod>2026-08-05</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.fudosan-recycle.com/column/parent-nursing-home-empty-house.html</loc>
+    <lastmod>2026-08-05</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.fudosan-recycle.com/column/trash-house-as-is-disposal.html</loc>
+    <lastmod>2026-08-05</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.fudosan-recycle.com/column/farmhouse-with-agricultural-land.html</loc>
+    <lastmod>2026-08-05</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.fudosan-recycle.com/column/row-house-joint-ownership-disposal.html</loc>
+    <lastmod>2026-08-05</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.fudosan-recycle.com/column/protection-forest-disposal.html</loc>
+    <lastmod>2026-08-05</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.fudosan-recycle.com/column/steep-slope-mountain-disposal.html</loc>
+    <lastmod>2026-08-05</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.fudosan-recycle.com/column/no-boundary-mountain-disposal.html</loc>
+    <lastmod>2026-08-05</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.fudosan-recycle.com/column/bubble-genya-disposal.html</loc>
+    <lastmod>2026-08-05</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.fudosan-recycle.com/column/forest-tax-and-regulations.html</loc>
+    <lastmod>2026-08-05</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.fudosan-recycle.com/column/blind-land-disposal.html</loc>
+    <lastmod>2026-08-05</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.fudosan-recycle.com/column/cliff-land-disposal.html</loc>
+    <lastmod>2026-08-05</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.fudosan-recycle.com/column/private-road-consent-issue.html</loc>
+    <lastmod>2026-08-05</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.fudosan-recycle.com/column/illegal-construction-disposal.html</loc>
+    <lastmod>2026-08-05</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.fudosan-recycle.com/column/resort-land-maintenance-fees.html</loc>
+    <lastmod>2026-08-05</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.fudosan-recycle.com/column/stigmatized-property-disposal.html</loc>
+    <lastmod>2026-08-05</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.fudosan-recycle.com/column/co-ownership-share-disposal.html</loc>
+    <lastmod>2026-08-05</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.fudosan-recycle.com/column/cemetery-land-inheritance.html</loc>
+    <lastmod>2026-08-05</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.fudosan-recycle.com/column/vacant-house-bank-unsold.html</loc>
+    <lastmod>2026-08-05</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.fudosan-recycle.com/column/proximity-nuisance-facility.html</loc>
+    <lastmod>2026-08-05</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.fudosan-recycle.com/column/cliff-house-demolition-risk.html</loc>
+    <lastmod>2026-08-05</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.fudosan-recycle.com/column/paid-property-acquisition-comparison.html</loc>
+    <lastmod>2026-08-05</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.fudosan-recycle.com/column/inheritance-mediation-land-disposal.html</loc>
+    <lastmod>2026-08-05</lastmod>
     <priority>0.7</priority>
   </url>
 </urlset>
