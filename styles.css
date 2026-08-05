@@ -2429,7 +2429,7 @@ svg.recycle-scheme-img {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 3rem;
-    max-width: 900px;
+    max-width: 1000px;
     margin: 0 auto;
 }
 
@@ -2465,6 +2465,35 @@ svg.recycle-scheme-img {
 .menu-card-header h3 {
     font-size: 1.25rem;
     font-weight: 700;
+    white-space: nowrap;
+}
+
+/* 特化ページダイレクト誘導ボタン（強調デザイン） */
+.btn-specialized-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    width: 100%;
+    padding: 0.75rem 1.2rem;
+    margin-top: 1.25rem;
+    background: linear-gradient(135deg, #e76f51 0%, #d97706 100%);
+    color: #ffffff !important;
+    font-size: 0.93rem;
+    font-weight: 700;
+    border-radius: 8px;
+    text-decoration: none;
+    box-shadow: 0 4px 14px rgba(231, 111, 81, 0.35);
+    transition: all 0.25s ease;
+    box-sizing: border-box;
+    border: none;
+}
+
+.btn-specialized-link:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(231, 111, 81, 0.5);
+    background: linear-gradient(135deg, #f4a261 0%, #e76f51 100%);
+    color: #ffffff !important;
 }
 
 .menu-card-body {

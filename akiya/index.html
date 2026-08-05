@@ -39,7 +39,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="../styles.css?v=1.0.5">
+    <link rel="stylesheet" href="../styles.css?v=1.0.7">
     
     <!-- AIO Structured Data -->
     <script type="application/ld+json">
@@ -86,7 +86,7 @@
               "name": "本当にどのような物件でも引き取ってもらえますか？",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "基本的には全国（現在は関西主要エリア中心）の空き家、古民家、店舗、倉庫、傾いた建物、共有持分など幅広く対応しております。提携する土地家屋調査士・司法書士が裏側で自動連携するため、相続登記が完了していない物件や境界が曖昧な土地でも、お客様は対面不要・郵送だけで100%お任せいただけます。ただし、隣人と重大な係争がある場合等、一部お引き受けできない場合もございます。まずは無料査定にて物件の状態をお知らせください。"
+                "text": "基本的には全国（現在は関西主要エリア中心）の空き家、古民家、店舗、倉庫、傾いた建物、共有持分など幅広く対応しております。提携する土地家屋調査士・司法書士が裏側で自動連携するため、相続登記が完了していない物件や境界が曖昧な土地でも、お客様は対面不要・郵送だけでスムーズにお任せいただけます。ただし、隣人と重大な係争がある場合等、一部お引き受けできない場合もございます。まずは無料査定にて物件の状態をお知らせください。"
               }
             },
             {
@@ -110,6 +110,33 @@
       ]
     }
     </script>
+    <!-- Google Search Site Name & Breadcrumb Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "負動産リサイクルセンター",
+      "alternateName": ["負動産リサイクル"],
+      "url": "https://www.fudosan-recycle.com/"
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "総合トップ",
+        "item": "https://www.fudosan-recycle.com/"
+      },{
+        "@type": "ListItem",
+        "position": 2,
+        "name": "空き家引き取り専門窓口",
+        "item": "https://www.fudosan-recycle.com/akiya/"
+      }]
+    }}
+    </script>
 </head>
 <body>
 
@@ -126,26 +153,32 @@
                 <a href="hyogo/" class="sub-link-area"><i class="fa-solid fa-location-dot"></i>兵庫</a>
                 <a href="wakayama/" class="sub-link-area"><i class="fa-solid fa-location-dot"></i>和歌山</a>
             </div>
-            <nav class="desktop-nav">
+                        <nav class="desktop-nav">
                 <a href="#problems">お悩み</a>
+                <a href="#about-team">解決策</a>
                 <a href="#features">3つの特徴</a>
-                <a href="#usecases">想定ケース</a>
-                <a href="#service-menu">プラン</a>
-                <a href="#comparison">他社比較</a>
+                <a href="#guarantee">安心宣言</a>
+                <a href="#areas">他エリア</a>
                 <a href="#process">手続きの流れ</a>
                 <a href="#faq">よくある質問</a>
-                <a href="../" style="color: var(--color-accent); font-weight: bold;"><i class="fa-solid fa-house"></i> 総合トップ</a>
-                <a href="kyoto/" class="nav-mobile-only">京都エリア</a>
-                <a href="osaka/" class="nav-mobile-only">大阪エリア</a>
-                <a href="shiga/" class="nav-mobile-only">滋賀エリア</a>
-                <a href="hyogo/" class="nav-mobile-only">兵庫エリア</a>
-                <a href="wakayama/" class="nav-mobile-only">和歌山エリア</a>
+                <a href="../column/">コラム一覧</a>
+                <a href="../akiya/"><i class="fa-solid fa-house-chimney"></i> 空き家引き取り</a>
+                <a href="../sanrin/"><i class="fa-solid fa-tree"></i> 山林引き取り</a>
+                <a href="../" style="color: #2d6a4f; font-weight: bold;"><i class="fa-solid fa-house"></i> 総合トップ</a>
             </nav>
             <div class="header-cta">
                 <a href="https://lin.ee/9Ozovz2" class="btn-header-cta-img-wrap" target="_blank" rel="noopener noreferrer"><img decoding=async loading=lazy src="../images/btn_line_cta.webp" alt="LINEで引き取り可否を無料診断" class="btn-header-cta-img"></a>
             </div>
         </div>
     </header>
+    <!-- Breadcrumb Navigation -->
+    <nav class="breadcrumb-nav" aria-label="パンくずリスト" style="background: #f8f9fa; padding: 0.6rem 1rem; border-bottom: 1px solid #e9ecef; font-size: 0.85rem;">
+        <div class="container" style="max-width: 1200px; margin: 0 auto;">
+            <ol style="list-style: none; display: flex; flex-wrap: wrap; gap: 0.5rem; margin: 0; padding: 0; color: #6c757d;">
+                <li><a href="../" style="color: #2d6a4f; text-decoration: none;">総合トップ</a></li><li>&gt;</li><li style="color: #495057; font-weight: 500;">空き家引き取り専門窓口</li>
+            </ol>
+        </div>
+    </nav>
 
     <main>
                 <!-- Hero Section -->
@@ -491,7 +524,7 @@
         <section id="why-paid" class="why-paid-section reveal">
             <div class="container">
                 <h2 class="section-title text-center">なぜ「有料引き取り」なのか？</h2>
-                <p class="section-subtitle text-center">確定したお見積り費用を一括でお支払いいただき、当社が所有権と管理責任を引き受けます。</p>
+                <p class="section-subtitle text-center">確定したお見積り費用を一括でお支払いいただき、管理責任と将来の固定資産税・維持費を引き受けます。</p>
                 
                 <div class="infographic-container">
                     <img decoding=async loading=lazy src="../images/payment_costs.webp" alt="お支払い費用の内訳：維持管理コスト・固定資産税・法的登記手続き・調査開発費" class="infographic-img">
@@ -505,7 +538,7 @@
         <section id="recycle" class="recycle-section reveal">
             <div class="container">
                 <h2 class="section-title text-center">引き取り後の「リサイクル」スキーム</h2>
-                <p class="section-subtitle text-center">専門事業者への引き継ぎによる、価値の再循環</p>
+                <p class="section-subtitle text-center">専門パートナーへの確実なバトン引き継ぎによる価値の再循環</p>
                 
                 <div class="infographic-container">
                     <img decoding=async loading=lazy src="../images/infographic_recycle_flow.webp" alt="リサイクルの流れ：所有者様→当センター→専門パートナー" class="infographic-img">
@@ -538,7 +571,7 @@
                     
                     <!-- Feature 02 -->
                     <div class="feature-card-item">
-                        <img decoding=async loading=lazy src="../images/feature_team.webp" alt="相続登記の未了・境界曖昧な物件も100%ワンストップ対応" class="feature-card-img">
+                        <img decoding=async loading=lazy src="../images/feature_team.webp" alt="相続登記の未了・境界曖昧な物件もワンストップ対応" class="feature-card-img">
                         <div class="feat-card-content">
                             <h3>相続未了・名義人多数でも<br><span class="highlight-text">ワンストップ対応</span></h3>
                             <p>相続登記がまだ終わっていない、共有名義人が多くて進まないなどの複雑な状態でも、専門家チームが提携する専属の司法書士が代理人として実行します。</p>
@@ -563,7 +596,7 @@
         <section id="comparison" class="comparison-section reveal">
             <div class="container">
                 <h2 class="section-title text-center">一目でわかる「他社・通常の仲介」との違い</h2>
-                <p class="section-subtitle text-center">当店の負動産リサイクルが圧倒的に選ばれる理由</p>
+                <p class="section-subtitle text-center">当センターの負動産引き取りが選ばれる理由</p>
                 
                 <div class="infographic-container">
                     <img decoding=async loading=lazy src="../images/infographic_comparison.webp" alt="他社との比較：専門家手配・手続き期間・対応範囲・対面の必要" class="infographic-img">
@@ -688,30 +721,6 @@
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Support Links Section (お役立ち・サポートリンク) -->
-        <section class="support-links-section reveal">
-            <div class="container">
-                <div class="support-grid">
-                    <a href="#why-paid" class="support-btn-item">
-                        <div class="support-btn-icon"><i class="fa-solid fa-coins"></i></div>
-                        <span>引き取り費用の内訳と税金について <i class="fa-solid fa-circle-arrow-right"></i></span>
-                    </a>
-                    <a href="#process" class="support-btn-item">
-                        <div class="support-btn-icon"><i class="fa-solid fa-envelope-open-text"></i></div>
-                        <span>郵送のみ・完了までの3ステップ ＞</span>
-                    </a>
-                    <a href="#alliance" class="support-btn-item">
-                        <div class="support-btn-icon"><i class="fa-solid fa-scale-balanced"></i></div>
-                        <span>専門家チームとの連携システム ＞</span>
-                    </a>
-                    <a href="#faq" class="support-btn-item">
-                        <div class="support-btn-icon"><i class="fa-solid fa-circle-question"></i></div>
-                        <span>よくあるご質問（FAQ） ＞</span>
-                    </a>
                 </div>
             </div>
         </section>
@@ -910,6 +919,70 @@
 
 
 <!-- CTA/Contact Section -->
+        <section id="recent-columns" class="recent-columns-section reveal" style="padding: 5rem 0; background-color: #fcfdfc; border-top: 1px solid #eaeaea; border-bottom: 1px solid #eaeaea;">
+            <div class="container">
+                <h2 class="section-title text-center">お役立ちコラム</h2>
+                <p class="section-subtitle text-center" style="text-align: center; color: #666; margin-bottom: 3rem;">売れない空き家や山林の処分・手放し方に関する専門知識をお届けします</p>
+                
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; max-width: 1200px; margin: 0 auto;">
+                    <!-- Column Card 1 -->
+                    <div class="column-card" style="background: #fff; border-radius: 12px; box-shadow: 0 5px 20px rgba(0,0,0,0.05); overflow: hidden; display: flex; flex-direction: column; border: 1px solid #eaeaea; transition: transform 0.3s;">
+                        <div style="height: 180px; background: linear-gradient(135deg, #2d6a4f 0%, #1b4332 100%); display: flex; flex-direction: column; align-items: center; justify-content: center; color: rgba(255,255,255,0.9); font-size: 1.2rem; font-weight: bold; padding: 1rem; text-align: center;">
+                            <i class="fa-solid fa-house-circle-xmark" style="font-size: 2.5rem; display: block; margin-bottom: 0.5rem;"></i>
+                            古い実家の処分
+                        </div>
+                        <div style="padding: 1.5rem; display: flex; flex-direction: column; flex-grow: 1;">
+                            <span style="align-self: flex-start; background-color: var(--color-accent, #e76f51); color: #fff; font-size: 0.75rem; font-weight: bold; padding: 0.25rem 0.75rem; border-radius: 50px; margin-bottom: 0.8rem;">空き家処分・実家整理</span>
+                            <h3 style="font-size: 1.15rem; font-weight: bold; line-height: 1.5; margin-bottom: 0.8rem; color: #333; text-align: left;"><a href="../column/old-house-cleanup-purchase.html" style="color: inherit; text-decoration: none;">古い家を処分したい！売れない実家を『荷物丸ごと』買い取ってもらう手順</a></h3>
+                            <p style="font-size: 0.9rem; color: #666; line-height: 1.6; margin-bottom: 1.5rem; flex-grow: 1; text-align: left;">相続した古い実家に荷物が大量に残っていて片付けられないとお悩みの方へ。荷物丸ごとの状態での売却・引き取り手順を分かりやすく解説します。</p>
+                            <div style="font-size: 0.8rem; color: #999; border-top: 1px solid #eee; padding-top: 0.8rem; display: flex; justify-content: space-between;">
+                                <span><i class="fa-regular fa-calendar-days"></i> 2026/07/13</span>
+                                <span>負動産リサイクルセンター</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Column Card 2 -->
+                    <div class="column-card" style="background: #fff; border-radius: 12px; box-shadow: 0 5px 20px rgba(0,0,0,0.05); overflow: hidden; display: flex; flex-direction: column; border: 1px solid #eaeaea; transition: transform 0.3s;">
+                        <div style="height: 180px; background: linear-gradient(135deg, #2d6a4f 0%, #1b4332 100%); display: flex; flex-direction: column; align-items: center; justify-content: center; color: rgba(255,255,255,0.9); font-size: 1.2rem; font-weight: bold; padding: 1rem; text-align: center;">
+                            <i class="fa-solid fa-landmark" style="font-size: 2.5rem; display: block; margin-bottom: 0.5rem;"></i>
+                            不要な土地を国に返す
+                        </div>
+                        <div style="padding: 1.5rem; display: flex; flex-direction: column; flex-grow: 1;">
+                            <span style="align-self: flex-start; background-color: var(--color-accent, #e76f51); color: #fff; font-size: 0.75rem; font-weight: bold; padding: 0.25rem 0.75rem; border-radius: 50px; margin-bottom: 0.8rem;">相続土地の処分・法律</span>
+                            <h3 style="font-size: 1.15rem; font-weight: bold; line-height: 1.5; margin-bottom: 0.8rem; color: #333; text-align: left;"><a href="../column/land-state-return.html" style="color: inherit; text-decoration: none;">相続した不要な土地を国に返す方法｜相続土地国庫帰属制度と引き取りの違い</a></h3>
+                            <p style="font-size: 0.9rem; color: #666; line-height: 1.6; margin-bottom: 1.5rem; flex-grow: 1; text-align: left;">不要な土地を国に引き取らせる国庫帰属制度。その厳しい要件、解体・測量などの自己負担費用、民間有料引き取りサービスとの違いを解説します。</p>
+                            <div style="font-size: 0.8rem; color: #999; border-top: 1px solid #eee; padding-top: 0.8rem; display: flex; justify-content: space-between;">
+                                <span><i class="fa-regular fa-calendar-days"></i> 2026/07/13</span>
+                                <span>負動産リサイクルセンター</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Column Card 3 -->
+                    <div class="column-card" style="background: #fff; border-radius: 12px; box-shadow: 0 5px 20px rgba(0,0,0,0.05); overflow: hidden; display: flex; flex-direction: column; border: 1px solid #eaeaea; transition: transform 0.3s;">
+                        <div style="height: 180px; background: linear-gradient(135deg, #2d6a4f 0%, #1b4332 100%); display: flex; flex-direction: column; align-items: center; justify-content: center; color: rgba(255,255,255,0.9); font-size: 1.2rem; font-weight: bold; padding: 1rem; text-align: center;">
+                            <i class="fa-solid fa-file-invoice-dollar" style="font-size: 2.5rem; display: block; margin-bottom: 0.5rem;"></i>
+                            空き家放置の税金リスク
+                        </div>
+                        <div style="padding: 1.5rem; display: flex; flex-direction: column; flex-grow: 1;">
+                            <span style="align-self: flex-start; background-color: var(--color-accent, #e76f51); color: #fff; font-size: 0.75rem; font-weight: bold; padding: 0.25rem 0.75rem; border-radius: 50px; margin-bottom: 0.8rem;">空き家処分・税金対策</span>
+                            <h3 style="font-size: 1.15rem; font-weight: bold; line-height: 1.5; margin-bottom: 0.8rem; color: #333; text-align: left;"><a href="../column/abandoned-house-tax.html" style="color: inherit; text-decoration: none;">実家を放置すると固定資産税が6倍に？特定空家・管理不全空家の対策</a></h3>
+                            <p style="font-size: 0.9rem; color: #666; line-height: 1.6; margin-bottom: 1.5rem; flex-grow: 1; text-align: left;">空き家放置による大増税リスク。2023年改正法で新設された「管理不全空家」の基準と、税金ペナルティを受ける前に実家を手放す解決策を徹底解説。</p>
+                            <div style="font-size: 0.8rem; color: #999; border-top: 1px solid #eee; padding-top: 0.8rem; display: flex; justify-content: space-between;">
+                                <span><i class="fa-regular fa-calendar-days"></i> 2026/07/13</span>
+                                <span>負動産リサイクルセンター</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div style="text-align: center; margin-top: 3rem;">
+                    <a href="../column/" class="btn btn-primary" style="display: inline-block; padding: 0.8rem 2rem; border-radius: 50px; text-decoration: none; font-weight: bold; background-color: var(--color-primary, #2d6a4f); color: #fff;">コラム一覧を見る</a>
+                </div>
+            </div>
+        </section>
+
         <section id="contact" class="cta-section line-only reveal">
             <div class="container">
                 <div class="cta-wrapper">
