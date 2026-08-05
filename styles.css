@@ -6060,6 +6060,275 @@ a.guarantee-badge:hover {
     }
 }
 
+/* ==========================================================================
+   Responsive Infographic: Process Steps Section (3つのステップ)
+   ========================================================================== */
+.infographic-process-wrapper {
+    max-width: 1200px;
+    margin: 2rem auto 0;
+    padding: 2.5rem 1.5rem;
+    background: #F7F8F6;
+    border-radius: 24px;
+    box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.04);
+}
+
+.process-cards-grid {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.process-step-card {
+    flex: 1;
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 1.8rem 1.5rem;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+    border: 1px solid #E5E9E6;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.process-step-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 14px 32px rgba(0, 0, 0, 0.1);
+}
+
+.process-card-header {
+    display: flex;
+    align-items: center;
+    gap: 0.85rem;
+    margin-bottom: 1.25rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 2px solid #F0F4F1;
+}
+
+.process-step-badge {
+    background: #0F5A3A;
+    color: #ffffff;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.65rem;
+    font-weight: 700;
+    line-height: 1.1;
+    letter-spacing: 0.05em;
+    flex-shrink: 0;
+    box-shadow: 0 4px 10px rgba(15, 90, 58, 0.25);
+}
+
+.process-step-badge strong {
+    font-size: 1.35rem;
+    font-weight: 900;
+    line-height: 1;
+}
+
+.process-card-title {
+    font-size: 1.25rem;
+    font-weight: 800;
+    color: #1A202C;
+    line-height: 1.35;
+    margin: 0;
+}
+
+.process-card-img-wrap {
+    text-align: center;
+    margin: 0.5rem 0 1.25rem;
+    min-height: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.process-card-img {
+    max-width: 100%;
+    max-height: 150px;
+    height: auto;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+.process-card-checklist {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1.25rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.65rem;
+    flex-grow: 1;
+}
+
+.process-card-checklist li {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.6rem;
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: #2D3748;
+    line-height: 1.45;
+}
+
+.process-card-checklist .check-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 22px;
+    height: 22px;
+    border: 2px solid #0F5A3A;
+    border-radius: 4px;
+    color: #0F5A3A;
+    font-size: 0.85rem;
+    font-weight: 900;
+    flex-shrink: 0;
+    margin-top: 1px;
+    background: #F0F7F4;
+}
+
+.process-card-checklist .highlight-red {
+    color: #D53A2F;
+    font-weight: 800;
+}
+
+.process-card-note {
+    background: #FFF9E6;
+    border: 1px solid #FFE8A3;
+    border-radius: 12px;
+    padding: 0.85rem 1rem;
+    display: flex;
+    align-items: flex-start;
+    gap: 0.6rem;
+    margin-top: auto;
+}
+
+.process-card-note .note-icon {
+    font-size: 1.3rem;
+    line-height: 1;
+    flex-shrink: 0;
+}
+
+.process-card-note p {
+    font-size: 0.82rem;
+    color: #4A5568;
+    line-height: 1.45;
+    margin: 0;
+    font-weight: 600;
+}
+
+.process-arrow-divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #0F5A3A;
+    font-size: 1.5rem;
+    flex-shrink: 0;
+    padding: 0 0.2rem;
+}
+
+.process-arrow-svg {
+    width: 24px;
+    height: 24px;
+    fill: #0F5A3A;
+}
+
+.process-bottom-notice {
+    background: #ffffff;
+    border: 2px solid #0F5A3A;
+    border-radius: 9999px;
+    padding: 0.75rem 1.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    max-width: 760px;
+    margin: 0 auto;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+}
+
+.process-bottom-notice .notice-info-icon {
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.process-bottom-notice span {
+    font-size: 1.05rem;
+    font-weight: 800;
+    color: #1A202C;
+    letter-spacing: -0.01em;
+}
+
+/* レスポンシブ (スマホ / タブレット表示) */
+@media (max-width: 992px) {
+    .process-cards-grid {
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+    .process-arrow-divider {
+        transform: rotate(90deg);
+        margin: 0.25rem 0;
+    }
+    .process-bottom-notice {
+        border-radius: 16px;
+        padding: 0.85rem 1rem;
+        flex-direction: row;
+        text-align: left;
+    }
+    .process-bottom-notice span {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .infographic-process-wrapper {
+        padding: 1.25rem 0.85rem;
+        border-radius: 16px;
+        margin-top: 1.5rem;
+    }
+    .process-step-card {
+        padding: 1.25rem 1rem;
+        border-radius: 16px;
+    }
+    .process-step-badge {
+        width: 54px;
+        height: 54px;
+        font-size: 0.6rem;
+    }
+    .process-step-badge strong {
+        font-size: 1.15rem;
+    }
+    .process-card-title {
+        font-size: 1.1rem;
+    }
+    .process-card-img-wrap {
+        min-height: 120px;
+        margin: 0.25rem 0 0.85rem;
+    }
+    .process-card-img {
+        max-height: 120px;
+    }
+    .process-card-checklist li {
+        font-size: 0.88rem;
+    }
+    .process-bottom-notice {
+        gap: 0.5rem;
+    }
+    .process-bottom-notice span {
+        font-size: 0.82rem;
+        line-height: 1.35;
+    }
+}
+
+
 
 
 
