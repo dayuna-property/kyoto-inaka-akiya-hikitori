@@ -39,8 +39,36 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="../styles.css?v=1.0.5">
+    <link rel="stylesheet" href="../styles.css?v=1.0.7">
     
+        <!-- Google Search Site Name & Breadcrumb Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "負動産リサイクルセンター",
+      "alternateName": ["負動産リサイクル"],
+      "url": "https://www.fudosan-recycle.com/"
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "総合トップ",
+        "item": "https://www.fudosan-recycle.com/"
+      },{
+        "@type": "ListItem",
+        "position": 2,
+        "name": "大阪府窓口",
+        "item": "https://www.fudosan-recycle.com/osaka/"
+      }]
+    }
+    </script>
+
     <!-- AIO Structured Data -->
     <script type="application/ld+json">
     {
@@ -87,7 +115,7 @@
               "name": "本当にどのような物件でも引き取ってもらえますか？",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "基本的には大阪府内の能勢町、豊能町、千早赤阪村、河南町、太子町、河内長野市における空き家、山林、原野、老朽化したオールドニュータウン物件、古民家、傾斜地、放置別荘地など幅広く対応しております。専属の土地家屋調査士・司法書士チームが自動連携するため、相続登記が未了の物件や境界が曖昧な土地でも、お客様は対面不要・郵送だけで100%お任せいただけます。まずは無料査定にて物件の状態をお知らせください。"
+                "text": "基本的には大阪府内の能勢町、豊能町、千早赤阪村、河南町、太子町、河内長野市における空き家、山林、原野、老朽化したオールドニュータウン物件、古民家、傾斜地、放置別荘地など幅広く対応しております。専属の土地家屋調査士・司法書士チームが自動連携するため、相続登記が未了の物件や境界が曖昧な土地でも、お客様は対面不要・郵送だけでスムーズにお任せいただけます。まずは無料査定にて物件の状態をお知らせください。"
               }
             },
             {
@@ -123,23 +151,36 @@
             <div class="header-sub-links">
             </div>
 
-            <nav class="desktop-nav">
+                        <nav class="desktop-nav">
                 <a href="#problems">お悩み</a>
                 <a href="#about-team">解決策</a>
-                <a href="#structure-trust">3社連携</a>
                 <a href="#features">3つの特徴</a>
-                <a href="#usecases">想定ケース</a>
-                <a href="#service-menu">プラン</a>
+                <a href="#service-menu" style="color: var(--color-accent); font-weight: bold;"><i class="fa-solid fa-circle-arrow-right"></i> プラン一覧</a>
                 <a href="#guarantee">安心宣言</a>
+                <a href="#areas">他エリア</a>
                 <a href="#process">手続きの流れ</a>
                 <a href="#faq">よくある質問</a>
-                <a href="../" style="color: var(--color-accent); font-weight: bold;"><i class="fa-solid fa-house"></i> 総合トップ</a>
+                <a href="../column/">コラム一覧</a>
+                <a href="../akiya/"><i class="fa-solid fa-house-chimney"></i> 空き家引き取り</a>
+                <a href="../sanrin/"><i class="fa-solid fa-tree"></i> 山林引き取り</a>
+                <a href="../" style="color: #2d6a4f; font-weight: bold;"><i class="fa-solid fa-house"></i> 総合トップ</a>
             </nav>
             <div class="header-cta">
                 <a href="https://lin.ee/9Ozovz2" class="btn-header-cta-img-wrap" target="_blank" rel="noopener noreferrer"><img decoding="async" loading="lazy" src="../images/btn_line_cta.webp" alt="LINEで引き取り可否を無料診断" class="btn-header-cta-img"></a>
             </div>
         </div>
     </header>
+    <!-- Breadcrumb Navigation -->
+    <nav class="breadcrumb-nav" aria-label="パンくずリスト" style="background: #f8f9fa; padding: 0.6rem 1rem; border-bottom: 1px solid #e9ecef; font-size: 0.85rem;">
+        <div class="container" style="max-width: 1200px; margin: 0 auto;">
+            <ol style="list-style: none; display: flex; flex-wrap: wrap; gap: 0.5rem; margin: 0; padding: 0; color: #6c757d;">
+                <li><a href="../" style="color: #2d6a4f; text-decoration: none;"><i class="fa-solid fa-house"></i> 総合トップ</a></li>
+                <li>&gt;</li>
+                <li style="color: #495057; font-weight: 500;">大阪府専用窓口</li>
+            </ol>
+        </div>
+    </nav>
+
 
     <main>
         <!-- Hero Section -->
@@ -483,9 +524,6 @@
 
 
                         <!-- Right: Trust Badges Strip -->
-                        <div style="display: flex; align-items: center; justify-content: center; width: 100%;">
-                            <img src="../images/real-estate-three-party-asset-kit/assets/16_trust-badges-full-strip.webp" alt="法令遵守・宅建業法に基づく取引・登記完了まで対応・専門家連携（DAYUNA：相談受付・受託システム / 株式会社ミュートス：宅建業法に基づく調査・価格査定・売買契約 / 提携司法書士：所有権移転登記代理）" style="width: 100%; height: auto; object-fit: contain; max-width: 100%;">
-                        </div>
                     </div>
                 </div>
             </div>
@@ -585,7 +623,7 @@
                     
                     <!-- Feature 02 -->
                     <div class="feature-card-item">
-                        <img decoding=async loading=lazy src="../images/feature_team.webp" alt="相続登記の未了・境界曖昧な物件も100%ワンストップ対応" class="feature-card-img">
+                        <img decoding=async loading=lazy src="../images/feature_team.webp" alt="相続登記の未了・境界曖昧な物件もワンストップ対応" class="feature-card-img">
                         <div class="feat-card-content">
                             <h3>相続未了・境界不明でも<br><span class="highlight-text">ワンストップ対応</span></h3>
                             <p>相続登記がまだ終わっていない、境界が分からないなどの複雑な状態でも、専門家チームが提携する専属の司法書士が代理人として実行します。</p>
@@ -640,7 +678,7 @@
                         </div>
                         <div class="menu-card-body">
                             <span class="menu-feat-tag">境界不明・相続未了対応</span>
-                            <p>境界が分からなくなった山林、保安林、荒れ果てた別荘地など、買い手が絶対につかない土地を引き取ります。相続登記が完了していなくてもお任せください。</p>
+                            <p>境界が分からなくなった山林、保安林、荒れ果てた別荘地など、原則として一般的な仲介での売却が困難な土地をお引き取りします。相続登記が完了していなくてもお任せください。</p>
                             <ul class="menu-spec-list">
                                 <li><i class="fa-solid fa-check"></i> 相続登記未了・共有持分の手続き代行</li>
                                 <li><i class="fa-solid fa-check"></i> 土地境界が不明なままで引き取り可</li>
@@ -1103,6 +1141,64 @@
         </div>
 
         <!-- Process Section -->
+                <!-- Area Section (近隣エリア専用窓口) -->
+        <section id="areas" class="area-section reveal" style="padding: 4rem 0; background: #f8f9fa; border-top: 1px solid #e9ecef;">
+            <div class="container">
+                <h2 class="section-title text-center">近隣府県の専用窓口・対応エリア</h2>
+                <p class="section-subtitle text-center">大阪府以外の関西全域（京都・滋賀・兵庫・和歌山）の専門窓口でも引き取り査定を受付中</p>
+
+                <div class="area-grid">
+                    <!-- 京都エリア -->
+                    <div class="area-card">
+                        <div>
+                            <h3><i class="fa-solid fa-location-dot"></i> 京都エリア窓口</h3>
+                            <p><strong>【対応地域：京都北部（綾部・福知山・南丹・京丹波）】</strong></p>
+                            <p>地元のローカルネットワークと連携し、空き家、古民家、長屋、アパートなどの早期引き取り査定を行っています。</p>
+                        </div>
+                        <div class="area-card-footer">
+                            <a href="../kyoto/" class="btn btn-primary btn-block">京都エリア窓口はこちら</a>
+                        </div>
+                    </div>
+                    
+                    <!-- 滋賀エリア -->
+                    <div class="area-card">
+                        <div>
+                            <h3><i class="fa-solid fa-location-dot"></i> 滋賀エリア窓口</h3>
+                            <p><strong>【対応地域：湖西・北部（大津・高島・長浜）】</strong></p>
+                            <p>大津市湖西や高島・長浜などの豪雪地帯に放置された空き家・古民家を有料引き取りする地域専用窓口です。</p>
+                        </div>
+                        <div class="area-card-footer">
+                            <a href="../shiga/" class="btn btn-primary btn-block">滋賀エリア窓口はこちら</a>
+                        </div>
+                    </div>
+                    
+                    <!-- 兵庫エリア -->
+                    <div class="area-card">
+                        <div>
+                            <h3><i class="fa-solid fa-location-dot"></i> 兵庫エリア窓口</h3>
+                            <p><strong>【対応地域：淡路島・山間部（但馬・丹波・西播磨）】</strong></p>
+                            <p>淡路島の放置空き家や但馬の豪雪地の建物、丹波や西播磨の古民家などを有料引き取りする地域専用窓口です。</p>
+                        </div>
+                        <div class="area-card-footer">
+                            <a href="../hyogo/" class="btn btn-primary btn-block">兵庫エリア窓口はこちら</a>
+                        </div>
+                    </div>
+                    
+                    <!-- 和歌山エリア -->
+                    <div class="area-card">
+                        <div>
+                            <h3><i class="fa-solid fa-location-dot"></i> 和歌山エリア窓口</h3>
+                            <p><strong>【対応地域：有田川・紀美野・紀南山間部・高野山】</strong></p>
+                            <p>山間部や沿岸部に放置されたままの空き家や古民家、使用されなくなった店舗などを受付・有料引き取りする地域専用窓口です。</p>
+                        </div>
+                        <div class="area-card-footer">
+                            <a href="../wakayama/" class="btn btn-primary btn-block">和歌山エリア窓口はこちら</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <section id="process" class="process-section reveal">
             <div class="container">
                 <h2 class="section-title text-center">「完全非対面・郵送のみ」の3つのステップ</h2>
@@ -1122,7 +1218,7 @@
                     <div class="process-step">
                         <div class="step-badge">STEP 03</div>
                         <h3>最短7日〜で引き取り完了（迅速手続き）</h3>
-                        <p>書類が揃えば、チームが一気に所有権移転登記を完了させて手続き終了。固定資産税や維持管理の不安から<strong>100%解放</strong>されます。</p>
+                        <p>書類が揃えば、チームが一気に所有権移転登記を完了させて手続き終了。固定資産税や維持管理の不安から<strong>すっきり解放</strong>されます。</p>
                     </div>
                 </div>
             </div>
@@ -1176,6 +1272,26 @@
                         </div>
                     </div>
 
+                    
+                    <div class="faq-hybrid-item">
+                        <div class="faq-question">
+                            <div class="faq-question-text">
+                                <span class="faq-q-badge">Q</span>
+                                「地目が墓地の土地」や先祖のお墓がある土地、境界不明な山林も引き取れますか？
+                            </div>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <div class="faq-answer-inner">
+                                <span class="faq-a-badge">A</span>
+                                <div class="faq-answer-text">
+                                    <p><strong>はい、地目が墓地の土地や境界が未確定な山林・崖地・土砂災害警戒区域など、一般的な不動産店で拒否される物件でもお引き受け可能です。</strong> 改葬手続きや地目変更登記、境界確認の手配などの法的手続きも、提携司法書士・土地家屋調査士チームが連携して対応いたします。</p>
+                                    <span class="faq-related-link">👉 関連コラム：<a href="../column/cemetery-land-inheritance.html">地目が「墓地」の土地を処分・相続放棄する方法と注意点</a></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                     <!-- カテゴリ2: 他サービス・制度との違い -->
                     <h3 class="faq-category-title"><i class="fa-solid fa-building-columns"></i> 【他サービス・制度との違い】</h3>
 
@@ -1192,6 +1308,7 @@
                                 <span class="faq-a-badge">A</span>
                                 <div class="faq-answer-text">
                                     <p><strong>国庫帰属は建物がある土地や境界が曖昧な土地は申請できません。当センターでは国庫帰属対象外の物件も柔軟に対応可能です。</strong> 国庫帰属制度は条件が厳しく申請却下リスクや高い審査負担金が必要となります。また自治体への寄付も受け入れ条件が限定的です。当センターでは民間の受託網を活用し、建物付き土地や境界未確定山林もスムーズに引き取ります。</p>
+                                                                        <span class="faq-related-link">👉 <a href="https://www.moj.go.jp/MINJI/minji05_00457.html" target="_blank" rel="noopener noreferrer">法務省：相続土地国庫帰属制度の要件・費用を確認する</a></span>
                                     <span class="faq-related-link">👉 関連コラム：<a href="../column/land-state-return.html">相続土地国庫帰属制度と民間引き取りの違い</a></span>
                                 </div>
                             </div>
@@ -1251,8 +1368,47 @@
                             <div class="faq-answer-inner">
                                 <span class="faq-a-badge">A</span>
                                 <div class="faq-answer-text">
-                                    <p><strong>はい、相続調停中や遺産分割協議の段階でも、事前のご相談や引き取り可否の確認、お見積りのご提示が可能です。</strong> 遺産分割の話し合いを行うにあたり、「引き取りにどの程度の費用がかかるか」「所有権移転が可能か」を事前把握しておくことで、相続人間での話し合いの客観的な参考材料としてご活用いただけます。</p>
+                                    <p><strong>はい、相続調停中や遺産分割協議の段階でも、事前のご相談や引き取り可否の確認、お見積りのご提示が可能です。</strong> 遺産分割の話し合いを行うにあたり、「引き取りにどの程度の費用がかかるか」「所有権移転が可能か」を事前把握しておくことで、相続人間での話し合いの客観的な参考材料としてご活用いただけます。（※本査定は特定の相続人の利益を代弁あるいは交渉に介入するものではなく、対象物件に基づく客観的な試算です。また、引き取り査定回答および実際の契約主体は提携する宅地建物取引業者となります。所有権移転手続きは調停成立等により取得者が確定した後に提携司法書士とともに進められます。）</p>
                                     <span class="faq-related-link">👉 関連コラム：<a href="../column/inheritance-mediation-land-disposal.html">相続調停中・遺産分割協議中の山林や土地の手放し手順</a></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                    <div class="faq-hybrid-item">
+                        <div class="faq-question">
+                            <div class="faq-question-text">
+                                <span class="faq-q-badge">Q</span>
+                                兄弟や親族との「共有持分」だけを処分することはできますか？
+                            </div>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <div class="faq-answer-inner">
+                                <span class="faq-a-badge">A</span>
+                                <div class="faq-answer-text">
+                                    <p><strong>はい、ご自身が所有する「共有持分のみ」の引き取り・所有権移転手続きが可能です。</strong> 他の共有者との話し合いが難航している場合や連絡が取れない状況であっても、お客様の持分単独でご相談・手放しを進めることができます。</p>
+                                    <span class="faq-related-link">👉 関連コラム：<a href="../column/co-ownership-share-disposal.html">不動産の共有持分のみを手放す・処分する方法</a></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="faq-hybrid-item">
+                        <div class="faq-question">
+                            <div class="faq-question-text">
+                                <span class="faq-q-badge">Q</span>
+                                相続放棄をすれば、売れない空き家の管理責任はすぐになくなりますか？
+                            </div>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <div class="faq-answer-inner">
+                                <span class="faq-a-badge">A</span>
+                                <div class="faq-answer-text">
+                                    <p><strong>いいえ、相続放棄をしても次の管理者が決まるまでは管理責任が残る場合があります。</strong> 民法改正により保存義務が整理されましたが、放置すると近隣トラブルや賠償責任のリスクが残ります。有料引き取りを活用して所有権移転登記を完了させることで、将来の管理リスクから確実に解放されます。</p>
+                                    <span class="faq-related-link">👉 関連コラム：<a href="../column/abandoned-house-inheritance-renunciation.html">空き家の相続放棄と残る管理責任・トラブル回避策</a></span>
                                 </div>
                             </div>
                         </div>
@@ -1300,6 +1456,28 @@
 
                     <div class="faq-hybrid-item">
                         <div class="faq-question">
+                            
+                    <div class="faq-hybrid-item">
+                        <div class="faq-question">
+                            <div class="faq-question-text">
+                                <span class="faq-q-badge">Q</span>
+                                放置した空き家の「固定資産税6倍化」リスクが心配ですが、どう対策すべきですか？
+                            </div>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <div class="faq-answer-inner">
+                                <span class="faq-a-badge">A</span>
+                                <div class="faq-answer-text">
+                                    <p><strong>放置空き家が「特定空家」や「管理不全空家」に指定されて自治体から勧告を受けると、住宅用地特例（固定資産税の最大1/6軽減）が解除され、税負担が実質約6倍となる可能性があります。</strong> 課税が強化される前に当センターで所有権移転を完了させることで、突然の増税リスクや過料等の不安を解消できます。</p>
+                                    <span class="faq-related-link">👉 関連コラム：<a href="../column/abandoned-house-tax.html">特定空家指定による固定資産税6倍化リスクと回避策</a></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="faq-hybrid-item">
+                        <div class="faq-question">
                             <div class="faq-question-text">
                                 <span class="faq-q-badge">Q</span>
                                 契約手続きのために来店したり、対面での面談は必要ですか？
@@ -1322,6 +1500,70 @@
 
 
 <!-- CTA/Contact Section -->
+        <section id="recent-columns" class="recent-columns-section reveal" style="padding: 5rem 0; background-color: #fcfdfc; border-top: 1px solid #eaeaea; border-bottom: 1px solid #eaeaea;">
+            <div class="container">
+                <h2 class="section-title text-center">お役立ちコラム</h2>
+                <p class="section-subtitle text-center" style="text-align: center; color: #666; margin-bottom: 3rem;">売れない空き家や山林の処分・手放し方に関する専門知識をお届けします</p>
+                
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; max-width: 1200px; margin: 0 auto;">
+                    <!-- Column Card 1 -->
+                    <div class="column-card" style="background: #fff; border-radius: 12px; box-shadow: 0 5px 20px rgba(0,0,0,0.05); overflow: hidden; display: flex; flex-direction: column; border: 1px solid #eaeaea; transition: transform 0.3s;">
+                        <div style="height: 180px; background: linear-gradient(135deg, #2d6a4f 0%, #1b4332 100%); display: flex; flex-direction: column; align-items: center; justify-content: center; color: rgba(255,255,255,0.9); font-size: 1.2rem; font-weight: bold; padding: 1rem; text-align: center;">
+                            <i class="fa-solid fa-house-circle-xmark" style="font-size: 2.5rem; display: block; margin-bottom: 0.5rem;"></i>
+                            古い実家の処分
+                        </div>
+                        <div style="padding: 1.5rem; display: flex; flex-direction: column; flex-grow: 1;">
+                            <span style="align-self: flex-start; background-color: var(--color-accent, #e76f51); color: #fff; font-size: 0.75rem; font-weight: bold; padding: 0.25rem 0.75rem; border-radius: 50px; margin-bottom: 0.8rem;">空き家処分・実家整理</span>
+                            <h3 style="font-size: 1.15rem; font-weight: bold; line-height: 1.5; margin-bottom: 0.8rem; color: #333; text-align: left;"><a href="../column/old-house-cleanup-purchase.html" style="color: inherit; text-decoration: none;">古い家を処分したい！売れない実家を『荷物丸ごと』買い取ってもらう手順</a></h3>
+                            <p style="font-size: 0.9rem; color: #666; line-height: 1.6; margin-bottom: 1.5rem; flex-grow: 1; text-align: left;">相続した古い実家に荷物が大量に残っていて片付けられないとお悩みの方へ。荷物丸ごとの状態での売却・引き取り手順を分かりやすく解説します。</p>
+                            <div style="font-size: 0.8rem; color: #999; border-top: 1px solid #eee; padding-top: 0.8rem; display: flex; justify-content: space-between;">
+                                <span><i class="fa-regular fa-calendar-days"></i> 2026/07/13</span>
+                                <span>負動産リサイクルセンター</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Column Card 2 -->
+                    <div class="column-card" style="background: #fff; border-radius: 12px; box-shadow: 0 5px 20px rgba(0,0,0,0.05); overflow: hidden; display: flex; flex-direction: column; border: 1px solid #eaeaea; transition: transform 0.3s;">
+                        <div style="height: 180px; background: linear-gradient(135deg, #2d6a4f 0%, #1b4332 100%); display: flex; flex-direction: column; align-items: center; justify-content: center; color: rgba(255,255,255,0.9); font-size: 1.2rem; font-weight: bold; padding: 1rem; text-align: center;">
+                            <i class="fa-solid fa-landmark" style="font-size: 2.5rem; display: block; margin-bottom: 0.5rem;"></i>
+                            不要な土地を国に返す
+                        </div>
+                        <div style="padding: 1.5rem; display: flex; flex-direction: column; flex-grow: 1;">
+                            <span style="align-self: flex-start; background-color: var(--color-accent, #e76f51); color: #fff; font-size: 0.75rem; font-weight: bold; padding: 0.25rem 0.75rem; border-radius: 50px; margin-bottom: 0.8rem;">相続土地の処分・法律</span>
+                            <h3 style="font-size: 1.15rem; font-weight: bold; line-height: 1.5; margin-bottom: 0.8rem; color: #333; text-align: left;"><a href="../column/land-state-return.html" style="color: inherit; text-decoration: none;">相続した不要な土地を国に返す方法｜相続土地国庫帰属制度と引き取りの違い</a></h3>
+                            <p style="font-size: 0.9rem; color: #666; line-height: 1.6; margin-bottom: 1.5rem; flex-grow: 1; text-align: left;">不要な土地を国に引き取らせる国庫帰属制度。その厳しい要件、解体・測量などの自己負担費用、民間有料引き取りサービスとの違いを解説します。</p>
+                            <div style="font-size: 0.8rem; color: #999; border-top: 1px solid #eee; padding-top: 0.8rem; display: flex; justify-content: space-between;">
+                                <span><i class="fa-regular fa-calendar-days"></i> 2026/07/13</span>
+                                <span>負動産リサイクルセンター</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Column Card 3 -->
+                    <div class="column-card" style="background: #fff; border-radius: 12px; box-shadow: 0 5px 20px rgba(0,0,0,0.05); overflow: hidden; display: flex; flex-direction: column; border: 1px solid #eaeaea; transition: transform 0.3s;">
+                        <div style="height: 180px; background: linear-gradient(135deg, #2d6a4f 0%, #1b4332 100%); display: flex; flex-direction: column; align-items: center; justify-content: center; color: rgba(255,255,255,0.9); font-size: 1.2rem; font-weight: bold; padding: 1rem; text-align: center;">
+                            <i class="fa-solid fa-file-invoice-dollar" style="font-size: 2.5rem; display: block; margin-bottom: 0.5rem;"></i>
+                            空き家放置の税金リスク
+                        </div>
+                        <div style="padding: 1.5rem; display: flex; flex-direction: column; flex-grow: 1;">
+                            <span style="align-self: flex-start; background-color: var(--color-accent, #e76f51); color: #fff; font-size: 0.75rem; font-weight: bold; padding: 0.25rem 0.75rem; border-radius: 50px; margin-bottom: 0.8rem;">空き家処分・税金対策</span>
+                            <h3 style="font-size: 1.15rem; font-weight: bold; line-height: 1.5; margin-bottom: 0.8rem; color: #333; text-align: left;"><a href="../column/abandoned-house-tax.html" style="color: inherit; text-decoration: none;">実家を放置すると固定資産税が6倍に？特定空家・管理不全空家の対策</a></h3>
+                            <p style="font-size: 0.9rem; color: #666; line-height: 1.6; margin-bottom: 1.5rem; flex-grow: 1; text-align: left;">空き家放置による大増税リスク。2023年改正法で新設された「管理不全空家」の基準と、税金ペナルティを受ける前に実家を手放す解決策を徹底解説。</p>
+                            <div style="font-size: 0.8rem; color: #999; border-top: 1px solid #eee; padding-top: 0.8rem; display: flex; justify-content: space-between;">
+                                <span><i class="fa-regular fa-calendar-days"></i> 2026/07/13</span>
+                                <span>負動産リサイクルセンター</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div style="text-align: center; margin-top: 3rem;">
+                    <a href="../column/" class="btn btn-primary" style="display: inline-block; padding: 0.8rem 2rem; border-radius: 50px; text-decoration: none; font-weight: bold; background-color: var(--color-primary, #2d6a4f); color: #fff;">コラム一覧を見る</a>
+                </div>
+            </div>
+        </section>
+
         <section id="contact" class="cta-section line-only reveal">
             <div class="container">
                 <div class="cta-wrapper">
