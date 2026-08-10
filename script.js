@@ -202,7 +202,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // 繝上Φ繝舌�繧ｬ繝ｼ繝懊ち繝ｳ縺ｮ菴懈�
         const hamburger = document.createElement('button');
         hamburger.className = 'hamburger-menu';
-        hamburger.setAttribute('aria-label', '繝｡繝九Η繝ｼ繧帝幕髢峨☆繧�');
+        hamburger.setAttribute('aria-label', 'メニューを開閉する');
         hamburger.innerHTML = `
             <span class="bar"></span>
             <span class="bar"></span>

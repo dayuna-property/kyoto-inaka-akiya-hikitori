@@ -3417,6 +3417,11 @@ svg.recycle-scheme-img {
         grid-template-columns: 1fr !important;
         gap: 2.5rem !important;
     }
+
+    /* 表の最小幅が親グリッドまで押し広げないようにする */
+    .about-team-wrapper > * {
+        min-width: 0 !important;
+    }
     
     .about-team-text h2 {
         font-size: 1.45rem !important;
@@ -4984,6 +4989,85 @@ a.guarantee-badge:hover {
     min-width: 768px !important;
 }
 
+/* ファーストビュー直後のモバイル用窓口選択 */
+.mobile-priority-chooser {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .mobile-priority-chooser {
+        display: block;
+        padding: 1rem;
+        background: #f8faf8;
+        border-bottom: 1px solid rgba(27, 67, 50, 0.08);
+    }
+
+    .mobile-priority-chooser-lead {
+        margin: 0 0 0.65rem;
+        color: var(--color-primary-dark, #1b4332);
+        font-size: 0.9rem;
+        font-weight: 700;
+        text-align: center;
+    }
+
+    .mobile-priority-chooser-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 0.6rem;
+    }
+
+    .mobile-priority-card {
+        display: flex;
+        min-height: 126px;
+        box-sizing: border-box;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0.75rem 0.45rem;
+        border: 1px solid rgba(27, 67, 50, 0.16);
+        border-radius: 10px;
+        color: #fff;
+        text-align: center;
+        text-decoration: none;
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+    }
+
+    .mobile-priority-card-house {
+        background: linear-gradient(145deg, #2d6a4f, #1b4332);
+    }
+
+    .mobile-priority-card-forest {
+        background: linear-gradient(145deg, #b86f08, #8b5300);
+    }
+
+    .mobile-priority-card > i {
+        margin-bottom: 0.35rem;
+        font-size: 1.35rem;
+    }
+
+    .mobile-priority-card-title {
+        font-size: 1rem;
+        font-weight: 800;
+        line-height: 1.35;
+    }
+
+    .mobile-priority-card-note {
+        margin-top: 0.15rem;
+        font-size: 0.72rem;
+        line-height: 1.3;
+        opacity: 0.92;
+    }
+
+    .mobile-priority-card-action {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.25rem;
+        margin-top: 0.5rem;
+        font-size: 0.72rem;
+        font-weight: 700;
+    }
+}
+
 /* ==========================================================================
    27. コラム用「負動産リサイクルセンター」詳細認知・誘導パーツ
    ========================================================================== */
@@ -6330,8 +6414,6 @@ a.guarantee-badge:hover {
         line-height: 1.35;
     }
 }
-
-
 
 
 
