@@ -261,4 +261,23 @@ document.addEventListener('DOMContentLoaded', () => {
         window.addEventListener('scroll', handleScroll);
         handleScroll(); // 初期状態の判定
     }
+
+    // LINE問い合わせクリックをGA4へ送信
+    document.querySelectorAll('a[href*="lin.ee/"]').forEach((link) => {
+        link.addEventListener('click', () => {
+            if (typeof gtag !== 'function') return;
+
+            const ctaPosition = link.closest('.floating-line-cta') ? 'floating'
+                : link.closest('.site-header, header') ? 'header'
+                : link.closest('.hero, .hero-section') ? 'hero'
+                : link.closest('.body-cta, .body-cta-btn') ? 'body'
+                : 'other';
+
+            gtag('event', 'line_click', {
+                source_page: window.location.pathname,
+                cta_position: ctaPosition,
+                link_text: link.textContent.trim().replace(/\s+/g, ' ').slice(0, 100)
+            });
+        });
+    });
 });
